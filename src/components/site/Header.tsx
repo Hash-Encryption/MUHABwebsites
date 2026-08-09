@@ -1,59 +1,142 @@
-import { ShoppingBag, Languages } from "lucide-react";
-import logo from "@/assets/logo.png";
+import React, { useState } from "react";
+import { Languages, Menu, X } from "lucide-react";
 import { useI18n } from "@/lib/i18n";
-import { useCart } from "@/lib/cart";
+import logoImg from "@/assets/muhab-logo.jpg";
+import { RequestWebsiteDialog } from "./RequestWebsiteDialog";
 
 export function Header() {
   const { lang, setLang, t } = useI18n();
-  const { count, setOpen } = useCart();
+  const [requestModalOpen, setRequestModalOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+  const scrollToSection = (id: string) => {
+    setMobileMenuOpen(false);
+    const element = document.getElementById(id);
+    if (element) {
+      const offset = 80;
+      const bodyRect = document.body.getBoundingClientRect().top;
+      const elementRect = element.getBoundingClientRect().top;
+      const elementPosition = elementRect - bodyRect;
+      const offsetPosition = elementPosition - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: "smooth",
+      });
+    }
+  };
 
   return (
-    <header className="sticky top-0 z-40 backdrop-blur-md bg-[color:var(--cream)]/85 border-b border-[color:var(--border)]/60">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-4">
-        <a href="#top" className="flex items-center gap-3 min-w-0">
-          <img src={logo} alt="" width={40} height={40} className="h-9 w-9 sm:h-11 sm:w-11 shrink-0" />
-          <div className="min-w-0 leading-tight">
-            <div className="font-display text-[15px] sm:text-lg font-semibold tracking-wide text-[color:var(--charcoal)] truncate">
-              ALKHAL ALDIMASHKI
-            </div>
-            <div className="text-[11px] sm:text-xs text-[color:var(--gold-deep)] tracking-[0.2em] uppercase" style={{ fontFamily: "var(--font-arabic-display)" }}>
-              الخال الدمشقي
+    <>
+      <header className="sticky top-0 z-50 backdrop-blur-md bg-[#051A12]/90 border-b border-[#A6FF2E]/15 transition-all">
+        <div className="mx-auto max-w-7xl px-4 sm:px-6 h-16 sm:h-20 flex items-center justify-between gap-4">
+          
+          {/* Official Full MUHAB Logo Placement */}
+          <a
+            href="#top"
+            onClick={(e) => { e.preventDefault(); scrollToSection("top"); }}
+            className="flex items-center gap-3 shrink-0 group"
+          >
+            <img
+              src={logoImg}
+              alt="MUHAB SAUDI WEBMAKERS"
+              className="h-10 sm:h-12 w-auto object-contain rounded-md transition-transform group-hover:scale-105"
+            />
+          </a>
+
+          {/* Center Navigation Links (Desktop) */}
+          <nav className="hidden md:flex items-center gap-7 text-xs sm:text-sm font-medium tracking-wide text-[#DADDD6]">
+            <button
+              onClick={() => scrollToSection("features")}
+              className="hover:text-[#A6FF2E] transition-colors cursor-pointer"
+            >
+              {t("nav.features")}
+            </button>
+            <button
+              onClick={() => scrollToSection("portfolio")}
+              className="hover:text-[#A6FF2E] transition-colors cursor-pointer"
+            >
+              {t("nav.portfolio")}
+            </button>
+            <button
+              onClick={() => scrollToSection("services")}
+              className="hover:text-[#A6FF2E] transition-colors cursor-pointer"
+            >
+              {t("nav.services")}
+            </button>
+            <button
+              onClick={() => scrollToSection("digital-cards")}
+              className="hover:text-[#A6FF2E] transition-colors cursor-pointer"
+            >
+              {t("nfc.title")}
+            </button>
+            <button
+              onClick={() => scrollToSection("contact")}
+              className="hover:text-[#A6FF2E] transition-colors cursor-pointer"
+            >
+              {t("nav.contact")}
+            </button>
+          </nav>
+
+          {/* Right Actions: Lang Switcher & Primary Lime CTA */}
+          <div className="flex items-center gap-3 shrink-0">
+            {/* Language Switcher */}
+            <button
+              onClick={() => setLang(lang === "en" ? "ar" : "en")}
+              className="group inline-flex items-center gap-1.5 rounded-full border border-white/20 bg-white/5 px-3 py-1.5 text-xs font-semibold text-white hover:border-[#A6FF2E]/60 transition-colors cursor-pointer"
+              aria-label="Toggle language"
+            >
+              <Languages className="h-3.5 w-3.5 text-[#A6FF2E]" />
+              <span className={lang === "en" ? "text-[#A6FF2E] font-bold" : "text-white/80"}>EN</span>
+              <span className="opacity-40 text-white">/</span>
+              <span className={lang === "ar" ? "text-[#A6FF2E] font-bold" : "text-white/80"} style={{ fontFamily: "var(--font-arabic)" }}>ع</span>
+            </button>
+
+            {/* Primary CTA (Lime Background, Dark Text) */}
+            <button
+              onClick={() => setRequestModalOpen(true)}
+              className="hidden sm:inline-flex items-center gap-2 rounded-full bg-[#A6FF2E] px-5 py-2.5 text-xs sm:text-sm font-bold text-[#09110D] shadow-lg shadow-[#A6FF2E]/20 hover:bg-[#b5ff4f] hover:scale-[1.02] active:scale-[0.98] transition-all cursor-pointer group"
+            >
+              <span>{t("hero.cta_primary")}</span>
+            </button>
+
+            {/* Mobile Menu Toggle Button */}
+            <button
+              onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+              className="md:hidden p-2 rounded-xl border border-white/20 text-white hover:bg-white/10 transition-colors cursor-pointer"
+              aria-label="Toggle mobile menu"
+            >
+              {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
+            </button>
+          </div>
+        </div>
+
+        {/* Mobile Navigation Dropdown */}
+        {mobileMenuOpen && (
+          <div className="md:hidden border-t border-[#A6FF2E]/15 bg-[#051A12] px-6 py-6 space-y-4 animate-in slide-in-from-top-2">
+            <nav className="flex flex-col space-y-3 text-sm font-medium text-[#DADDD6]">
+              <button onClick={() => scrollToSection("features")} className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer">{t("nav.features")}</button>
+              <button onClick={() => scrollToSection("portfolio")} className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer">{t("nav.portfolio")}</button>
+              <button onClick={() => scrollToSection("services")} className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer">{t("nav.services")}</button>
+              <button onClick={() => scrollToSection("digital-cards")} className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer">{t("nfc.title")}</button>
+              <button onClick={() => scrollToSection("contact")} className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer">{t("nav.contact")}</button>
+            </nav>
+            <div className="pt-2">
+              <button
+                onClick={() => { setMobileMenuOpen(false); setRequestModalOpen(true); }}
+                className="w-full inline-flex items-center justify-center gap-2 rounded-xl bg-[#A6FF2E] px-5 py-3 text-sm font-bold text-[#09110D] shadow-md cursor-pointer"
+              >
+                <span>{t("hero.cta_primary")}</span>
+              </button>
             </div>
           </div>
-        </a>
+        )}
+      </header>
 
-        <nav className="hidden md:flex items-center gap-8 text-sm text-[color:var(--charcoal)]/80">
-          <a href="#menu" className="hover:text-[color:var(--rose)] transition-colors">{t("nav.menu")}</a>
-          <a href="#about" className="hover:text-[color:var(--rose)] transition-colors">{t("nav.about")}</a>
-          <a href="#visit" className="hover:text-[color:var(--rose)] transition-colors">{t("nav.visit")}</a>
-        </nav>
-
-        <div className="flex items-center gap-2 shrink-0">
-          <button
-            onClick={() => setLang(lang === "en" ? "ar" : "en")}
-            className="group inline-flex items-center gap-1.5 rounded-full border border-[color:var(--gold-deep)]/40 px-3 py-1.5 text-xs font-medium text-[color:var(--charcoal)] hover:bg-[color:var(--gold)]/10 transition-colors"
-            aria-label="Toggle language"
-          >
-            <Languages className="h-3.5 w-3.5" />
-            <span className={lang === "en" ? "text-[color:var(--rose)] font-bold" : ""}>EN</span>
-            <span className="opacity-40">/</span>
-            <span className={lang === "ar" ? "text-[color:var(--rose)] font-bold" : ""} style={{ fontFamily: "var(--font-arabic)" }}>ع</span>
-          </button>
-
-          <button
-            onClick={() => setOpen(true)}
-            className="relative inline-flex items-center justify-center h-10 w-10 rounded-full bg-[color:var(--charcoal)] text-[color:var(--cream)] hover:bg-[color:var(--rose)] transition-colors"
-            aria-label="Open cart"
-          >
-            <ShoppingBag className="h-4.5 w-4.5" />
-            {count > 0 && (
-              <span className="absolute -top-1 -right-1 rtl:-left-1 rtl:right-auto h-5 min-w-5 px-1 rounded-full bg-[color:var(--gold)] text-[color:var(--charcoal)] text-[11px] font-bold flex items-center justify-center shadow-md">
-                {count}
-              </span>
-            )}
-          </button>
-        </div>
-      </div>
-    </header>
+      <RequestWebsiteDialog
+        open={requestModalOpen}
+        onOpenChange={setRequestModalOpen}
+      />
+    </>
   );
 }
