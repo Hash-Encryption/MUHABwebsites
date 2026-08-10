@@ -1,7 +1,11 @@
 import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 
-// Adapt Nitro preset based on deployment target (Vercel vs Cloudflare)
-const preset = process.env.VERCEL ? "vercel" : (process.env.NITRO_PRESET || "cloudflare-module");
+// Auto-detect deployment preset for Cloudflare Pages, Cloudflare Workers, and Vercel
+const getPreset = () => {
+  if (process.env.VERCEL) return "vercel";
+  if (process.env.CF_PAGES || process.env.CLOUDFLARE_PAGES) return "cloudflare-pages";
+  return process.env.NITRO_PRESET || "cloudflare-pages"; // Default to cloudflare-pages for .pages.dev compatibility
+};
 
 export default defineConfig({
   tanstackStart: {
@@ -9,7 +13,7 @@ export default defineConfig({
   },
   vite: {
     nitro: {
-      preset,
+      preset: getPreset(),
     },
   },
 });
