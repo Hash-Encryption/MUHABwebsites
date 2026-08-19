@@ -3,6 +3,7 @@ import { createFileRoute } from "@tanstack/react-router";
 import { I18nProvider, useI18n } from "@/lib/i18n";
 import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
+import { OurCompanies } from "@/components/site/OurCompanies";
 import { Footer } from "@/components/site/Footer";
 import { RequestWebsiteDialog } from "@/components/site/RequestWebsiteDialog";
 import {
@@ -19,16 +20,23 @@ import {
   Search,
   Headphones,
   ExternalLink,
-  Sparkles
+  Sparkles,
 } from "lucide-react";
 
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
       { title: "MUHAB · SAUDI WEBMAKERS — WEBSITES. GROWTH. REPUTATION." },
-      { name: "description", content: "Muhab creates modern digital experiences that help Saudi businesses grow." },
+      {
+        name: "description",
+        content: "Muhab creates modern digital experiences that help Saudi businesses grow.",
+      },
       { property: "og:title", content: "MUHAB · SAUDI WEBMAKERS" },
-      { property: "og:description", content: "Websites. Growth. Reputation. High-performance digital solutions for Saudi businesses." },
+      {
+        property: "og:description",
+        content:
+          "Websites. Growth. Reputation. High-performance digital solutions for Saudi businesses.",
+      },
       { property: "og:type", content: "website" },
     ],
   }),
@@ -47,10 +55,10 @@ function HomeContent() {
   };
 
   const featureBadges = [
-    { icon: Smartphone, key: "badge.responsive" },
-    { icon: Zap, key: "badge.performance" },
-    { icon: Shield, key: "badge.saudi" },
-    { icon: TrendingUp, key: "badge.seo" },
+    { icon: Smartphone, key: "badge.responsive" as const },
+    { icon: Zap, key: "badge.performance" as const },
+    { icon: Shield, key: "badge.saudi" as const },
+    { icon: TrendingUp, key: "badge.seo" as const },
   ];
 
   const portfolioProjects = [
@@ -62,10 +70,12 @@ function HomeContent() {
       categoryAr: "متجر مشروبات وتجزئة",
       filter: "ecommerce",
       liveUrl: "https://gotcha-fresh-tea-jeddah-jwmw.vercel.app",
-      image: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+      image:
+        "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
       outcomeEn: "Live Website · Interactive Menu & Orders",
       outcomeAr: "موقع مباشر · قائمة تفاعلية وطلبات",
-      descEn: "Vibrant, mobile-optimized online store & interactive menu for Gotcha Fresh Tea in Jeddah.",
+      descEn:
+        "Vibrant, mobile-optimized online store & interactive menu for Gotcha Fresh Tea in Jeddah.",
       descAr: "متجر إلكتروني وقائمة تفاعلية حديثة لعلامة جوتشا فريش تي بجدة.",
     },
     {
@@ -76,10 +86,12 @@ function HomeContent() {
       categoryAr: "مطعم مأكولات عريقة",
       filter: "corporate",
       liveUrl: "https://damascene.vercel.app/#cat-chicken-shawarma",
-      image: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+      image:
+        "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
       outcomeEn: "Live Website · Bilingual Syrian Menu",
       outcomeAr: "موقع مباشر · قائمة طعام ثنائية اللغة",
-      descEn: "Traditional Damascene restaurant platform featuring authentic heritage recipes, shawarma catalog, and WhatsApp ordering.",
+      descEn:
+        "Traditional Damascene restaurant platform featuring authentic heritage recipes, shawarma catalog, and WhatsApp ordering.",
       descAr: "منصة مطعم دمشقي عريق تعرض أشهر الأطباق والقوائم المباشرة مع الربط بالواتساب.",
     },
     {
@@ -90,10 +102,12 @@ function HomeContent() {
       categoryAr: "مقهى وتجربة يابانية",
       filter: "saas",
       liveUrl: "https://ueno-saryo.vercel.app/",
-      image: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&q=80",
+      image:
+        "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&q=80",
       outcomeEn: "Live Website · Zen Japanese Design",
       outcomeAr: "موقع مباشر · تصميم ورقي ياباني",
-      descEn: "Sophisticated Japanese teahouse web experience crafted with minimalistic aesthetic and smooth navigation.",
+      descEn:
+        "Sophisticated Japanese teahouse web experience crafted with minimalistic aesthetic and smooth navigation.",
       descAr: "تجربة ويب يابانية فاخرة للمقهى مصممة بطابع مينيماليست وأداء سلس.",
     },
     {
@@ -104,24 +118,29 @@ function HomeContent() {
       categoryAr: "متجر إلكتروني فاخر",
       filter: "ecommerce",
       liveUrl: "https://lavoa.hgendi3.workers.dev/",
-      image: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
+      image:
+        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
       outcomeEn: "Live Store · Cloudflare Workers Speed",
       outcomeAr: "متجر مباشر · سرعة استجابة فائقة",
-      descEn: "High-end retail & boutique store engineered on edge infrastructure for ultra-fast load times and seamless checkout.",
-      descAr: "متجر إلكتروني فاخر مبني على البنية السحابية لسرعة استجابة استثنائية وتجربة تسوق راقية.",
+      descEn:
+        "High-end retail & boutique store engineered on edge infrastructure for ultra-fast load times and seamless checkout.",
+      descAr:
+        "متجر إلكتروني فاخر مبني على البنية السحابية لسرعة استجابة استثنائية وتجربة تسوق راقية.",
     },
   ];
 
-  const filteredProjects = activeFilter === "all"
-    ? portfolioProjects
-    : portfolioProjects.filter((p) => p.filter === activeFilter);
+  const filteredProjects =
+    activeFilter === "all"
+      ? portfolioProjects
+      : portfolioProjects.filter((p) => p.filter === activeFilter);
 
   const servicesOutcome = [
     {
       id: "web-design",
       title: "WEB DESIGN",
       titleAr: "تصميم المواقع",
-      descEn: "Modern websites designed around the business and its customers to maximize conversion.",
+      descEn:
+        "Modern websites designed around the business and its customers to maximize conversion.",
       descAr: "مواقع حديثة مصممة حول هوية عملك وعملائك لتحقيق أعلى معدل تحويل.",
       icon: Globe,
     },
@@ -145,7 +164,8 @@ function HomeContent() {
       id: "reputation",
       title: "ONLINE REPUTATION",
       titleAr: "سمعة العلامة التجارية",
-      descEn: "Solutions that make it easy for happy customers to strengthen your brand's online presence.",
+      descEn:
+        "Solutions that make it easy for happy customers to strengthen your brand's online presence.",
       descAr: "حلول تتيح لعملائك تعزيز سمعة موقعك وحضورك الرقمي بكل سهولة.",
       icon: Star,
     },
@@ -188,7 +208,7 @@ function HomeContent() {
   return (
     <div className="min-h-screen flex flex-col bg-[#051A12] text-white">
       <Header />
-      
+
       <main className="flex-1">
         {/* Dark Hero Section (#051A12) */}
         <Hero />
@@ -208,7 +228,7 @@ function HomeContent() {
                       <Icon className="h-5 w-5" />
                     </div>
                     <span className="text-xs sm:text-sm font-bold text-white leading-tight">
-                      {t(badge.key as any)}
+                      {t(badge.key)}
                     </span>
                   </div>
                 );
@@ -217,15 +237,22 @@ function HomeContent() {
           </div>
         </section>
 
-        {/* SECTION: PORTFOLIO & LIVE CLIENT WEBSITES (#portfolio - Warm Ivory #F7F5EF Light Rhythm) */}
-        <section id="portfolio" className="scroll-mt-24 py-20 sm:py-28 bg-[#F7F5EF] text-[#09110D]">
+        {/* SECTION: OUR COMPANIES (White / Off-White #FFFFFF) */}
+        <OurCompanies />
+
+        {/* SECTION: OUR CLIENTS & LIVE WEBSITES (#portfolio - Subtle Green-Tinted Neutral #EEF3EC) */}
+        <section
+          id="portfolio"
+          className="scroll-mt-24 py-20 sm:py-28 bg-[#EEF3EC] text-[#09110D] border-t border-[#0B2F23]/10"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            
             {/* Header */}
             <div className="text-center max-w-3xl mx-auto space-y-4 mb-12">
-              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B2F23] text-[#A6FF2E] text-xs font-extrabold uppercase tracking-wider">
+              <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B2F23] text-[#A6FF2E] text-xs font-extrabold uppercase tracking-wider shadow-sm">
                 <Sparkles className="h-4 w-4" />
-                <span>MUHAB LIVE CLIENT SHOWCASE</span>
+                <span>
+                  {lang === "ar" ? "عملاؤنا ومشاريعنا الحية" : "OUR CLIENTS · LIVE SHOWCASE"}
+                </span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#09110D]">
                 {lang === "ar" ? "أعمالنا والمواقع الحية التي صمّمنا" : "Our Live Client Websites"}
@@ -242,8 +269,16 @@ function HomeContent() {
               {[
                 { id: "all", labelEn: "All Websites", labelAr: "جميع المواقع" },
                 { id: "ecommerce", labelEn: "E-Commerce & Retail", labelAr: "المتاجر والتجزئة" },
-                { id: "corporate", labelEn: "Restaurants & Corporate", labelAr: "المطاعم والشركات" },
-                { id: "saas", labelEn: "Specialty & Culinary", labelAr: "المقاهي والتجارب الفاخرة" },
+                {
+                  id: "corporate",
+                  labelEn: "Restaurants & Corporate",
+                  labelAr: "المطاعم والشركات",
+                },
+                {
+                  id: "saas",
+                  labelEn: "Specialty & Culinary",
+                  labelAr: "المقاهي والتجارب الفاخرة",
+                },
               ].map((tab) => (
                 <button
                   key={tab.id}
@@ -273,7 +308,7 @@ function HomeContent() {
                       className="h-full w-full object-cover group-hover:scale-105 transition-transform duration-500"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
-                    
+
                     {/* Category Badge */}
                     <div className="absolute top-4 left-4 rtl:left-auto rtl:right-4">
                       <span className="inline-block rounded-full bg-[#0B2F23] px-3.5 py-1 text-xs font-bold text-[#A6FF2E] shadow-md">
@@ -317,21 +352,24 @@ function HomeContent() {
                         onClick={() => openCategoryDialog(project.filter)}
                         className="inline-flex items-center gap-1.5 rounded-full bg-[#0B2F23] px-5 py-2 text-xs font-extrabold text-[#A6FF2E] hover:bg-[#082218] transition-colors cursor-pointer"
                       >
-                        <span>{lang === "ar" ? "طلب موقع مماثل ←" : "BUILD SIMILAR PROJECT →"}</span>
+                        <span>
+                          {lang === "ar" ? "طلب موقع مماثل ←" : "BUILD SIMILAR PROJECT →"}
+                        </span>
                       </button>
                     </div>
                   </div>
                 </div>
               ))}
             </div>
-
           </div>
         </section>
 
         {/* SECTION: SERVICES (#services) */}
-        <section id="services" className="scroll-mt-24 py-20 sm:py-28 bg-[#051A12] text-white border-t border-[#A6FF2E]/15">
+        <section
+          id="services"
+          className="scroll-mt-24 py-20 sm:py-28 bg-[#051A12] text-white border-t border-[#A6FF2E]/15"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            
             <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B2F23] text-[#A6FF2E] text-xs font-extrabold uppercase tracking-wider">
                 <ShieldCheck className="h-4 w-4" />
@@ -376,15 +414,16 @@ function HomeContent() {
                 );
               })}
             </div>
-
           </div>
         </section>
 
         {/* SECTION: RESULTS / VALUE PROPS (Deep Emerald Dark Surface #0B2F23) */}
-        <section id="features" className="scroll-mt-24 py-20 sm:py-24 bg-[#0B2F23] text-white border-y border-[#A6FF2E]/15">
+        <section
+          id="features"
+          className="scroll-mt-24 py-20 sm:py-24 bg-[#0B2F23] text-white border-y border-[#A6FF2E]/15"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              
               <div className="lg:col-span-6 space-y-6">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#A6FF2E]/10 border border-[#A6FF2E]/30 text-[#A6FF2E] text-xs font-extrabold uppercase">
                   <span>WEBSITES. GROWTH. REPUTATION.</span>
@@ -393,9 +432,10 @@ function HomeContent() {
                   Engineered to Deliver Real Business Impact in the Saudi Market
                 </h2>
                 <p className="text-[#DADDD6] text-base leading-relaxed">
-                  Muhab combines modern web development standards with deep knowledge of local market preferences to build websites that look premium and convert reliably.
+                  Muhab combines modern web development standards with deep knowledge of local
+                  market preferences to build websites that look premium and convert reliably.
                 </p>
-                
+
                 <div className="pt-2 space-y-3">
                   <div className="flex items-center gap-3 text-sm font-semibold">
                     <CheckCircle2 className="h-5 w-5 text-[#A6FF2E] shrink-0" />
@@ -414,26 +454,28 @@ function HomeContent() {
 
               <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-3 gap-6">
                 {resultsValue.map((res, i) => (
-                  <div key={i} className="rounded-2xl bg-[#051A12] border border-[#A6FF2E]/20 p-6 text-center space-y-2">
-                    <div className="text-4xl font-extrabold text-[#A6FF2E]">
-                      {res.stat}
-                    </div>
+                  <div
+                    key={i}
+                    className="rounded-2xl bg-[#051A12] border border-[#A6FF2E]/20 p-6 text-center space-y-2"
+                  >
+                    <div className="text-4xl font-extrabold text-[#A6FF2E]">{res.stat}</div>
                     <p className="text-xs font-semibold text-[#DADDD6]">
                       {lang === "ar" ? res.labelAr : res.labelEn}
                     </p>
                   </div>
                 ))}
               </div>
-
             </div>
           </div>
         </section>
 
         {/* SECTION: NFC DIGITAL CARDS (Dark #051A12) */}
-        <section id="digital-cards" className="scroll-mt-24 py-20 sm:py-28 bg-[#051A12] relative overflow-hidden">
+        <section
+          id="digital-cards"
+          className="scroll-mt-24 py-20 sm:py-28 bg-[#051A12] relative overflow-hidden"
+        >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="rounded-3xl bg-[#0B2F23] p-8 sm:p-12 lg:p-16 border border-[#A6FF2E]/25 text-white shadow-2xl relative overflow-hidden">
-              
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
                 <div className="lg:col-span-8 space-y-6">
                   <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#A6FF2E] text-[#09110D] text-xs font-extrabold">
@@ -467,13 +509,16 @@ function HomeContent() {
                       <CreditCard className="h-6 w-6 text-[#A6FF2E]" />
                     </div>
                     <div>
-                      <div className="text-[10px] text-[#A6FF2E] uppercase tracking-widest font-extrabold">MUHAB SMART PASS</div>
-                      <div className="text-sm font-bold tracking-wide text-white">SAUDI WEBMAKERS</div>
+                      <div className="text-[10px] text-[#A6FF2E] uppercase tracking-widest font-extrabold">
+                        MUHAB SMART PASS
+                      </div>
+                      <div className="text-sm font-bold tracking-wide text-white">
+                        SAUDI WEBMAKERS
+                      </div>
                     </div>
                   </div>
                 </div>
               </div>
-
             </div>
           </div>
         </section>

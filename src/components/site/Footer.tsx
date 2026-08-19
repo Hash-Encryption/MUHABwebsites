@@ -9,7 +9,6 @@ export function Footer() {
   return (
     <footer id="contact" className="relative bg-[#051A12] text-white border-t border-[#A6FF2E]/15">
       <div className="mx-auto max-w-7xl px-6 py-16 grid gap-10 md:grid-cols-4">
-        
         {/* Full Brand Lockup Placement */}
         <div className="md:col-span-1 space-y-4">
           <a href="#top" className="inline-block group">
@@ -19,9 +18,7 @@ export function Footer() {
               className="h-14 w-auto object-contain rounded-md"
             />
           </a>
-          <p className="text-xs text-[#DADDD6] leading-relaxed">
-            {t("footer.tag")}
-          </p>
+          <p className="text-xs text-[#DADDD6] leading-relaxed">{t("footer.tag")}</p>
           <div className="text-[11px] font-extrabold tracking-[0.2em] text-[#A6FF2E] uppercase">
             WEBSITES. GROWTH. REPUTATION.
           </div>
@@ -33,10 +30,34 @@ export function Footer() {
             {t("footer.quick_links")}
           </div>
           <ul className="space-y-2 text-xs text-[#DADDD6]">
-            <li><a href="#features" className="hover:text-[#A6FF2E] transition-colors">{t("nav.features")}</a></li>
-            <li><a href="#services" className="hover:text-[#A6FF2E] transition-colors">{t("nav.services")}</a></li>
-            <li><a href="#portfolio" className="hover:text-[#A6FF2E] transition-colors">{t("nav.portfolio")}</a></li>
-            <li><a href="#digital-cards" className="hover:text-[#A6FF2E] transition-colors">{t("nfc.title")}</a></li>
+            <li>
+              <a href="/#companies" className="hover:text-[#A6FF2E] transition-colors">
+                {t("nav.companies")}
+              </a>
+            </li>
+            <li>
+              <a href="/#portfolio" className="hover:text-[#A6FF2E] transition-colors">
+                {t("nav.portfolio")}
+              </a>
+            </li>
+            <li>
+              <a href="/#services" className="hover:text-[#A6FF2E] transition-colors">
+                {t("nav.services")}
+              </a>
+            </li>
+            <li>
+              <a href="/#digital-cards" className="hover:text-[#A6FF2E] transition-colors">
+                {t("nfc.title")}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/companies/taqyeemi"
+                className="text-[#A6FF2E] font-semibold hover:underline"
+              >
+                Taqyeemi Platform →
+              </a>
+            </li>
           </ul>
         </div>
 
@@ -75,18 +96,29 @@ export function Footer() {
           </div>
 
           <div className="flex gap-3 pt-2">
-            <a href="#" aria-label="Twitter" className="h-8 w-8 rounded-full border border-white/20 hover:border-[#A6FF2E] hover:text-[#A6FF2E] flex items-center justify-center transition-colors">
+            <a
+              href="#"
+              aria-label="Twitter"
+              className="h-8 w-8 rounded-full border border-white/20 hover:border-[#A6FF2E] hover:text-[#A6FF2E] flex items-center justify-center transition-colors"
+            >
               <Twitter className="h-3.5 w-3.5" />
             </a>
-            <a href="#" aria-label="LinkedIn" className="h-8 w-8 rounded-full border border-white/20 hover:border-[#A6FF2E] hover:text-[#A6FF2E] flex items-center justify-center transition-colors">
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              className="h-8 w-8 rounded-full border border-white/20 hover:border-[#A6FF2E] hover:text-[#A6FF2E] flex items-center justify-center transition-colors"
+            >
               <Linkedin className="h-3.5 w-3.5" />
             </a>
-            <a href="#" aria-label="Instagram" className="h-8 w-8 rounded-full border border-white/20 hover:border-[#A6FF2E] hover:text-[#A6FF2E] flex items-center justify-center transition-colors">
+            <a
+              href="#"
+              aria-label="Instagram"
+              className="h-8 w-8 rounded-full border border-white/20 hover:border-[#A6FF2E] hover:text-[#A6FF2E] flex items-center justify-center transition-colors"
+            >
               <Instagram className="h-3.5 w-3.5" />
             </a>
           </div>
         </div>
-
       </div>
 
       <div className="border-t border-white/10 py-6 text-center text-xs text-[#DADDD6]/60">
