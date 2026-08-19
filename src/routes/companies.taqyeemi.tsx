@@ -248,7 +248,7 @@ function TaqyeemiPage() {
                 </div>
                 <div className="pt-3 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-[#64748B]">
                   <CheckCircle2 className="h-4 w-4 text-[#34A853]" />
-                  <span>{isRTL ? "تحميل فوري في ثانية" : "Sub-second Load Time"}</span>
+                  <span>{isRTL ? "تقييم سريع بلمسة واحدة" : "Quick 1–5 Star Rating"}</span>
                 </div>
               </div>
 
@@ -303,7 +303,7 @@ function TaqyeemiPage() {
                 </div>
                 <div className="pt-3 border-t border-white/5 flex items-center gap-2 text-xs font-semibold text-[#64748B]">
                   <CheckCircle2 className="h-4 w-4 text-[#34A853]" />
-                  <span>{isRTL ? "متابعة وإشعارات فورية" : "Live Owner Alerts"}</span>
+                  <span>{isRTL ? "لوحة متابعة مركزية" : "Centralized Dashboard"}</span>
                 </div>
               </div>
             </div>
@@ -429,12 +429,16 @@ function TaqyeemiPage() {
                     <div className="h-6 bg-[#0F172A] flex items-center justify-center gap-1.5 border-b border-white/5">
                       <div className="h-2 w-12 rounded-full bg-white/20" />
                     </div>
-                    <img
-                      src={dashboardRealImg}
-                      alt="Real Taqyeemi Management Dashboard UI"
-                      className="w-full h-auto object-contain transition-transform duration-500 group-hover:scale-[1.02]"
-                      loading="lazy"
-                    />
+                    <div className="max-h-[380px] overflow-hidden relative">
+                      <img
+                        src={dashboardRealImg}
+                        alt="Real Taqyeemi Management Dashboard UI"
+                        className="w-full h-auto object-cover object-top transition-transform duration-500 group-hover:scale-[1.02]"
+                        loading="lazy"
+                      />
+                      {/* Subtle bottom fade to keep focus on top stats & filters */}
+                      <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[#070D18] via-[#070D18]/80 to-transparent pointer-events-none" />
+                    </div>
                   </div>
                   {/* Subtle Badge */}
                   <div className="absolute bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-[#050A14]/90 backdrop-blur-md px-4 py-1.5 text-[11px] font-bold text-[#60A5FA] border border-white/15 shadow-md flex items-center gap-1.5">

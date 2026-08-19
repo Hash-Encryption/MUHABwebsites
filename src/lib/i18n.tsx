@@ -122,12 +122,12 @@ const dict: Dict = {
   },
   "taqyeemi.flow.step2_num": { en: "02 — RATE EXPERIENCE", ar: "02 — تقييم التجربة" },
   "taqyeemi.flow.step2_title": {
-    en: "Instant 1–5 Star Rating",
-    ar: "اختيار النجوم بضغطة زر",
+    en: "Quick 1–5 Star Rating",
+    ar: "تقييم سريع من 1 إلى 5 نجوم",
   },
   "taqyeemi.flow.step2_desc": {
-    en: "A clean, dark-mode rating modal appears in under a second for the customer to rate their visit from 1 to 5 stars.",
-    ar: "تظهر شاشة تقييم سريعة وأنيقة تتيح للعميل تقييم زيارته من 1 إلى 5 نجوم في ثوانٍ معدودة.",
+    en: "A clean, dark-mode rating modal allows the customer to select their rating from 1 to 5 stars with a single tap.",
+    ar: "واجهة تقييم سريعة وأنيقة تتيح للعميل تقييم زيارته من 1 إلى 5 نجوم بلمسة واحدة.",
   },
   "taqyeemi.flow.step3_num": { en: "03 — INTELLIGENT SPLIT", ar: "03 — مسار ذكي وموجّه" },
   "taqyeemi.flow.step3_pos_title": {
@@ -146,14 +146,14 @@ const dict: Dict = {
     en: "Constructive feedback is captured in a confidential modal, alerting managers before issues hit the public web.",
     ar: "تُجمع الملاحظات في نافذة خاصة وسرية، مما يتيح للإدارة معالجة أي استياء فوراً قبل النشر العام.",
   },
-  "taqyeemi.flow.step4_num": { en: "04 — LIVE DASHBOARD", ar: "04 — لوحة تحكم فورية" },
+  "taqyeemi.flow.step4_num": { en: "04 — LIVE DASHBOARD", ar: "04 — لوحة تحكم مركزية" },
   "taqyeemi.flow.step4_title": {
-    en: "Centralized Management & Triage",
-    ar: "إدارة ومتابعة مركزية فورية",
+    en: "Centralized Management Dashboard",
+    ar: "لوحة تحكم وإدارة مركزية",
   },
   "taqyeemi.flow.step4_desc": {
-    en: "Every submission streams immediately to the owner dashboard with unread counters, rating filters, and operational triage.",
-    ar: "تصل كافة الملاحظات والتقييمات لحظياً إلى لوحة التحكم مع عداد التنبيهات وفلاتر التقييم لسهولة المتابعة.",
+    en: "Feedback is available in the business dashboard with unread counters, rating filters, and operational triage.",
+    ar: "تصل الملاحظات والتقييمات إلى لوحة تحكم المنشأة مع عداد التنبيهات وفلاتر التقييم لسهولة المتابعة.",
   },
 
   "taqyeemi.stand.eyebrow": { en: "PHYSICAL EXPERIENCE", ar: "التجربة الفيزيائية" },
@@ -214,20 +214,20 @@ const dict: Dict = {
   },
 
   "taqyeemi.sim.eyebrow": {
-    en: "REAL LIVE SIMULATOR",
-    ar: "المحاكي التفاعلي المباشر",
+    en: "INTERACTIVE SIMULATOR PREVIEW",
+    ar: "معاينة المحاكي التفاعلي",
   },
   "taqyeemi.sim.title": {
-    en: "Try the customer experience yourself.",
-    ar: "جرّب تجربة العميل بنفسك مباشرة.",
+    en: "Explore the customer experience.",
+    ar: "اكتشف تجربة العميل.",
   },
   "taqyeemi.sim.desc": {
-    en: "Experience how Taqyeemi intercepts 1–3 star ratings while routing 4–5 star ratings to Google. Test the live simulator directly on the official Taqyeemi website.",
-    ar: "اكتشف عملياً كيف يوجّه تقييمي التقييمات الإيجابية ويحمي المنشأة من الشكاوى العامة عبر تجربة المحاكي الحي على موقع تقييمي.",
+    en: "See how the Taqyeemi review funnel separates 4–5 star ratings from private feedback. Visit the official Taqyeemi website to try the interactive simulator.",
+    ar: "تعرّف على كيفية توجيه تقييمي للتقييمات الإيجابية إلى Google واستقبال الملاحظات الخاصة بسرية. تفضل بزيارة موقع تقييمي لتجربة المحاكي التفاعلي مباشرة.",
   },
   "taqyeemi.sim.cta": {
-    en: "TRY LIVE SIMULATOR ↗",
-    ar: "تجربة المحاكي التفاعلي ↗",
+    en: "Try Interactive Simulator on Taqyeemi ↗",
+    ar: "تجربة المحاكي على موقع تقييمي ↗",
   },
 
   "taqyeemi.story.eyebrow": { en: "CUSTOMER JOURNEY", ar: "رحلة العميل الذكية" },
@@ -256,8 +256,8 @@ const dict: Dict = {
     ar: "قناة تواصل خاصة وسرية للإدارة",
   },
   "taqyeemi.story.neg_desc": {
-    en: "Customers rating 1 to 3 stars receive a private form. Their comments reach your dashboard instantly without appearing on public search results.",
-    ar: "العملاء أصحاب التقييم المنخفض يُتاح لهم نموذج سري، لتصل شكواهم للإدارة دون نشرها علناً.",
+    en: "Customers rating 1 to 3 stars receive a private feedback form. Comments are delivered to your business dashboard without appearing on public search results.",
+    ar: "العملاء أصحاب التقييم المنخفض يُتاح لهم نموذج سري، لتصل ملاحظاتهم إلى لوحة تحكم الإدارة دون نشرها علناً.",
   },
 
   "taqyeemi.benefits.eyebrow": { en: "BUSINESS BENEFITS", ar: "القيمة المضافة لمنشأتك" },
@@ -299,8 +299,8 @@ const dict: Dict = {
     ar: "تقييمي أكثر من مجرد موقع. إنه منتج رقمي متكامل.",
   },
   "taqyeemi.muhab.desc": {
-    en: "Muhab engineers bespoke customer-facing web apps, connected physical NFC hardware flows, and high-performance management portals. Taqyeemi demonstrates our capability to build end-to-end digital business solutions from scratch.",
-    ar: "نبتكر في مُهاب تطبيقات ويب متقدمة، وتكاملات ذكية مع بطاقات وحوامل NFC، ولوحات تحكم عالية الأداء. يُجسد تقييمي قدرتنا على هندسة منتجات رقمية شاملة تنمي الأعمال.",
+    en: "Muhab engineers bespoke customer-facing web apps, NFC-powered customer experiences, and high-performance management portals. Taqyeemi demonstrates our capability to build complete digital products from scratch.",
+    ar: "نبتكر في مُهاب تطبيقات ويب مخصصة، وتجارب عملاء ذكية مدعومة بتقنية NFC، ولوحات تحكم عالية الأداء. يُجسد تقييمي قدرتنا على هندسة منتجات رقمية متكاملة تنمي الأعمال.",
   },
   "taqyeemi.muhab.cta": {
     en: "START YOUR PROJECT WITH MUHAB →",
