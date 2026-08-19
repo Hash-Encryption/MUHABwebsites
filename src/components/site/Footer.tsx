@@ -46,11 +46,6 @@ export function Footer() {
               </a>
             </li>
             <li>
-              <a href="/#digital-cards" className="hover:text-[#A6FF2E] transition-colors">
-                {t("nfc.title")}
-              </a>
-            </li>
-            <li>
               <a
                 href="/companies/taqyeemi"
                 className="text-[#A6FF2E] font-semibold hover:underline"
@@ -71,7 +66,6 @@ export function Footer() {
             <li>Business Digital Growth</li>
             <li>Online Reputation Management</li>
             <li>SEO & Performance Tuning</li>
-            <li>NFC Smart Digital Cards</li>
           </ul>
         </div>
 

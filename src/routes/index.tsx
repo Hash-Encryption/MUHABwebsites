@@ -5,7 +5,7 @@ import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { OurCompanies } from "@/components/site/OurCompanies";
 import { Footer } from "@/components/site/Footer";
-import { RequestWebsiteDialog } from "@/components/site/RequestWebsiteDialog";
+import { RequestWebsiteDialog, type ServicePackageId } from "@/components/site/RequestWebsiteDialog";
 import {
   TrendingUp,
   ShieldCheck,
@@ -14,7 +14,6 @@ import {
   Star,
   Smartphone,
   Shield,
-  CreditCard,
   ArrowRight,
   CheckCircle2,
   Search,
@@ -46,11 +45,11 @@ export const Route = createFileRoute("/")({
 function HomeContent() {
   const { t, lang } = useI18n();
   const [dialogOpen, setDialogOpen] = useState(false);
-  const [selectedCategory, setSelectedCategory] = useState("corporate");
+  const [selectedService, setSelectedService] = useState<ServicePackageId | "">("");
   const [activeFilter, setActiveFilter] = useState("all");
 
-  const openCategoryDialog = (catId: string) => {
-    setSelectedCategory(catId);
+  const openServiceDialog = (srvId?: ServicePackageId | "") => {
+    setSelectedService(srvId || "");
     setDialogOpen(true);
   };
 
@@ -349,7 +348,7 @@ function HomeContent() {
 
                       {/* Request Dialog Button */}
                       <button
-                        onClick={() => openCategoryDialog(project.filter)}
+                        onClick={() => openServiceDialog("")}
                         className="inline-flex items-center gap-1.5 rounded-full bg-[#0B2F23] px-5 py-2 text-xs font-extrabold text-[#A6FF2E] hover:bg-[#082218] transition-colors cursor-pointer"
                       >
                         <span>
@@ -404,7 +403,7 @@ function HomeContent() {
                     </div>
 
                     <button
-                      onClick={() => openCategoryDialog(srv.id)}
+                      onClick={() => openServiceDialog("")}
                       className="mt-6 pt-4 border-t border-white/10 inline-flex items-center gap-2 text-xs font-extrabold text-[#A6FF2E] hover:text-white transition-colors cursor-pointer"
                     >
                       <span>START THIS SERVICE</span>
@@ -468,60 +467,6 @@ function HomeContent() {
             </div>
           </div>
         </section>
-
-        {/* SECTION: NFC DIGITAL CARDS (Dark #051A12) */}
-        <section
-          id="digital-cards"
-          className="scroll-mt-24 py-20 sm:py-28 bg-[#051A12] relative overflow-hidden"
-        >
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-            <div className="rounded-3xl bg-[#0B2F23] p-8 sm:p-12 lg:p-16 border border-[#A6FF2E]/25 text-white shadow-2xl relative overflow-hidden">
-              <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center relative z-10">
-                <div className="lg:col-span-8 space-y-6">
-                  <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#A6FF2E] text-[#09110D] text-xs font-extrabold">
-                    <CreditCard className="h-4 w-4" />
-                    <span>SMART NFC TECHNOLOGY</span>
-                  </div>
-
-                  <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight leading-tight">
-                    {t("nfc.title")}
-                  </h2>
-
-                  <p className="text-[#DADDD6] text-base sm:text-lg max-w-2xl leading-relaxed">
-                    {t("nfc.desc")}
-                  </p>
-
-                  <div className="pt-2">
-                    <button
-                      onClick={() => setDialogOpen(true)}
-                      className="inline-flex items-center gap-2 rounded-full bg-[#A6FF2E] px-7 py-3.5 text-sm font-extrabold text-[#09110D] shadow-lg hover:bg-[#b5ff4f] transition-all cursor-pointer"
-                    >
-                      <span>{t("nfc.cta")}</span>
-                      <ArrowRight className="h-4 w-4 rtl:rotate-180" />
-                    </button>
-                  </div>
-                </div>
-
-                <div className="lg:col-span-4 flex justify-center">
-                  <div className="relative w-64 h-40 sm:w-72 sm:h-44 rounded-2xl bg-gradient-to-tr from-[#051A12] to-[#0B2F23] border border-[#A6FF2E]/40 shadow-2xl p-5 flex flex-col justify-between transform hover:rotate-2 transition-transform select-none">
-                    <div className="flex justify-between items-start">
-                      <div className="h-7 w-9 rounded-md bg-[#A6FF2E]" />
-                      <CreditCard className="h-6 w-6 text-[#A6FF2E]" />
-                    </div>
-                    <div>
-                      <div className="text-[10px] text-[#A6FF2E] uppercase tracking-widest font-extrabold">
-                        MUHAB SMART PASS
-                      </div>
-                      <div className="text-sm font-bold tracking-wide text-white">
-                        SAUDI WEBMAKERS
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
       </main>
 
       <Footer />
@@ -529,7 +474,7 @@ function HomeContent() {
       <RequestWebsiteDialog
         open={dialogOpen}
         onOpenChange={setDialogOpen}
-        defaultCategory={selectedCategory}
+        defaultService={selectedService}
       />
     </div>
   );

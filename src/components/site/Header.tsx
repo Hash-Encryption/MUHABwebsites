@@ -71,12 +71,6 @@ export function Header() {
               {t("nav.services")}
             </button>
             <button
-              onClick={() => scrollToSection("digital-cards")}
-              className="hover:text-[#A6FF2E] transition-colors cursor-pointer"
-            >
-              {t("nfc.title")}
-            </button>
-            <button
               onClick={() => scrollToSection("contact")}
               className="hover:text-[#A6FF2E] transition-colors cursor-pointer"
             >
@@ -145,12 +139,6 @@ export function Header() {
                 className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer"
               >
                 {t("nav.services")}
-              </button>
-              <button
-                onClick={() => scrollToSection("digital-cards")}
-                className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer"
-              >
-                {t("nfc.title")}
               </button>
               <button
                 onClick={() => scrollToSection("contact")}

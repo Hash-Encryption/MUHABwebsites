@@ -741,7 +741,7 @@ function TaqyeemiPage() {
       <RequestWebsiteDialog
         open={dialogOpen}
         onOpenChange={setDialogOpen}
-        defaultCategory="saas"
+        defaultService="taqyeemi"
       />
     </div>
   );
