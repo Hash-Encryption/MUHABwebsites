@@ -4,7 +4,7 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 const getPreset = () => {
   if (process.env.VERCEL) return "vercel";
   if (process.env.CF_PAGES || process.env.CLOUDFLARE_PAGES) return "cloudflare-pages";
-  return process.env.NITRO_PRESET || "cloudflare-pages"; // Default to cloudflare-pages for .pages.dev compatibility
+  return process.env.NITRO_PRESET || "cloudflare-module";
 };
 
 export default defineConfig({
