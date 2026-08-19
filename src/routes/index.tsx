@@ -536,9 +536,5 @@ function HomeContent() {
 }
 
 function Home() {
-  return (
-    <I18nProvider>
-      <HomeContent />
-    </I18nProvider>
-  );
+  return <HomeContent />;
 }

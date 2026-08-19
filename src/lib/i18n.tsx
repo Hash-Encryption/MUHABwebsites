@@ -78,6 +78,244 @@ const dict: Dict = {
   "companies.wasel.cta": { en: "EXPLORE WASEL →", ar: "استكشف واصل ←" },
   "companies.wasel.visit": { en: "Visit Wasel", ar: "زيارة واصل" },
 
+  /* Taqyeemi Case Study / Product Page */
+  "taqyeemi.page.title": {
+    en: "Taqyeemi by MUHAB — Customer Experience & Reputation Platform",
+    ar: "تقييمي من مُهاب — منصة تجربة العملاء وإدارة السمعة",
+  },
+  "taqyeemi.hero.badge": {
+    en: "BUILT BY MUHAB · DIGITAL PRODUCT",
+    ar: "تم تطويره وتصميمه بواسطة مُهاب · منتج رقمي",
+  },
+  "taqyeemi.hero.headline": {
+    en: "Turn customer feedback into better reviews and better decisions.",
+    ar: "حوّل آراء العملاء إلى تقييمات أفضل وقرارات أذكى.",
+  },
+  "taqyeemi.hero.sub": {
+    en: "Taqyeemi bridges physical customer touchpoints with smart cloud management. Combine contactless NFC/QR feedback collection, intelligent review routing, and a real-time business dashboard.",
+    ar: "يجمع نظام تقييمي بين نقاط اتصال العملاء الفيزيائية والإدارة السحابية الذكية، لدمج جمع التقييمات عبر NFC و QR وتوجيه الملاحظات ولوحة تحكم فورية للأعمال.",
+  },
+  "taqyeemi.hero.cta_visit": { en: "Visit Taqyeemi", ar: "زيارة تقييمي" },
+  "taqyeemi.hero.cta_how": { en: "See How It Works ↓", ar: "شاهد كيف يعمل النظام ↓" },
+  "taqyeemi.hero.cta_request": {
+    en: "Get Taqyeemi For Your Business →",
+    ar: "طلب نظام تقييمي لمنشأتك ←",
+  },
+
+  "taqyeemi.flow.eyebrow": { en: "HOW TAQYEEMI WORKS", ar: "آلية عمل تقييمي" },
+  "taqyeemi.flow.title": {
+    en: "From table tap to verified review in 15 seconds.",
+    ar: "من لمسة الطاولة إلى التقييم الموثق خلال 15 ثانية.",
+  },
+  "taqyeemi.flow.sub": {
+    en: "A frictionless physical-to-digital journey that converts customer sentiment into business reputation without forcing app downloads.",
+    ar: "تجربة سلسة تربط الواقع الملموس بالمنصة الرقمية لتحويل انطباعات العملاء إلى نمو موثوق دون الحاجة لتطبيقات.",
+  },
+  "taqyeemi.flow.step1_num": { en: "01 — TAP OR SCAN", ar: "01 — تمرير أو مسح" },
+  "taqyeemi.flow.step1_title": {
+    en: "Contactless NFC & QR Stand",
+    ar: "حوامل ذكية بتقنية NFC و QR",
+  },
+  "taqyeemi.flow.step1_desc": {
+    en: "Customer taps their phone on the branded stand or scans the dynamic QR code. Instant launch with zero app installation.",
+    ar: "يمرر العميل هاتفه فوق الحامل المطبوع أو يمسح رمز QR فوراً دون الحاجة لتنزيل أي تطبيق.",
+  },
+  "taqyeemi.flow.step2_num": { en: "02 — RATE EXPERIENCE", ar: "02 — تقييم التجربة" },
+  "taqyeemi.flow.step2_title": {
+    en: "Instant 1–5 Star Rating",
+    ar: "اختيار النجوم بضغطة زر",
+  },
+  "taqyeemi.flow.step2_desc": {
+    en: "A clean, dark-mode rating modal appears in under a second for the customer to rate their visit from 1 to 5 stars.",
+    ar: "تظهر شاشة تقييم سريعة وأنيقة تتيح للعميل تقييم زيارته من 1 إلى 5 نجوم في ثوانٍ معدودة.",
+  },
+  "taqyeemi.flow.step3_num": { en: "03 — INTELLIGENT SPLIT", ar: "03 — مسار ذكي وموجّه" },
+  "taqyeemi.flow.step3_pos_title": {
+    en: "4–5 Stars → Google Review Path",
+    ar: "4–5 نجوم → توجيه مباشر لـ Google",
+  },
+  "taqyeemi.flow.step3_pos_desc": {
+    en: "Happy customers are routed straight to your Google Maps review page to multiply verified 5-star ratings.",
+    ar: "يتم توجيه العملاء الراضين مباشرة إلى صفحة منشأتك على خرائط Google لزيادة التقييمات الإيجابية.",
+  },
+  "taqyeemi.flow.step3_neg_title": {
+    en: "1–3 Stars → Private Feedback",
+    ar: "1–3 نجوم → ملاحظات خاصة للإدارة",
+  },
+  "taqyeemi.flow.step3_neg_desc": {
+    en: "Constructive feedback is captured in a confidential modal, alerting managers before issues hit the public web.",
+    ar: "تُجمع الملاحظات في نافذة خاصة وسرية، مما يتيح للإدارة معالجة أي استياء فوراً قبل النشر العام.",
+  },
+  "taqyeemi.flow.step4_num": { en: "04 — LIVE DASHBOARD", ar: "04 — لوحة تحكم فورية" },
+  "taqyeemi.flow.step4_title": {
+    en: "Centralized Management & Triage",
+    ar: "إدارة ومتابعة مركزية فورية",
+  },
+  "taqyeemi.flow.step4_desc": {
+    en: "Every submission streams immediately to the owner dashboard with unread counters, rating filters, and operational triage.",
+    ar: "تصل كافة الملاحظات والتقييمات لحظياً إلى لوحة التحكم مع عداد التنبيهات وفلاتر التقييم لسهولة المتابعة.",
+  },
+
+  "taqyeemi.stand.eyebrow": { en: "PHYSICAL EXPERIENCE", ar: "التجربة الفيزيائية" },
+  "taqyeemi.stand.title": { en: "One tap from the customer.", ar: "لمسة واحدة من العميل." },
+  "taqyeemi.stand.desc": {
+    en: "Engineered from premium high-gloss acrylic, the Taqyeemi stand sits directly at cash registers, dining tables, hotel counters, and reception areas — turning every in-person visit into an opportunity for growth.",
+    ar: "صُنع حامل تقييمي من الأكريليك الفاخر ليوضع على طاولات المطاعم ومكاتب الاستقبال ونقاط الدفع، ليحوّل كل زيارة فعلية إلى فرصة لتعزيز السمعة.",
+  },
+  "taqyeemi.stand.feat1": {
+    en: "Instant NFC contactless tap",
+    ar: "تمرير لا تلامسي فوري عبر NFC",
+  },
+  "taqyeemi.stand.feat2": {
+    en: "High-resolution dynamic QR scan",
+    ar: "مسح سريع لرمز QR عالي الدقة",
+  },
+  "taqyeemi.stand.feat3": {
+    en: "Zero apps or downloads required",
+    ar: "بدون أي تطبيقات أو تسجيل دخول",
+  },
+  "taqyeemi.stand.feat4": {
+    en: "Durable, branded acrylic construction",
+    ar: "تصميم أكريليك أنيق ومتين للمنشآت",
+  },
+
+  "taqyeemi.dash.eyebrow": { en: "DASHBOARD SHOWCASE", ar: "لوحة التحكم المركزية" },
+  "taqyeemi.dash.title": {
+    en: "Feedback you can actually use.",
+    ar: "بيانات وملاحظات تصنع الفارق.",
+  },
+  "taqyeemi.dash.desc": {
+    en: "The Taqyeemi owner portal gives management full real-time visibility into customer satisfaction, unread feedback items, and rating distributions across branches.",
+    ar: "تمنح لوحة تحكم تقييمي الإدارة رؤية شاملة وفورية لمستوى رضا العملاء والملاحظات الجديدة وتوزيع التقييمات.",
+  },
+  "taqyeemi.dash.feat1": {
+    en: "Live customer feedback feed with timestamps",
+    ar: "سجل فوري لآراء وملاحظات العملاء بالوقت والتاريخ",
+  },
+  "taqyeemi.dash.feat2": {
+    en: "Average rating calculation & total review count",
+    ar: "حساب دقيق لمتوسط التقييم وإجمالي الآراء",
+  },
+  "taqyeemi.dash.feat3": {
+    en: "Unread notification counter & triage queue",
+    ar: "عداد للملاحظات غير المقروءة لتسهيل المتابعة",
+  },
+  "taqyeemi.dash.feat4": {
+    en: "Instant star rating filtering (1-Star, 2-Star, 3-Star)",
+    ar: "فلاتر سريعة لفرز التقييمات حسب النجوم",
+  },
+  "taqyeemi.dash.feat5": {
+    en: "One-click 'Mark as Read' workflow",
+    ar: "تحديد الملاحظات كمقروءة بضغطة زر",
+  },
+  "taqyeemi.dash.feat6": {
+    en: "Direct access to launch customer funnel",
+    ar: "وصول مباشر لتشغيل وتجربة مسار العميل",
+  },
+
+  "taqyeemi.sim.eyebrow": {
+    en: "REAL LIVE SIMULATOR",
+    ar: "المحاكي التفاعلي المباشر",
+  },
+  "taqyeemi.sim.title": {
+    en: "Try the customer experience yourself.",
+    ar: "جرّب تجربة العميل بنفسك مباشرة.",
+  },
+  "taqyeemi.sim.desc": {
+    en: "Experience how Taqyeemi intercepts 1–3 star ratings while routing 4–5 star ratings to Google. Test the live simulator directly on the official Taqyeemi website.",
+    ar: "اكتشف عملياً كيف يوجّه تقييمي التقييمات الإيجابية ويحمي المنشأة من الشكاوى العامة عبر تجربة المحاكي الحي على موقع تقييمي.",
+  },
+  "taqyeemi.sim.cta": {
+    en: "TRY LIVE SIMULATOR ↗",
+    ar: "تجربة المحاكي التفاعلي ↗",
+  },
+
+  "taqyeemi.story.eyebrow": { en: "CUSTOMER JOURNEY", ar: "رحلة العميل الذكية" },
+  "taqyeemi.story.title": {
+    en: "Two paths. Maximum reputation protection.",
+    ar: "مساران ذكيان لحماية سمعة منشأتك.",
+  },
+  "taqyeemi.story.pos_label": {
+    en: "POSITIVE EXPERIENCE (4–5 STARS)",
+    ar: "تجربة إيجابية (4–5 نجوم)",
+  },
+  "taqyeemi.story.pos_title": {
+    en: "Public Google Review Acceleration",
+    ar: "مضاعفة التقييمات على خرائط Google",
+  },
+  "taqyeemi.story.pos_desc": {
+    en: "Customers rating 4 or 5 stars are seamlessly guided to your Google Maps listing to share their glowing review with the public.",
+    ar: "العملاء الذين يختارون 4 أو 5 نجوم يُوجّهون فوراً لنشر تقييمهم الإيجابي على خرائط Google.",
+  },
+  "taqyeemi.story.neg_label": {
+    en: "CONSTRUCTIVE EXPERIENCE (1–3 STARS)",
+    ar: "ملاحظات وتطوير (1–3 نجوم)",
+  },
+  "taqyeemi.story.neg_title": {
+    en: "Confidential Private Feedback",
+    ar: "قناة تواصل خاصة وسرية للإدارة",
+  },
+  "taqyeemi.story.neg_desc": {
+    en: "Customers rating 1 to 3 stars receive a private form. Their comments reach your dashboard instantly without appearing on public search results.",
+    ar: "العملاء أصحاب التقييم المنخفض يُتاح لهم نموذج سري، لتصل شكواهم للإدارة دون نشرها علناً.",
+  },
+
+  "taqyeemi.benefits.eyebrow": { en: "BUSINESS BENEFITS", ar: "القيمة المضافة لمنشأتك" },
+  "taqyeemi.benefits.title": {
+    en: "Three focused advantages for your brand.",
+    ar: "ثلاث مزايا استراتيجية لنمو علامتك.",
+  },
+  "taqyeemi.benefits.b1_title": {
+    en: "Build your online reputation",
+    ar: "عزّز سمعتك الرقمية",
+  },
+  "taqyeemi.benefits.b1_desc": {
+    en: "Make it effortless for satisfied customers to reach the Google review flow, improving local SEO rankings and customer trust.",
+    ar: "اجعل وصول العملاء السعداء لتقييم Google سهلاً وسريعاً، مما يرفع تصدرك لنتائج البحث ويزيد ثقة الزوار الجدد.",
+  },
+  "taqyeemi.benefits.b2_title": {
+    en: "Catch problems earlier",
+    ar: "تدارك الملاحظات مبكراً",
+  },
+  "taqyeemi.benefits.b2_desc": {
+    en: "Give dissatisfied customers a direct private feedback channel before frustration turns into a damaging public review.",
+    ar: "وفّر قناة مباشرة للعميل لمشاركة استيائه بسرية، لتتمكن من حل المشكلة وكسب ولائه قبل النشر العام.",
+  },
+  "taqyeemi.benefits.b3_title": {
+    en: "Understand your customers",
+    ar: "افهم عملائك بدقة",
+  },
+  "taqyeemi.benefits.b3_desc": {
+    en: "Consolidate real-time feedback across all branches into one dashboard so your team can make confident, data-backed decisions.",
+    ar: "وحّد كافة الملاحظات والآراء من جميع فروعك في لوحة تحكم واحدة لتمكين فريقك من اتخاذ قرارات مبنية على بيانات حقيقية.",
+  },
+
+  "taqyeemi.muhab.eyebrow": {
+    en: "BUILT BY MUHAB",
+    ar: "صُنّاع المواقع السعودية",
+  },
+  "taqyeemi.muhab.title": {
+    en: "Taqyeemi is more than a website. It's a complete digital product.",
+    ar: "تقييمي أكثر من مجرد موقع. إنه منتج رقمي متكامل.",
+  },
+  "taqyeemi.muhab.desc": {
+    en: "Muhab engineers bespoke customer-facing web apps, connected physical NFC hardware flows, and high-performance management portals. Taqyeemi demonstrates our capability to build end-to-end digital business solutions from scratch.",
+    ar: "نبتكر في مُهاب تطبيقات ويب متقدمة، وتكاملات ذكية مع بطاقات وحوامل NFC، ولوحات تحكم عالية الأداء. يُجسد تقييمي قدرتنا على هندسة منتجات رقمية شاملة تنمي الأعمال.",
+  },
+  "taqyeemi.muhab.cta": {
+    en: "START YOUR PROJECT WITH MUHAB →",
+    ar: "ابدأ مشروعك الرقمي مع مُهاب ←",
+  },
+
+  "taqyeemi.final.title": {
+    en: "See Taqyeemi in action.",
+    ar: "شاهد تقييمي يعمل على أرض الواقع.",
+  },
+  "taqyeemi.final.sub": {
+    en: "Visit the live Taqyeemi platform or contact the Muhab team to deploy branded stands and dashboards for your business.",
+    ar: "تفضل بزيارة منصة تقييمي المباشرة أو تواصل مع فريق مُهاب لتفعيل الحوامل ولوحات التحكم لفروعك اليوم.",
+  },
+
   "badge.responsive": { en: "Mobile Responsiveness", ar: "متجاوب مع جميع الهواتف" },
   "badge.performance": { en: "High-Speed Performance", ar: "أداء فائق السرعة" },
   "badge.saudi": { en: "Saudi Market Optimized", ar: "مُعدّ للسوق السعودي" },
@@ -153,7 +391,7 @@ type Ctx = {
   dir: "ltr" | "rtl";
   setLang: (l: Lang) => void;
   t: (k: keyof typeof dict) => string;
-  tf: (o: Record<string, string>, key: "name" | "description" | "category") => string;
+  tf: (o: Record<string, any>, key: "name" | "description" | "category") => string;
 };
 
 const I18nCtx = createContext<Ctx | null>(null);
@@ -178,7 +416,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   }, [lang]);
 
   const t = (k: keyof typeof dict) => dict[k]?.[lang] || k;
-  const tf = (o: Record<string, string>, key: "name" | "description" | "category") => {
+  const tf = (o: Record<string, any>, key: "name" | "description" | "category") => {
     const suffix = lang === "ar" ? "_ar" : "_en";
     return o[`${key}${suffix}`];
   };

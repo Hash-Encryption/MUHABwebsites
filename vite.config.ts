@@ -7,7 +7,7 @@ const getPreset = () => {
   return process.env.NITRO_PRESET || "cloudflare-module";
 };
 
-export default defineConfig({
+export default (defineConfig as any)({
   tanstackStart: {
     server: { entry: "server" },
   },
