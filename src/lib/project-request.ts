@@ -27,6 +27,23 @@ function isValidWhatsapp(phone: string): boolean {
   return digits.length >= 7 && digits.length <= 16;
 }
 
+function getEnvVar(key: string): string | undefined {
+  if (typeof process !== "undefined" && process.env && process.env[key]) {
+    return process.env[key];
+  }
+  if (typeof globalThis !== "undefined" && (globalThis as any)[key]) {
+    return (globalThis as any)[key];
+  }
+  if (
+    typeof globalThis !== "undefined" &&
+    (globalThis as any).__env__ &&
+    (globalThis as any).__env__[key]
+  ) {
+    return (globalThis as any).__env__[key];
+  }
+  return undefined;
+}
+
 export const submitProjectRequest = createServerFn({ method: "POST" })
   .validator((data: unknown): ProjectRequestPayload => {
     if (!data || typeof data !== "object") {
@@ -69,10 +86,10 @@ export const submitProjectRequest = createServerFn({ method: "POST" })
     };
   })
   .handler(async ({ data }) => {
-    const apiKey = process.env.RESEND_API_KEY;
-    const toEmail = process.env.PROJECT_REQUEST_TO_EMAIL || "hello@muhab.sa";
+    const apiKey = getEnvVar("RESEND_API_KEY");
+    const toEmail = getEnvVar("PROJECT_REQUEST_TO_EMAIL") || "hello@muhab.sa";
     const fromEmail =
-      process.env.PROJECT_REQUEST_FROM_EMAIL || "MUHAB <onboarding@resend.dev>";
+      getEnvVar("PROJECT_REQUEST_FROM_EMAIL") || "MUHAB <onboarding@resend.dev>";
 
     if (!apiKey) {
       console.error(
