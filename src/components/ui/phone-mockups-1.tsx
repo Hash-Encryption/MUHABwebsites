@@ -3,11 +3,13 @@ import {
   ImageItem,
   PhoneCarousel,
 } from "@/components/ui/phone-mockups-1-utils/phone-carousel";
+import gotchaImg from "@/assets/gotcha-fresh-tea.png";
+import alkhalImg from "@/assets/alkhal-aldimashki.png";
 
 const liveClientMedia: ImageItem[] = [
   {
     type: "video",
-    src: "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+    src: gotchaImg,
     videoSrc: "/videos/app-demo1.mp4",
     alt: "Gotcha Fresh Tea Jeddah",
     title: "Gotcha Fresh Tea — Jeddah Store",
@@ -15,10 +17,10 @@ const liveClientMedia: ImageItem[] = [
   },
   {
     type: "video",
-    src: "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+    src: alkhalImg,
     videoSrc: "/videos/app-demo2.mp4",
-    alt: "Damascene Syrian Restaurant",
-    title: "Damascene Heritage Restaurant",
+    alt: "Alkhal Aldimashki",
+    title: "Alkhal Aldimashki",
     category: "Syrian Cuisine & Menu",
   },
   {

@@ -5,6 +5,8 @@ import { Header } from "@/components/site/Header";
 import { Hero } from "@/components/site/Hero";
 import { OurCompanies } from "@/components/site/OurCompanies";
 import { Footer } from "@/components/site/Footer";
+import gotchaImg from "@/assets/gotcha-fresh-tea.png";
+import alkhalImg from "@/assets/alkhal-aldimashki.png";
 import { RequestWebsiteDialog, type ServicePackageId } from "@/components/site/RequestWebsiteDialog";
 import {
   TrendingUp,
@@ -69,8 +71,7 @@ function HomeContent() {
       categoryAr: "متجر مشروبات وتجزئة",
       filter: "ecommerce",
       liveUrl: "https://gotcha-fresh-tea-jeddah-jwmw.vercel.app",
-      image:
-        "https://images.unsplash.com/photo-1551024709-8f23befc6f87?auto=format&fit=crop&w=800&q=80",
+      image: gotchaImg,
       outcomeEn: "Live Website · Interactive Menu & Orders",
       outcomeAr: "موقع مباشر · قائمة تفاعلية وطلبات",
       descEn:
@@ -79,19 +80,18 @@ function HomeContent() {
     },
     {
       id: "damascene-syrian",
-      titleEn: "Damascene Heritage Restaurant",
-      titleAr: "مطعم الدمشقي للأطعمة العريقة",
+      titleEn: "Alkhal Aldimashki",
+      titleAr: "مطعم الخال الدمشقي",
       categoryEn: "Heritage Dining & Menu",
       categoryAr: "مطعم مأكولات عريقة",
       filter: "corporate",
       liveUrl: "https://damascene.vercel.app/#cat-chicken-shawarma",
-      image:
-        "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?auto=format&fit=crop&w=800&q=80",
+      image: alkhalImg,
       outcomeEn: "Live Website · Bilingual Syrian Menu",
       outcomeAr: "موقع مباشر · قائمة طعام ثنائية اللغة",
       descEn:
-        "Traditional Damascene restaurant platform featuring authentic heritage recipes, shawarma catalog, and WhatsApp ordering.",
-      descAr: "منصة مطعم دمشقي عريق تعرض أشهر الأطباق والقوائم المباشرة مع الربط بالواتساب.",
+        "Alkhal aldimashki restaurant platform featuring authentic heritage recipes, shawarma catalog, and WhatsApp ordering.",
+      descAr: "منصة مطعم الخال الدمشقي تعرض أشهر الأطباق والقوائم المباشرة مع الربط بالواتساب.",
     },
     {
       id: "ueno-saryo",
