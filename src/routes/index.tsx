@@ -7,6 +7,8 @@ import { OurCompanies } from "@/components/site/OurCompanies";
 import { Footer } from "@/components/site/Footer";
 import gotchaImg from "@/assets/gotcha-fresh-tea.png";
 import alkhalImg from "@/assets/alkhal-aldimashki.png";
+import uenoImg from "@/assets/ueno-saryo.png";
+import lavoaImg from "@/assets/lavoa.png";
 import { RequestWebsiteDialog, type ServicePackageId } from "@/components/site/RequestWebsiteDialog";
 import {
   TrendingUp,
@@ -95,36 +97,34 @@ function HomeContent() {
     },
     {
       id: "ueno-saryo",
-      titleEn: "Ueno Saryo Japanese Teahouse",
-      titleAr: "مقهى أويانو ساريو الياباني",
-      categoryEn: "Japanese Culinary & Teahouse",
-      categoryAr: "مقهى وتجربة يابانية",
+      titleEn: "Ueno Saryo Teahouse",
+      titleAr: "مقهى أوينو ساريو",
+      categoryEn: "Specialty Culinary & Teahouse",
+      categoryAr: "مقهى وتجربة شاي فاخرة",
       filter: "saas",
       liveUrl: "https://ueno-saryo.vercel.app/",
-      image:
-        "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&q=80",
-      outcomeEn: "Live Website · Zen Japanese Design",
-      outcomeAr: "موقع مباشر · تصميم ورقي ياباني",
+      image: uenoImg,
+      outcomeEn: "Live Website · Zen Design",
+      outcomeAr: "موقع مباشر · تصميم ورقي هادئ",
       descEn:
-        "Sophisticated Japanese teahouse web experience crafted with minimalistic aesthetic and smooth navigation.",
-      descAr: "تجربة ويب يابانية فاخرة للمقهى مصممة بطابع مينيماليست وأداء سلس.",
+        "Sophisticated teahouse web experience crafted with minimalistic aesthetic and smooth navigation.",
+      descAr: "تجربة ويب فاخرة للمقهى مصممة بطابع مينيماليست وأداء سلس.",
     },
     {
-      id: "lavoa-boutique",
-      titleEn: "Lavoa Luxury E-Commerce",
-      titleAr: "متجر لافوا الفاخر للتجزئة",
-      categoryEn: "Luxury E-Commerce",
-      categoryAr: "متجر إلكتروني فاخر",
-      filter: "ecommerce",
+      id: "lavoa-lounge",
+      titleEn: "Lavoa Night Lounge & Café",
+      titleAr: "لاونج ومقهى لافوا الليلي",
+      categoryEn: "Night Lounge & Café",
+      categoryAr: "لاونج ومقهى ليلي فاخر",
+      filter: "saas",
       liveUrl: "https://lavoa.hgendi3.workers.dev/",
-      image:
-        "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
-      outcomeEn: "Live Store · Cloudflare Workers Speed",
-      outcomeAr: "متجر مباشر · سرعة استجابة فائقة",
+      image: lavoaImg,
+      outcomeEn: "Live Lounge Platform · Edge Speed",
+      outcomeAr: "منصة لاونج مباشرة · سرعة استجابة فائقة",
       descEn:
-        "High-end retail & boutique store engineered on edge infrastructure for ultra-fast load times and seamless checkout.",
+        "Exceptional night lounge & café experience crafted with luxury dark ambiance, specialty menu, and smooth online ordering.",
       descAr:
-        "متجر إلكتروني فاخر مبني على البنية السحابية لسرعة استجابة استثنائية وتجربة تسوق راقية.",
+        "تجربة ليلية استثنائية للاونج والمقهى تجمع بين الفخامة والقهوة المختصة وقائمة رقمية سلسة.",
     },
   ];
 

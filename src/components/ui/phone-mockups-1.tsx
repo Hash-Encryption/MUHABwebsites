@@ -5,6 +5,8 @@ import {
 } from "@/components/ui/phone-mockups-1-utils/phone-carousel";
 import gotchaImg from "@/assets/gotcha-fresh-tea.png";
 import alkhalImg from "@/assets/alkhal-aldimashki.png";
+import uenoImg from "@/assets/ueno-saryo.png";
+import lavoaImg from "@/assets/lavoa.png";
 
 const liveClientMedia: ImageItem[] = [
   {
@@ -25,19 +27,19 @@ const liveClientMedia: ImageItem[] = [
   },
   {
     type: "video",
-    src: "https://images.unsplash.com/photo-1578474846511-04ba529f0b88?auto=format&fit=crop&w=800&q=80",
+    src: uenoImg,
     videoSrc: "/videos/app-demo3.mp4",
-    alt: "Ueno Saryo Japanese Teahouse",
-    title: "Ueno Saryo — Japanese Culinary",
+    alt: "Ueno Saryo Teahouse",
+    title: "Ueno Saryo — Teahouse Experience",
     category: "Matcha & Teahouse",
   },
   {
     type: "video",
-    src: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?auto=format&fit=crop&w=800&q=80",
+    src: lavoaImg,
     videoSrc: "/videos/app-demo4.mp4",
-    alt: "Lavoa Boutique Platform",
-    title: "Lavoa — Luxury E-Commerce",
-    category: "Boutique & Retail",
+    alt: "Lavoa Night Lounge & Café",
+    title: "Lavoa — Night Lounge & Café",
+    category: "Night Lounge & Café",
   },
 ];
 
