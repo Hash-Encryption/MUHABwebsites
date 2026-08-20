@@ -87,9 +87,8 @@ export const submitProjectRequest = createServerFn({ method: "POST" })
   })
   .handler(async ({ data }) => {
     const apiKey = getEnvVar("RESEND_API_KEY");
-    const toEmail = getEnvVar("PROJECT_REQUEST_TO_EMAIL") || "hello@muhab.sa";
-    const fromEmail =
-      getEnvVar("PROJECT_REQUEST_FROM_EMAIL") || "MUHAB <onboarding@resend.dev>";
+    const toEmail = "muhabagency@gmail.com";
+    const fromEmail = "MUHAB <onboarding@resend.dev>";
 
     if (!apiKey) {
       console.error(
