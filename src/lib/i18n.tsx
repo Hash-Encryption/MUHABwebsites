@@ -97,28 +97,28 @@ const dict: Dict = {
   "companies.pointpass.cta": { en: "EXPLORE POINTPASS →", ar: "تفاصيل بوينت باس ←" },
   "companies.pointpass.link": { en: "/companies/pointpass", ar: "/companies/pointpass" },
 
-  // Product 3: Wasel
-  "companies.wasel.title": { en: "Wasel", ar: "واصل | Wasel" },
-  "companies.wasel.badge": { en: "Smart NFC Solutions", ar: "بطاقات وحلول ذكية" },
-  "companies.wasel.name": { en: "WASEL", ar: "واصل" },
+  // Product 3: Foodus
+  "companies.wasel.title": { en: "Foodus", ar: "فودس | Foodus" },
+  "companies.wasel.badge": { en: "Restaurant Operating Suite", ar: "نظام تشغيل وإدارة المطاعم" },
+  "companies.wasel.name": { en: "FOODUS", ar: "فودس" },
   "companies.wasel.category": {
     en: "Restaurant Operating Suite",
-    ar: "بطاقات وحلول ذكية",
+    ar: "نظام تشغيل وإدارة المطاعم",
   },
   "companies.wasel.desc": {
-    en: "Digital NFC business cards and networking solutions to share your credentials with one tap.",
-    ar: "بطاقات أعمال رقمية وحلول ذكية بتقنية NFC لمشاركة بياناتك وتوسيع شبكة أعمالك بلمسة واحدة.",
+    en: "A unified platform for restaurants to manage orders, customer relationships, and day-to-day operations from a single dashboard.",
+    ar: "منصة موحدة لإدارة طلبات المطاعم وعلاقات العملاء ومتابعة العمليات اليومية من شاشة واحدة.",
   },
   "companies.wasel.status": { en: "COMING SOON", ar: "قريباً" },
-  "companies.wasel.tag1": { en: "NFC Smart Cards", ar: "NFC Smart Cards" },
-  "companies.wasel.tag2": { en: "Quick Share", ar: "مشاركة سريعة" },
-  "companies.wasel.tag3": { en: "Contact Management", ar: "إدارة جهات الاتصال" },
+  "companies.wasel.tag1": { en: "POS & Orders", ar: "إدارة الطلبات ونقاط البيع" },
+  "companies.wasel.tag2": { en: "Kitchen Display", ar: "شاشات المطبخ الذكية" },
+  "companies.wasel.tag3": { en: "Operations Suite", ar: "تشغيل متكامل للمطاعم" },
   "companies.wasel.note": {
     en: "Currently in active development by MUHAB.",
     ar: "قيد التطوير والتجهيز بواسطة فريق مُهاب.",
   },
-  "companies.wasel.cta": { en: "EXPLORE WASEL →", ar: "استكشف واصل ←" },
-  "companies.wasel.visit": { en: "Visit Wasel", ar: "زيارة واصل" },
+  "companies.wasel.cta": { en: "EXPLORE FOODUS →", ar: "استكشف فودس ←" },
+  "companies.wasel.visit": { en: "Visit Foodus", ar: "زيارة فودس" },
   "companies.wasel.link": { en: "#", ar: "#" },
 
   // PointPass Dedicated Landing Page Strings

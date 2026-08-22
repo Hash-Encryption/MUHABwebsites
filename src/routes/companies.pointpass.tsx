@@ -51,7 +51,7 @@ function PointPassPage() {
   const ForwardArrow = isRTL ? ArrowLeft : ArrowRight;
 
   const whatsappUrl =
-    "https://wa.me/966500000000?text=" +
+    "https://wa.me/966565114955?text=" +
     encodeURIComponent(
       lang === "ar"
         ? "مرحباً، أود الاستفسار عن خدمة بوينت باس (PointPass) لكروت الولاء الرقمية في محفظة الجوال."

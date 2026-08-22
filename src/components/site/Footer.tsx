@@ -50,7 +50,15 @@ export function Footer() {
                 href="/companies/taqyeemi"
                 className="text-[#A6FF2E] font-semibold hover:underline"
               >
-                Taqyeemi Platform →
+                {lang === "ar" ? "منصة تقييمي ←" : "Taqyeemi Platform →"}
+              </a>
+            </li>
+            <li>
+              <a
+                href="/companies/pointpass"
+                className="text-[#A6FF2E] font-semibold hover:underline"
+              >
+                {lang === "ar" ? "كروت بوينت باس ←" : "PointPass Cards →"}
               </a>
             </li>
           </ul>
@@ -75,17 +83,26 @@ export function Footer() {
             {t("footer.contact")}
           </div>
           <div className="space-y-2.5 text-xs text-[#DADDD6]">
-            <p className="flex items-center gap-2">
+            <a
+              href="mailto:muhabagency@gmail.com"
+              className="flex items-center gap-2 hover:text-[#A6FF2E] transition-colors"
+            >
               <Mail className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
-              <span>hello@muhab.sa</span>
-            </p>
-            <p className="flex items-center gap-2" dir="ltr">
+              <span>muhabagency@gmail.com</span>
+            </a>
+            <a
+              href="https://wa.me/966565114955"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 hover:text-[#A6FF2E] transition-colors"
+              dir="ltr"
+            >
               <Phone className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
-              <span>+966 50 000 0000</span>
-            </p>
+              <span>+966 56 511 4955</span>
+            </a>
             <p className="flex items-center gap-2">
               <MapPin className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
-              <span>{lang === "ar" ? "الرياض · المملكة العربية السعودية" : "Riyadh · Kingdom of Saudi Arabia"}</span>
+              <span>{lang === "ar" ? "جدة · المملكة العربية السعودية" : "Jeddah · Kingdom of Saudi Arabia"}</span>
             </p>
           </div>
 

@@ -116,10 +116,10 @@ const jsonLdSchema = {
     },
     {
       "@type": "Brand",
-      "name": "واصل",
-      "alternateName": "Wasel",
+      "name": "فودس",
+      "alternateName": "Foodus",
       "description":
-        "بطاقات أعمال رقمية وحلول ذكية لمشاركة جهات الاتصال وشبكات الأعمال بتقنية NFC.",
+        "منصة موحدة لإدارة طلبات المطاعم وعلاقات العملاء ومتابعة العمليات اليومية من شاشة واحدة.",
     },
   ],
   "hasOfferCatalog": {
@@ -170,7 +170,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "keywords",
         content:
-          "موهاب, Muhab, تصميم مواقع جدة, برمجة مواقع السعودية, تقييمي, Taqyeemi, بوينت باس, PointPass, بطاقات تقييم قوقل, كروت ولاء Apple Wallet, واصل, Muhabweb",
+          "موهاب, Muhab, تصميم مواقع جدة, برمجة مواقع السعودية, تقييمي, Taqyeemi, بوينت باس, PointPass, بطاقات تقييم قوقل, كروت ولاء Apple Wallet, فودس, Foodus, Muhabweb",
       },
       {
         name: "robots",

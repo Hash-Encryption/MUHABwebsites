@@ -310,7 +310,7 @@ export function OurCompanies() {
           </div>
 
           {/* ─────────────────────────────────────────
-              03 / WASEL — COMING SOON SHOWCASE
+              03 / FOODUS — COMING SOON SHOWCASE
           ───────────────────────────────────────── */}
           <div className="relative rounded-3xl sm:rounded-[32px] border border-[#0B2F23]/10 bg-[#FAF9F5] p-6 sm:p-10 lg:p-12 shadow-sm overflow-hidden">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
@@ -358,7 +358,7 @@ export function OurCompanies() {
 
                   {/* Oversized Ambient Watermark */}
                   <div className="absolute font-extrabold text-7xl sm:text-9xl text-white/[0.04] tracking-tighter uppercase pointer-events-none select-none">
-                    WASEL
+                    FOODUS
                   </div>
 
                   {/* Central Elegant Monogram / Abstract Emblem */}
@@ -368,10 +368,10 @@ export function OurCompanies() {
                     </div>
                     <div>
                       <div className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#A6FF2E]">
-                        WASEL · {t("companies.status_coming_soon")}
+                        FOODUS · {t("companies.status_coming_soon")}
                       </div>
                       <div className="text-[11px] text-white/50 tracking-wider">
-                        SMART NFC & NETWORKING SUITE
+                        RESTAURANT OPERATING SUITE
                       </div>
                     </div>
                   </div>
