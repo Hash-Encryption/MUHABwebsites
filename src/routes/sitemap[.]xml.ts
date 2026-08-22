@@ -1,0 +1,53 @@
+import { createFileRoute } from "@tanstack/react-router";
+
+const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:xhtml="http://www.w3.org/1999/xhtml">
+
+  <!-- Homepage / MUHAB Web & App Development Studio -->
+  <url>
+    <loc>https://muhab.org/</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://muhab.org/" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://muhab.org/" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muhab.org/" />
+  </url>
+
+  <!-- Taqyeemi / Google Reviews Management & Smart NFC Stands -->
+  <url>
+    <loc>https://muhab.org/companies/taqyeemi</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://muhab.org/companies/taqyeemi" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://muhab.org/companies/taqyeemi" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muhab.org/companies/taqyeemi" />
+  </url>
+
+  <!-- PointPass / Apple & Google Wallet Digital Loyalty Passes -->
+  <url>
+    <loc>https://muhab.org/companies/pointpass</loc>
+    <lastmod>2026-08-22</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>0.9</priority>
+    <xhtml:link rel="alternate" hreflang="ar" href="https://muhab.org/companies/pointpass" />
+    <xhtml:link rel="alternate" hreflang="en" href="https://muhab.org/companies/pointpass" />
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://muhab.org/companies/pointpass" />
+  </url>
+
+</urlset>`.trim();
+
+export const Route = createFileRoute("/sitemap.xml")({
+  loader: () => {
+    return new Response(SITEMAP_XML, {
+      status: 200,
+      headers: {
+        "Content-Type": "application/xml; charset=utf-8",
+        "Cache-Control": "public, max-age=86400",
+      },
+    });
+  },
+  component: () => null,
+});
