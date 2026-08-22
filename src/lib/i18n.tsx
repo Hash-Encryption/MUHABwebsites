@@ -10,106 +10,279 @@ const dict: Dict = {
   "brand.tagline": { en: "WEBSITES. GROWTH. REPUTATION.", ar: "مواقع. نمو. سمعة." },
 
   "nav.services": { en: "Services", ar: "الخدمات" },
-  "nav.companies": { en: "Our Companies", ar: "شركاتنا" },
-  "nav.portfolio": { en: "Our Clients", ar: "عملاؤنا" },
+  "nav.companies": { en: "Our Projects", ar: "مشاريعنا" },
+  "nav.portfolio": { en: "Client Work", ar: "أعمالنا" },
   "nav.features": { en: "Why Muhab", ar: "لماذا مُهاب" },
   "nav.contact": { en: "Contact", ar: "تواصل معنا" },
   "nav.request": { en: "START YOUR PROJECT →", ar: "ابدأ مشروعك الآن ←" },
 
-  "hero.eyebrow": { en: "MUHAB · SAUDI WEBMAKERS", ar: "مُهاب · صُنّاع المواقع السعودية" },
-  "hero.title_part1": { en: "WE BUILD WEBSITES THAT ", ar: "نصنع مواقع إلكترونية " },
-  "hero.title_part2": { en: "GROW BUSINESSES.", ar: "تنمّي أعمالك." },
-  "hero.sub": {
-    en: "Modern websites and digital solutions built to help Saudi businesses attract more customers, strengthen their online presence, and grow.",
-    ar: "مواقع إلكترونية وحلول رقمية حديثة صُممت لمساعدة الشركات السعودية في جذب المزيد من العملاء وتعزيز الحضور الرقمي.",
+  "hero.badge": { en: "Jeddah • Kingdom of Saudi Arabia", ar: "جدة • المملكة العربية السعودية" },
+  "hero.title_part1": { en: "WE BUILD THE BEST CUSTOM WEBSITES", ar: "نصمم أفضل المواقع المخصصة" },
+  "hero.title_part2": { en: "IN SAUDI ARABIA", ar: "في السعودية" },
+  "hero.subtitle_pre": {
+    en: "Web & app development studio in Jeddah — we engineer high-performance websites and build ",
+    ar: "استوديو تطوير مواقع وتطبيقات في جدة — نبني مواقع فائقة الأداء ونطور ",
   },
-  "hero.cta_primary": { en: "START YOUR PROJECT →", ar: "ابدأ مشروعك الآن ←" },
-  "hero.cta_secondary": { en: "VIEW OUR WORK", ar: "تصفح أعمالنا" },
+  "hero.companies_link": { en: "our companies & smart solutions ↓", ar: "شركاتنا وحلولنا الذكية ↓" },
+  "hero.subtitle_post": { en: " to grow your business.", ar: " لتنمية أعمالك." },
+  "hero.cta_primary": { en: "START YOUR PROJECT NOW →", ar: "ابدأ مشروعك الآن" },
+  "hero.cta_secondary": { en: "EXPLORE OUR COMPANIES", ar: "استكشف شركاتنا" },
 
-  "companies.eyebrow": { en: "OUR COMPANIES", ar: "شركاتنا ومشاريعنا" },
-  "companies.title_line1": { en: "We don't just build websites.", ar: "لا نبني المواقع وحسب." },
-  "companies.title_line2": { en: "We build products.", ar: "بل نبني منتجات." },
+  "companies.eyebrow": { en: "OUR PROJECTS & PRODUCTS", ar: "منظومة موهاب" },
+  "companies.section_badge": { en: "MUHAB Ecosystem", ar: "منظومة موهاب" },
+  "companies.section_title": { en: "Our Companies & Products", ar: "شركاتنا ومنتجاتنا" },
+  "companies.section_subtitle": {
+    en: "Smart solutions and platforms we built to accelerate your business growth.",
+    ar: "حلول ومنصات ذكية طورناها لتسريع نمو أعمالك ومبيعاتك.",
+  },
+  "companies.title_line1": { en: "We build websites.", ar: "لا نبني مجرد مواقع." },
+  "companies.title_line2": { en: "We engineer products.", ar: "بل نبتكر منتجات متكاملة." },
   "companies.sub": {
-    en: "Alongside bespoke client websites, Muhab builds and operates dedicated digital products designed to solve real business challenges and unlock operational growth.",
-    ar: "إلى جانب بناء المواقع لعملائنا، نبتكر ونشغّل في مُهاب منتجات رقمية متخصصة لمعالجة تحديات الأعمال الحقيقية ودفع النمو المستمر.",
+    en: "Alongside custom client platforms, Muhab builds and operates dedicated digital products that solve real operational problems and drive measurable growth.",
+    ar: "إلى جانب بناء المواقع المخصصة لعملائنا، نبتكر ونشغّل أنظمة ومنتجات رقمية لمعالجة تحديات تشغيلية حقيقية وزيادة كفاءة الأعمال.",
   },
+  "companies.status_live": { en: "Live Now", ar: "متاح الآن" },
+  "companies.status_almost_ready": { en: "Almost Ready", ar: "شبه جاهز" },
+  "companies.status_coming_soon": { en: "Coming Soon", ar: "قريباً" },
+  "companies.view_details": { en: "View Details", ar: "عرض التفاصيل" },
 
-  "companies.taqyeemi.badge": { en: "01 / PRODUCT", ar: "01 / منتج رقمي" },
+  // Product 1: Taqyeemi
+  "companies.taqyeemi.title": { en: "Taqyeemi", ar: "تقييمي | Taqyeemi" },
+  "companies.taqyeemi.badge": { en: "Google Reviews Management", ar: "إدارة تقييمات Google" },
   "companies.taqyeemi.name": { en: "TAQYEEMI", ar: "تقييمي" },
   "companies.taqyeemi.category": {
     en: "Customer Experience & Reputation",
-    ar: "تجربة العملاء وإدارة السمعة",
+    ar: "إدارة تجربة العملاء والتقييمات",
   },
   "companies.taqyeemi.desc": {
-    en: "Turn customer visits into valuable feedback while building your online reputation.",
-    ar: "حوّل زيارات العملاء إلى تقييمات وملاحظات قيّمة مع تعزيز سمعتك الرقمية ومكانة علامتك.",
+    en: "Smart NFC & QR stands to filter customer feedback and route 5-star reviews to Google Maps with an internal dashboard.",
+    ar: "حوامل وبطاقات ذكية بتقنية NFC و QR لفرز آراء العملاء وتوجيه التقييمات الإيجابية لخرائط Google مع لوحة تحكم خاصة.",
   },
+  "companies.taqyeemi.tag1": { en: "NFC & QR Cards", ar: "بطاقات NFC & QR" },
+  "companies.taqyeemi.tag2": { en: "Review Filter", ar: "فلترة التقييمات" },
+  "companies.taqyeemi.tag3": { en: "Google Maps", ar: "خرائط Google" },
   "companies.taqyeemi.cap1": {
     en: "NFC & QR feedback collection",
-    ar: "جمع الملاحظات عبر NFC و QR",
+    ar: "جمع التقييمات عبر NFC و QR",
   },
   "companies.taqyeemi.cap2": {
-    en: "Customer feedback dashboard",
-    ar: "لوحة تحكم تفاعلية للملاحظات",
+    en: "Real-time branch dashboard",
+    ar: "لوحة تحكم مباشرة لجميع الفروع",
   },
   "companies.taqyeemi.cap3": {
-    en: "Feedback analytics and insights",
-    ar: "تحليلات دقيقة وتقارير أداء فورية",
+    en: "Live satisfaction analytics",
+    ar: "تحليلات فورية لمستوى الرضا",
   },
-  "companies.taqyeemi.cap4": { en: "Google review funnel", ar: "مسار ذكي لتوجيه تقييمات Google" },
-  "companies.taqyeemi.cta": { en: "EXPLORE TAQYEEMI →", ar: "استكشف تقييمي ←" },
+  "companies.taqyeemi.cap4": { en: "Smart Google review routing", ar: "توجيه ذكي لتقييمات Google" },
+  "companies.taqyeemi.cta": { en: "EXPLORE TAQYEEMI →", ar: "تفاصيل نظام تقييمي ←" },
   "companies.taqyeemi.visit": { en: "Visit Taqyeemi", ar: "زيارة تقييمي" },
+  "companies.taqyeemi.link": { en: "/companies/taqyeemi", ar: "/companies/taqyeemi" },
 
-  "companies.wasel.badge": { en: "02 / PRODUCT", ar: "02 / منتج رقمي" },
+  // Product 2: PointPass
+  "companies.pointpass.title": { en: "PointPass", ar: "بوينت باس | PointPass" },
+  "companies.pointpass.badge": { en: "Apple & Google Wallet Loyalty Passes", ar: "كروت ولاء Apple & Google Wallet" },
+  "companies.pointpass.name": { en: "POINTPASS", ar: "بوينت باس" },
+  "companies.pointpass.category": {
+    en: "Apple & Google Wallet Loyalty",
+    ar: "كروت الولاء والأختام الرقمية",
+  },
+  "companies.pointpass.status": { en: "Almost Ready", ar: "شبه جاهز" },
+  "companies.pointpass.desc": {
+    en: "Digital loyalty cards and stamp passes stored directly in Apple Wallet & Google Wallet with geolocation and scheduled push notifications.",
+    ar: "بطاقات ولاء وأختام رقمية تُحفظ مباشرة في محفظة آبل وجوجل بدون تطبيق، مع ميزة إرسال إشعارات جغرافية ومجدولة لشاشة قفل العميل.",
+  },
+  "companies.pointpass.tag1": { en: "Apple & Google Wallet", ar: "Apple & Google Wallet" },
+  "companies.pointpass.tag2": { en: "3 Loyalty Designs", ar: "3 تصاميم للولاء" },
+  "companies.pointpass.tag3": { en: "Geo & Scheduled Push", ar: "إشعارات جغرافية ومجدولة" },
+  "companies.pointpass.cta": { en: "EXPLORE POINTPASS →", ar: "تفاصيل بوينت باس ←" },
+  "companies.pointpass.link": { en: "/companies/pointpass", ar: "/companies/pointpass" },
+
+  // Product 3: Wasel
+  "companies.wasel.title": { en: "Wasel", ar: "واصل | Wasel" },
+  "companies.wasel.badge": { en: "Smart NFC Solutions", ar: "بطاقات وحلول ذكية" },
   "companies.wasel.name": { en: "WASEL", ar: "واصل" },
   "companies.wasel.category": {
-    en: "Restaurant CRM & Management",
-    ar: "إدارة علاقات وعمليات المطاعم",
+    en: "Restaurant Operating Suite",
+    ar: "بطاقات وحلول ذكية",
   },
   "companies.wasel.desc": {
-    en: "One platform built to help restaurants manage their customers and operations.",
-    ar: "منصة متكاملة وموحدة مصممة لمساعدة المطاعم في إدارة عملائها وعملياتها بكفاءة وسلاسة.",
+    en: "Digital NFC business cards and networking solutions to share your credentials with one tap.",
+    ar: "بطاقات أعمال رقمية وحلول ذكية بتقنية NFC لمشاركة بياناتك وتوسيع شبكة أعمالك بلمسة واحدة.",
   },
   "companies.wasel.status": { en: "COMING SOON", ar: "قريباً" },
+  "companies.wasel.tag1": { en: "NFC Smart Cards", ar: "NFC Smart Cards" },
+  "companies.wasel.tag2": { en: "Quick Share", ar: "مشاركة سريعة" },
+  "companies.wasel.tag3": { en: "Contact Management", ar: "إدارة جهات الاتصال" },
   "companies.wasel.note": {
     en: "Currently in active development by MUHAB.",
-    ar: "قيد التطوير والتحضير بواسطة فريق مُهاب.",
+    ar: "قيد التطوير والتجهيز بواسطة فريق مُهاب.",
   },
   "companies.wasel.cta": { en: "EXPLORE WASEL →", ar: "استكشف واصل ←" },
   "companies.wasel.visit": { en: "Visit Wasel", ar: "زيارة واصل" },
+  "companies.wasel.link": { en: "#", ar: "#" },
+
+  // PointPass Dedicated Landing Page Strings
+  "pointpass_page.badge": {
+    en: "Almost Ready • Apple & Google Wallet",
+    ar: "شبه جاهز • Apple & Google Wallet",
+  },
+  "pointpass_page.hero_title": {
+    en: "PointPass — Digital Loyalty & Stamp Passes in Your Mobile Wallet",
+    ar: "بوينت باس — كروت الولاء والأختام الرقمية في محفظة جوالك",
+  },
+  "pointpass_page.hero_subtitle": {
+    en: "Replace lost paper punch cards with interactive digital cards inside Apple Wallet & Google Wallet without app downloads. Send automated lock-screen notifications based on location and schedule.",
+    ar: "استبدل الكروت الورقية الضائعة ببطاقات تفاعلية داخل Apple Wallet و Google Wallet بدون تحميل أي تطبيق. أرسل إشعارات جغرافية ومجدولة لشاشة قفل العميل لتذكيره بزيارة فرعك.",
+  },
+  "pointpass_page.cta_join_waitlist": {
+    en: "Join Early Access (WhatsApp)",
+    ar: "حجز انضمام مبكر (واتساب)",
+  },
+  "pointpass_page.cta_back_home": {
+    en: "Back to Home",
+    ar: "العودة للرئيسية",
+  },
+  "pointpass_page.designs_badge": {
+    en: "3 Digital Formats",
+    ar: "3 نماذج رقمية",
+  },
+  "pointpass_page.designs_title": {
+    en: "Choose the Perfect Loyalty Model for Your Business",
+    ar: "اختر نظام الولاء المناسب لطبيعة نشاطك",
+  },
+  "pointpass_page.designs_subtitle": {
+    en: "Tailored for cafes, restaurants, barbershops, car washes, and retail stores.",
+    ar: "تصاميم مدمجة جاهزة للمطاعم، الكافيهات، صالونات التجميل، المغاسل والمتاجر.",
+  },
+  "pointpass_page.card1_title": {
+    en: "Digital Stamp Card (Punch Card)",
+    ar: "كرت الأختام الرقمي (Digital Stamp Card)",
+  },
+  "pointpass_page.card1_desc": {
+    en: "Interactive stamp pass (e.g., Buy 5 coffees, get the 6th free). Cashiers stamp securely via screen tap or QR scan.",
+    ar: "نظام أختام تفاعلي (مثال: اشترِ 5 مرات واحصل على السادسة مجاناً). يختم الكاشير بلمسة شاشة أو مسح QR كود لمنع التلاعب.",
+  },
+  "pointpass_page.card2_title": {
+    en: "Accumulative Loyalty Points",
+    ar: "نقاط الولاء التراكمية (Loyalty Points)",
+  },
+  "pointpass_page.card2_desc": {
+    en: "Earn points per SAR spent and redeem for credit or rewards to boost customer lifetime value.",
+    ar: "جمع نقاط مع كل ريال يتم إنفاقه واستبدالها برصيد مشتريات أو هدايا مباشرة لرفع متوسط قيمة سلة الشراء.",
+  },
+  "pointpass_page.card3_title": {
+    en: "Digital Coupons & Tiered Vouchers",
+    ar: "كوبونات وقسائم الخصم (Tiered Vouchers)",
+  },
+  "pointpass_page.card3_desc": {
+    en: "Promotional vouchers and member discounts with expiration dates to drive quick repeat visits.",
+    ar: "قسائم ترويجية وبطاقات عضوية بخصومات حصرية وتواريخ صلاحية محددة تشجع العميل على تكرار الزيارة سريعاً.",
+  },
+  "pointpass_page.notifications_badge": {
+    en: "Smart Notification Engine",
+    ar: "نظام الإشعارات والتذكير الذكي",
+  },
+  "pointpass_page.notifications_title": {
+    en: "Direct Lock-Screen Engagement Without SMS Costs",
+    ar: "تواصل مباشر مع شاشة قفل العميل بدون تكلفة رسائل SMS",
+  },
+  "pointpass_page.notif1_title": {
+    en: "Geolocation Triggers",
+    ar: "إشعارات الموقع الجغرافي (Geolocation Triggers)",
+  },
+  "pointpass_page.notif1_desc": {
+    en: "When customers get within 100-300m of your branch, your pass lights up on their lock screen with a welcome offer.",
+    ar: "بمجرد اقتراب العميل من محيط فرعك (على بُعد 100 - 300 متر)، يظهر كرتك تلقائياً على شاشة القفل مع رسالة ترحيب تدعوه للدخول.",
+  },
+  "pointpass_page.notif2_title": {
+    en: "Scheduled Re-Engagement",
+    ar: "إشعارات إعادة التفاعل المجدولة (Scheduled Push)",
+  },
+  "pointpass_page.notif2_desc": {
+    en: "Send automated push notifications every 14 or 30 days to dormant customers to bring them back.",
+    ar: "أرسل تنبيهات تلقائية للعملاء المنقطعين كل 14 يوماً أو شهرياً مع عروض حصرية لتحفيزهم على العودة.",
+  },
+  "pointpass_page.matrix_title": {
+    en: "Why Switch to PointPass?",
+    ar: "لماذا تختار بوينت باس لنشاطك التجاري؟",
+  },
+  "pointpass_page.for_customer_title": {
+    en: "For Customers:",
+    ar: "مزايا العميل:",
+  },
+  "pointpass_page.for_customer_1": {
+    en: "Never lose a card; safely stored in native Apple/Google Wallet.",
+    ar: "الكرت محفوظ داخل Apple Wallet أو Google Wallet ولا يضيع أبداً.",
+  },
+  "pointpass_page.for_customer_2": {
+    en: "Zero app downloads or complicated sign-ups required.",
+    ar: "بدون تحميل تطبيقات جديدة أو تسجيل حسابات معقدة.",
+  },
+  "pointpass_page.for_customer_3": {
+    en: "Instant live balance updates directly on the phone screen.",
+    ar: "تحديث فوري للأختام والنقاط أمام العميل مباشرة.",
+  },
+  "pointpass_page.for_business_title": {
+    en: "For Business Owners:",
+    ar: "مزايا التاجر:",
+  },
+  "pointpass_page.for_business_1": {
+    en: "Eliminate recurring paper printing costs and waste.",
+    ar: "توفير تكاليف طباعة الكروت الورقية والتخلص من هدرها.",
+  },
+  "pointpass_page.for_business_2": {
+    en: "Fraud-proof digital verification prevents unauthorized stamps.",
+    ar: "منع التلاعب وتكرار الأختام بدون شراء حقيقي.",
+  },
+  "pointpass_page.for_business_3": {
+    en: "Free marketing channel with automated lock-screen push alerts.",
+    ar: "قناة تسويقية مجانية لإرسال إشعارات مباشرة لشاشة قفل العميل.",
+  },
+  "pointpass_page.bottom_cta_title": {
+    en: "Be First to Launch Digital Passes in Your Branch",
+    ar: "كن أول من يطلق كروت الولاء الرقمية في فرعك",
+  },
+  "pointpass_page.bottom_cta_subtitle": {
+    en: "Reserve your pilot spot and collaborate with the MUHAB team to design your cards.",
+    ar: "احجز نسختك التجريبية وتواصل مع فريق موهاب لتجهيز بطاقات نشاطك التجاري.",
+  },
+  "pointpass_page.bottom_cta_btn": {
+    en: "Chat on WhatsApp",
+    ar: "تواصل معنا عبر واتساب",
+  },
 
   /* Taqyeemi Case Study / Product Page */
   "taqyeemi.page.title": {
     en: "Taqyeemi by MUHAB — Customer Experience & Reputation Platform",
-    ar: "تقييمي من مُهاب — منصة تجربة العملاء وإدارة السمعة",
+    ar: "تقييمي من مُهاب — منصة تجربة العملاء وإدارة التقييمات",
   },
   "taqyeemi.hero.badge": {
     en: "BUILT BY MUHAB · DIGITAL PRODUCT",
     ar: "تم تطويره وتصميمه بواسطة مُهاب · منتج رقمي",
   },
   "taqyeemi.hero.headline": {
-    en: "Turn customer feedback into better reviews and better decisions.",
-    ar: "حوّل آراء العملاء إلى تقييمات أفضل وقرارات أذكى.",
+    en: "Turn in-person visits into verified Google reviews and actionable insights.",
+    ar: "حوّل تقييمات العملاء إلى نقاط قوة وقرارات واضحة.",
   },
   "taqyeemi.hero.sub": {
     en: "Taqyeemi bridges physical customer touchpoints with smart cloud management. Combine contactless NFC/QR feedback collection, intelligent review routing, and a real-time business dashboard.",
-    ar: "يجمع نظام تقييمي بين نقاط اتصال العملاء الفيزيائية والإدارة السحابية الذكية، لدمج جمع التقييمات عبر NFC و QR وتوجيه الملاحظات ولوحة تحكم فورية للأعمال.",
+    ar: "يجمع نظام تقييمي بين حوامل الطاولات الذكية ولوحة تحكم سحابية مباشرة، لتوجيه التقييمات الممتازة لخرائط Google واستلام الملاحظات الخاصة فوراً لمعالجتها.",
   },
   "taqyeemi.hero.cta_visit": { en: "Visit Taqyeemi", ar: "زيارة تقييمي" },
   "taqyeemi.hero.cta_how": { en: "See How It Works ↓", ar: "شاهد كيف يعمل النظام ↓" },
   "taqyeemi.hero.cta_request": {
     en: "Get Taqyeemi For Your Business →",
-    ar: "طلب نظام تقييمي لمنشأتك ←",
+    ar: "طلب نظام تقييمي لفروعك ←",
   },
 
   "taqyeemi.flow.eyebrow": { en: "HOW TAQYEEMI WORKS", ar: "آلية عمل تقييمي" },
   "taqyeemi.flow.title": {
     en: "From table tap to verified review in 15 seconds.",
-    ar: "من لمسة الطاولة إلى التقييم الموثق خلال 15 ثانية.",
+    ar: "من لمسة الطاولة إلى التقييم على Google خلال 15 ثانية.",
   },
   "taqyeemi.flow.sub": {
-    en: "A frictionless physical-to-digital journey that converts customer sentiment into business reputation without forcing app downloads.",
-    ar: "تجربة سلسة تربط الواقع الملموس بالمنصة الرقمية لتحويل انطباعات العملاء إلى نمو موثوق دون الحاجة لتطبيقات.",
+    en: "A fast, direct customer flow that collects verified feedback on the spot without requiring any app installations.",
+    ar: "طريقة مباشرة وسريعة تشجع الزبائن على التقييم في المكان نفسه دون الحاجة لتنزيل أي تطبيق.",
   },
   "taqyeemi.flow.step1_num": { en: "01 — TAP OR SCAN", ar: "01 — تمرير أو مسح" },
   "taqyeemi.flow.step1_title": {
@@ -117,100 +290,100 @@ const dict: Dict = {
     ar: "حوامل ذكية بتقنية NFC و QR",
   },
   "taqyeemi.flow.step1_desc": {
-    en: "Customer taps their phone on the branded stand or scans the dynamic QR code. Instant launch with zero app installation.",
-    ar: "يمرر العميل هاتفه فوق الحامل المطبوع أو يمسح رمز QR فوراً دون الحاجة لتنزيل أي تطبيق.",
+    en: "Customer taps their phone on the branded stand or scans the dynamic QR code to open the rating flow instantly.",
+    ar: "يمرر العميل هاتفه فوق الحامل المطبوع أو يمسح الرمز لتفتح صفحة التقييم فوراً.",
   },
   "taqyeemi.flow.step2_num": { en: "02 — RATE EXPERIENCE", ar: "02 — تقييم التجربة" },
   "taqyeemi.flow.step2_title": {
     en: "Quick 1–5 Star Rating",
-    ar: "تقييم سريع من 1 إلى 5 نجوم",
+    ar: "تقييم من 1 إلى 5 نجوم",
   },
   "taqyeemi.flow.step2_desc": {
-    en: "A clean, dark-mode rating modal allows the customer to select their rating from 1 to 5 stars with a single tap.",
-    ar: "واجهة تقييم سريعة وأنيقة تتيح للعميل تقييم زيارته من 1 إلى 5 نجوم بلمسة واحدة.",
+    en: "A clean, fast rating interface allowing the customer to select their experience level with a single tap.",
+    ar: "واجهة سريعة وخفيفة تسمح للعميل باختيار تقييمه بضغطة واحدة.",
   },
   "taqyeemi.flow.step3_num": { en: "03 — INTELLIGENT SPLIT", ar: "03 — مسار ذكي وموجّه" },
   "taqyeemi.flow.step3_pos_title": {
-    en: "4–5 Stars → Google Review Path",
-    ar: "4–5 نجوم → توجيه مباشر لـ Google",
+    en: "4–5 Stars → Direct Google Review",
+    ar: "4–5 نجوم ← خرائط Google مباشرة",
   },
   "taqyeemi.flow.step3_pos_desc": {
-    en: "Happy customers are routed straight to your Google Maps review page to multiply verified 5-star ratings.",
-    ar: "يتم توجيه العملاء الراضين مباشرة إلى صفحة منشأتك على خرائط Google لزيادة التقييمات الإيجابية.",
+    en: "Satisfied customers are routed straight to your Google Maps review page to publish verified 5-star ratings.",
+    ar: "يتم توجيه العميل الراضي مباشرة لصفحة منشأتك على Google Maps لتوثيق تقييمه الإيجابي.",
   },
   "taqyeemi.flow.step3_neg_title": {
-    en: "1–3 Stars → Private Feedback",
-    ar: "1–3 نجوم → ملاحظات خاصة للإدارة",
+    en: "1–3 Stars → Private Management Feedback",
+    ar: "1–3 نجوم ← نموذج ملاحظات خاص",
   },
   "taqyeemi.flow.step3_neg_desc": {
-    en: "Constructive feedback is captured in a confidential modal, alerting managers before issues hit the public web.",
-    ar: "تُجمع الملاحظات في نافذة خاصة وسرية، مما يتيح للإدارة معالجة أي استياء فوراً قبل النشر العام.",
+    en: "Constructive feedback is captured privately in your dashboard, alerting managers to resolve issues before public posting.",
+    ar: "تُرسل الملاحظات مباشرة للوحة تحكم الإدارة لحل أي مشكلة ومعالجتها فوراً قبل نشرها علناً.",
   },
-  "taqyeemi.flow.step4_num": { en: "04 — LIVE DASHBOARD", ar: "04 — لوحة تحكم مركزية" },
+  "taqyeemi.flow.step4_num": { en: "04 — LIVE DASHBOARD", ar: "04 — لوحة تحكم فورية" },
   "taqyeemi.flow.step4_title": {
     en: "Centralized Management Dashboard",
-    ar: "لوحة تحكم وإدارة مركزية",
+    ar: "لوحة تحكم فورية للإدارة",
   },
   "taqyeemi.flow.step4_desc": {
-    en: "Feedback is available in the business dashboard with unread counters, rating filters, and operational triage.",
-    ar: "تصل الملاحظات والتقييمات إلى لوحة تحكم المنشأة مع عداد التنبيهات وفلاتر التقييم لسهولة المتابعة.",
+    en: "Track feedback across all branches with unread alerts, rating filters, and operational metrics.",
+    ar: "متابعة الملاحظات، فرز التقييمات، ومراقبة أداء كل الفروع لحظة بلحظة.",
   },
 
-  "taqyeemi.stand.eyebrow": { en: "PHYSICAL EXPERIENCE", ar: "التجربة الفيزيائية" },
-  "taqyeemi.stand.title": { en: "One tap from the customer.", ar: "لمسة واحدة من العميل." },
+  "taqyeemi.stand.eyebrow": { en: "PHYSICAL STANDS", ar: "الحوامل الميدانية" },
+  "taqyeemi.stand.title": { en: "Custom acrylic stands for tables and checkouts.", ar: "حامل أكريليك مخصص لنقاط البيع والطاولات." },
   "taqyeemi.stand.desc": {
-    en: "Engineered from premium high-gloss acrylic, the Taqyeemi stand sits directly at cash registers, dining tables, hotel counters, and reception areas — turning every in-person visit into an opportunity for growth.",
-    ar: "صُنع حامل تقييمي من الأكريليك الفاخر ليوضع على طاولات المطاعم ومكاتب الاستقبال ونقاط الدفع، ليحوّل كل زيارة فعلية إلى فرصة لتعزيز السمعة.",
+    en: "Engineered from durable high-gloss acrylic, the Taqyeemi stand sits directly at cash registers, dining tables, and reception desks to capture customer sentiment on the spot.",
+    ar: "مصنوع من أكريليك فاخر ومتين، يوضع على طاولات المطاعم ومكاتب الاستقبال ونقاط الدفع ليحول كل زيارة إلى فرصة لبناء السمعة.",
   },
   "taqyeemi.stand.feat1": {
     en: "Instant NFC contactless tap",
-    ar: "تمرير لا تلامسي فوري عبر NFC",
+    ar: "تمرير لا تلامسي فوري (NFC)",
   },
   "taqyeemi.stand.feat2": {
-    en: "High-resolution dynamic QR scan",
-    ar: "مسح سريع لرمز QR عالي الدقة",
+    en: "High-resolution dynamic QR code",
+    ar: "رمز QR عالي الوضوح",
   },
   "taqyeemi.stand.feat3": {
-    en: "Zero apps or downloads required",
-    ar: "بدون أي تطبيقات أو تسجيل دخول",
+    en: "Zero app downloads required",
+    ar: "بدون تحميل أي تطبيق",
   },
   "taqyeemi.stand.feat4": {
-    en: "Durable, branded acrylic construction",
-    ar: "تصميم أكريليك أنيق ومتين للمنشآت",
+    en: "Custom branded acrylic design",
+    ar: "تصميم أنيق بطباعة اسم وهوية منشأتك",
   },
 
   "taqyeemi.dash.eyebrow": { en: "DASHBOARD SHOWCASE", ar: "لوحة التحكم المركزية" },
   "taqyeemi.dash.title": {
-    en: "Feedback you can actually use.",
-    ar: "بيانات وملاحظات تصنع الفارق.",
+    en: "Clear data that drives real operational improvements.",
+    ar: "بيانات حقيقية تساعدك على تحسين الخدمة.",
   },
   "taqyeemi.dash.desc": {
-    en: "The Taqyeemi owner portal gives management full real-time visibility into customer satisfaction, unread feedback items, and rating distributions across branches.",
-    ar: "تمنح لوحة تحكم تقييمي الإدارة رؤية شاملة وفورية لمستوى رضا العملاء والملاحظات الجديدة وتوزيع التقييمات.",
+    en: "The Taqyeemi portal gives management full visibility into customer satisfaction, new feedback alerts, and branch rating distributions in real time.",
+    ar: "شاشة متابعة واضحة لمديري الفروع والإدارة تعرض التقييمات الجديدة ومتوسط الرضا وتنبيهات الملاحظات غير المقروءة.",
   },
   "taqyeemi.dash.feat1": {
-    en: "Live customer feedback feed with timestamps",
-    ar: "سجل فوري لآراء وملاحظات العملاء بالوقت والتاريخ",
+    en: "Real-time feedback feed with branch and time stamps",
+    ar: "سجل فوري بالملاحظات مع التوقيت والفرع",
   },
   "taqyeemi.dash.feat2": {
-    en: "Average rating calculation & total review count",
-    ar: "حساب دقيق لمتوسط التقييم وإجمالي الآراء",
+    en: "Precise average rating and review volume metrics",
+    ar: "حساب دقيق لمتوسط التقييم العام",
   },
   "taqyeemi.dash.feat3": {
-    en: "Unread notification counter & triage queue",
-    ar: "عداد للملاحظات غير المقروءة لتسهيل المتابعة",
+    en: "Unread feedback notification counters",
+    ar: "تنبيهات فورية للملاحظات الواردة",
   },
   "taqyeemi.dash.feat4": {
-    en: "Instant star rating filtering (1-Star, 2-Star, 3-Star)",
-    ar: "فلاتر سريعة لفرز التقييمات حسب النجوم",
+    en: "Star rating filters (1-Star, 2-Star, 3-Star)",
+    ar: "فرز التقييمات حسب النجوم (1-3 نجوم)",
   },
   "taqyeemi.dash.feat5": {
-    en: "One-click 'Mark as Read' workflow",
-    ar: "تحديد الملاحظات كمقروءة بضغطة زر",
+    en: "One-click 'Mark as Handled' workflow",
+    ar: "تحديد الملاحظات كمقروءة ومتابعة معالجتها",
   },
   "taqyeemi.dash.feat6": {
-    en: "Direct access to launch customer funnel",
-    ar: "وصول مباشر لتشغيل وتجربة مسار العميل",
+    en: "Direct preview of customer review flow",
+    ar: "معاينة مباشرة لمسار العميل",
   },
 
   "taqyeemi.sim.eyebrow": {
@@ -218,89 +391,89 @@ const dict: Dict = {
     ar: "معاينة المحاكي التفاعلي",
   },
   "taqyeemi.sim.title": {
-    en: "Explore the customer experience.",
-    ar: "اكتشف تجربة العميل.",
+    en: "Test the customer experience directly.",
+    ar: "جرّب مسار العميل بنفسك.",
   },
   "taqyeemi.sim.desc": {
-    en: "See how the Taqyeemi review funnel separates 4–5 star ratings from private feedback. Visit the official Taqyeemi website to try the interactive simulator.",
-    ar: "تعرّف على كيفية توجيه تقييمي للتقييمات الإيجابية إلى Google واستقبال الملاحظات الخاصة بسرية. تفضل بزيارة موقع تقييمي لتجربة المحاكي التفاعلي مباشرة.",
+    en: "See how the Taqyeemi review funnel routes 4–5 star ratings to Google Maps while capturing 1–3 star feedback privately for management.",
+    ar: "تعرّف كيف يفرّق النظام بين التقييم الإيجابي الموجه لـ Google والملاحظات الخاصة التي تصل للإدارة مباشرة.",
   },
   "taqyeemi.sim.cta": {
     en: "Try Interactive Simulator on Taqyeemi ↗",
     ar: "تجربة المحاكي على موقع تقييمي ↗",
   },
 
-  "taqyeemi.story.eyebrow": { en: "CUSTOMER JOURNEY", ar: "رحلة العميل الذكية" },
+  "taqyeemi.story.eyebrow": { en: "CUSTOMER ROUTING", ar: "مسار التقييم الذكي" },
   "taqyeemi.story.title": {
-    en: "Two paths. Maximum reputation protection.",
-    ar: "مساران ذكيان لحماية سمعة منشأتك.",
+    en: "Two clear paths: Review growth & reputation defense.",
+    ar: "مساران واضحان: زيادة التقييمات وحماية السمعة.",
   },
   "taqyeemi.story.pos_label": {
     en: "POSITIVE EXPERIENCE (4–5 STARS)",
-    ar: "تجربة إيجابية (4–5 نجوم)",
+    ar: "تقييم إيجابي (4–5 نجوم)",
   },
   "taqyeemi.story.pos_title": {
-    en: "Public Google Review Acceleration",
-    ar: "مضاعفة التقييمات على خرائط Google",
+    en: "Direct Google Maps Review Flow",
+    ar: "توجيه مباشر لخرائط Google",
   },
   "taqyeemi.story.pos_desc": {
-    en: "Customers rating 4 or 5 stars are seamlessly guided to your Google Maps listing to share their glowing review with the public.",
-    ar: "العملاء الذين يختارون 4 أو 5 نجوم يُوجّهون فوراً لنشر تقييمهم الإيجابي على خرائط Google.",
+    en: "Customers who select 4 or 5 stars are guided straight to your Google Maps profile to submit their public review.",
+    ar: "العملاء الذين يختارون 4 أو 5 نجوم يتم تحويلهم فوراً لصفحتك على Google Maps لكتابة تقييمهم ونشره.",
   },
   "taqyeemi.story.neg_label": {
-    en: "CONSTRUCTIVE EXPERIENCE (1–3 STARS)",
+    en: "CONSTRUCTIVE FEEDBACK (1–3 STARS)",
     ar: "ملاحظات وتطوير (1–3 نجوم)",
   },
   "taqyeemi.story.neg_title": {
-    en: "Confidential Private Feedback",
-    ar: "قناة تواصل خاصة وسرية للإدارة",
+    en: "Private Management Communication Channel",
+    ar: "نموذج مباشر وسري للإدارة",
   },
   "taqyeemi.story.neg_desc": {
-    en: "Customers rating 1 to 3 stars receive a private feedback form. Comments are delivered to your business dashboard without appearing on public search results.",
-    ar: "العملاء أصحاب التقييم المنخفض يُتاح لهم نموذج سري، لتصل ملاحظاتهم إلى لوحة تحكم الإدارة دون نشرها علناً.",
+    en: "Customers rating 1 to 3 stars receive a private form so issues reach your management dashboard rather than public review feeds.",
+    ar: "العملاء الذين واجهوا ملاحظة يُتاح لهم نموذج خاص لتصل رسالتهم للإدارة مباشرة دون نشرها علناً.",
   },
 
-  "taqyeemi.benefits.eyebrow": { en: "BUSINESS BENEFITS", ar: "القيمة المضافة لمنشأتك" },
+  "taqyeemi.benefits.eyebrow": { en: "BUSINESS RESULTS", ar: "النتائج المباشرة" },
   "taqyeemi.benefits.title": {
-    en: "Three focused advantages for your brand.",
-    ar: "ثلاث مزايا استراتيجية لنمو علامتك.",
+    en: "Three direct advantages for your business.",
+    ar: "ثلاث نتائج مباشرة لنشاطك التجاري.",
   },
   "taqyeemi.benefits.b1_title": {
-    en: "Build your online reputation",
-    ar: "عزّز سمعتك الرقمية",
+    en: "Grow your Google Maps rating",
+    ar: "رفع تقييمك على Google Maps",
   },
   "taqyeemi.benefits.b1_desc": {
-    en: "Make it effortless for satisfied customers to reach the Google review flow, improving local SEO rankings and customer trust.",
-    ar: "اجعل وصول العملاء السعداء لتقييم Google سهلاً وسريعاً، مما يرفع تصدرك لنتائج البحث ويزيد ثقة الزوار الجدد.",
+    en: "Make it effortless for satisfied customers to review you, improving your local Google ranking and winning more foot traffic.",
+    ar: "تسهيل وصول العملاء الراضين لصفحة التقييم، مما يحسن ترتيبك في نتائج البحث ويزيد الزيارات لفروعك.",
   },
   "taqyeemi.benefits.b2_title": {
-    en: "Catch problems earlier",
-    ar: "تدارك الملاحظات مبكراً",
+    en: "Catch complaints before they go public",
+    ar: "استدراك الملاحظات قبل النشر",
   },
   "taqyeemi.benefits.b2_desc": {
-    en: "Give dissatisfied customers a direct private feedback channel before frustration turns into a damaging public review.",
-    ar: "وفّر قناة مباشرة للعميل لمشاركة استيائه بسرية، لتتمكن من حل المشكلة وكسب ولائه قبل النشر العام.",
+    en: "Give unhappy customers a private direct channel to share frustration, allowing your team to resolve issues immediately.",
+    ar: "استقبال شكاوى وملاحظات العملاء مباشرة وبسرية لمعالجة المشكلة قبل أن تتحول لتقييم سلبي عام.",
   },
   "taqyeemi.benefits.b3_title": {
-    en: "Understand your customers",
-    ar: "افهم عملائك بدقة",
+    en: "Data-driven operational decisions",
+    ar: "قرارات تشغيلية مبنية على الواقع",
   },
   "taqyeemi.benefits.b3_desc": {
-    en: "Consolidate real-time feedback across all branches into one dashboard so your team can make confident, data-backed decisions.",
-    ar: "وحّد كافة الملاحظات والآراء من جميع فروعك في لوحة تحكم واحدة لتمكين فريقك من اتخاذ قرارات مبنية على بيانات حقيقية.",
+    en: "Consolidate real-time customer ratings across all branches into one dashboard to spot trends and staff performance.",
+    ar: "جمع آراء الزوار من كل الفروع في مكان واحد لمعرفة نقاط القوة والخلل بدقة واتخاذ قرارات تحسين مستمرة.",
   },
 
   "taqyeemi.muhab.eyebrow": {
-    en: "BUILT BY MUHAB",
-    ar: "صُنّاع المواقع السعودية",
+    en: "ENGINEERED BY MUHAB",
+    ar: "مطور بالكامل بواسطة مُهاب",
   },
   "taqyeemi.muhab.title": {
-    en: "Taqyeemi is more than a website. It's a complete digital product.",
-    ar: "تقييمي أكثر من مجرد موقع. إنه منتج رقمي متكامل.",
+    en: "Taqyeemi is a complete digital product engineered by MUHAB.",
+    ar: "تقييمي هو أحد المنتجات الرقمية المطورة بالكامل في مُهاب.",
   },
   "taqyeemi.muhab.desc": {
-    en: "Muhab engineers bespoke customer-facing web apps, NFC-powered customer experiences, and high-performance management portals. Taqyeemi demonstrates our capability to build complete digital products from scratch.",
-    ar: "نبتكر في مُهاب تطبيقات ويب مخصصة، وتجارب عملاء ذكية مدعومة بتقنية NFC، ولوحات تحكم عالية الأداء. يُجسد تقييمي قدرتنا على هندسة منتجات رقمية متكاملة تنمي الأعمال.",
+    en: "Muhab designs and develops custom web platforms, NFC customer tools, and high-performance management systems for Saudi retail and hospitality businesses.",
+    ar: "نصمم ونبرمج في مُهاب تطبيقات ويب مخصصة وأنظمة تشغيل وأدوات تقنية تخدم قطاعات الضيافة والتجزئة والخدمات في السوق السعودي.",
   },
   "taqyeemi.muhab.cta": {
     en: "START YOUR PROJECT WITH MUHAB →",
@@ -308,95 +481,100 @@ const dict: Dict = {
   },
 
   "taqyeemi.final.title": {
-    en: "See Taqyeemi in action.",
-    ar: "شاهد تقييمي يعمل على أرض الواقع.",
+    en: "Deploy Taqyeemi in your branches today.",
+    ar: "اطلب نظام تقييمي لفروعك اليوم.",
   },
   "taqyeemi.final.sub": {
-    en: "Visit the live Taqyeemi platform or contact the Muhab team to deploy branded stands and dashboards for your business.",
-    ar: "تفضل بزيارة منصة تقييمي المباشرة أو تواصل مع فريق مُهاب لتفعيل الحوامل ولوحات التحكم لفروعك اليوم.",
+    en: "Get branded physical stands delivered and dashboard access configured for your business locations.",
+    ar: "نوفر الحوامل المطبوعة بهوية منشأتك مع تفعيل لوحة التحكم والربط المباشر مع خرائط Google.",
   },
 
-  "badge.responsive": { en: "Mobile Responsiveness", ar: "متجاوب مع جميع الهواتف" },
-  "badge.performance": { en: "High-Speed Performance", ar: "أداء فائق السرعة" },
-  "badge.saudi": { en: "Saudi Market Optimized", ar: "مُعدّ للسوق السعودي" },
-  "badge.seo": { en: "SEO & Growth", ar: "تحسين محركات البحث والنمو" },
+  "badge.responsive": { en: "100% Mobile Optimized", ar: "توافق تام مع الجوال" },
+  "badge.performance": { en: "Fast Loading Speed", ar: "سرعة تحميل فائقة" },
+  "badge.saudi": { en: "Saudi Market Compliance", ar: "مخصص للسوق السعودي" },
+  "badge.seo": { en: "Google Search Ready", ar: "مهيأ لنتائج Google" },
 
   "services.title": {
-    en: "Digital Solutions Built for Business Outcomes",
-    ar: "حلول رقمية مصممة للنتائج والنمو",
+    en: "Digital Services Built for Measurable Outcomes",
+    ar: "خدمات رقمية واضحة تحقق نتائج ملموسة",
   },
   "services.sub": {
-    en: "We don't just build websites. We craft digital experiences designed to convert attention into long-term customer relationships.",
-    ar: "لا نصنع مجرد مواقع، بل نبتكر تجارب رقمية تحول اهتمام الزوار إلى علاقات عملاء مستدامة.",
+    en: "We design and develop custom websites and web systems focused on high conversion, speed, and direct customer engagement.",
+    ar: "نصمم ونبني مواقع وتطبيقات تركز على وضوح العرض وسرعة التحميل وزيادة طلبات واستفسارات العملاء.",
   },
 
   "modal.title": { en: "Start Your Project with MUHAB", ar: "ابدأ مشروعك مع مُهاب" },
   "modal.desc": {
-    en: "Fill in your details and select a service. Our Saudi Webmakers team will reach out via WhatsApp.",
-    ar: "أدخل بياناتك واختر الخدمة المطلوبة وسيتواصل معك فريق صُنّاع المواقع عبر الواتساب.",
+    en: "Enter your contact details and choose your required service. Our Saudi Webmakers team will reach out via WhatsApp.",
+    ar: "أدخل بياناتك واختر الخدمة المطلوبة وسيتواصل معك فريق صُنّاع المواقع عبر الواتساب لتحديد تفاصيل مشروعك.",
   },
-  "modal.name": { en: "Name", ar: "الاسم" },
+  "modal.name": { en: "Full Name", ar: "الاسم الكريم" },
   "modal.name_placeholder": { en: "e.g. Abdullah Al-Otaibi", ar: "مثال: عبد الله العتيبي" },
-  "modal.business_name": { en: "Business Name", ar: "اسم المنشأة" },
+  "modal.business_name": { en: "Business / Project Name", ar: "اسم المنشأة أو المشروع" },
   "modal.business_placeholder": { en: "e.g. Al-Nakheel Cafe", ar: "مثال: كافيه النخيل" },
   "modal.whatsapp": { en: "WhatsApp Number", ar: "رقم الواتساب" },
   "modal.whatsapp_placeholder": {
-    en: "e.g. +966 50 000 0000",
-    ar: "مثال: 0500000000 أو +966...",
+    en: "e.g. 0500000000",
+    ar: "05XXXXXXXX",
   },
-  "modal.select_service": { en: "Select Service / Package", ar: "اختر الخدمة أو الباقة" },
+  "modal.select_service": { en: "Select Service / Package", ar: "اختر الخدمة أو الباقة المطلوبة" },
   "modal.service_required_error": {
-    en: "Please select a service or website package.",
+    en: "Please select a service or package.",
     ar: "يرجى اختيار الخدمة أو الباقة المطلوبة.",
   },
   "modal.whatsapp_invalid_error": {
-    en: "Please enter a valid WhatsApp phone number.",
-    ar: "يرجى إدخال رقم واتساب صحيح.",
+    en: "Please enter a valid phone number.",
+    ar: "يرجى إدخال رقم هاتف صحيح.",
   },
-  "modal.group.websites": { en: "WEBSITES", ar: "المواقع الإلكترونية" },
-  "modal.pkg.basic.title": { en: "Basic Website", ar: "موقع أساسي" },
-  "modal.pkg.basic.sub": { en: "Starter", ar: "الباقة المبتدئة" },
-  "modal.pkg.custom.title": { en: "Custom Website", ar: "موقع مخصص" },
-  "modal.pkg.custom.sub": { en: "Main custom option", ar: "الخيار المخصص الرئيسي" },
-  "modal.pkg.crm.title": { en: "Full CRM Custom Website", ar: "موقع مخصص مع نظام CRM متكامل" },
+  "modal.group.websites": { en: "CUSTOM WEBSITES", ar: "المواقع الإلكترونية المخصصة" },
+  "modal.pkg.basic.title": { en: "Basic Business Website", ar: "موقع تعريفي أساسي" },
+  "modal.pkg.basic.sub": { en: "Starter showcase site", ar: "عرض الخدمات والهوية والواتساب" },
+  "modal.pkg.custom.title": { en: "Custom Web Platform", ar: "موقع تجاري مخصص" },
+  "modal.pkg.custom.sub": { en: "Full interactive experience", ar: "قوائم تفاعلية وطلبات مخصصة" },
+  "modal.pkg.crm.title": { en: "CRM Web System", ar: "موقع مع نظام إدارة متكامل" },
   "modal.pkg.crm.sub": {
-    en: "Coming Soon / Currently Unavailable",
-    ar: "قريباً / غير متاح حالياً",
+    en: "Coming Soon",
+    ar: "قريباً",
   },
-  "modal.group.apps": { en: "APPS / BUSINESS SYSTEMS", ar: "التطبيقات وأنظمة الأعمال" },
-  "modal.pkg.taqyeemi.title": { en: "Taqyeemi", ar: "تقييمي" },
+  "modal.group.apps": { en: "BUSINESS SYSTEMS & PRODUCTS", ar: "أنظمة ومنتجات الأعمال" },
+  "modal.pkg.taqyeemi.title": { en: "Taqyeemi System", ar: "نظام تقييمي" },
   "modal.pkg.taqyeemi.sub": {
-    en: "Customer Experience & Reputation",
-    ar: "تجربة العملاء وإدارة السمعة",
+    en: "NFC/QR stands & review dashboard",
+    ar: "حوامل ذكية ولوحة متابعة التقييمات",
+  },
+  "modal.pkg.pointpass.title": { en: "PointPass Loyalty Cards", ar: "بوينت باس (كروت الولاء)" },
+  "modal.pkg.pointpass.sub": {
+    en: "Apple & Google Wallet digital passes",
+    ar: "كروت وأختام رقمية في محفظة الجوال",
   },
   "modal.coming_soon": { en: "Coming Soon", ar: "قريباً" },
   "modal.unavailable": { en: "Unavailable", ar: "غير متاح" },
   "modal.submit": { en: "SUBMIT PROJECT REQUEST →", ar: "إرسال طلب المشروع ←" },
-  "modal.submitting": { en: "Submitting details...", ar: "جاري الإرسال..." },
-  "modal.success_title": { en: "Project Request Received!", ar: "تم استلام طلب المشروع بنجاح!" },
+  "modal.submitting": { en: "Submitting request...", ar: "جاري إرسال الطلب..." },
+  "modal.success_title": { en: "Request Received Successfully!", ar: "تم استلام طلبك بنجاح!" },
   "modal.success_desc": {
-    en: "Thank you for reaching out to MUHAB. Reference ID: ",
-    ar: "شكراً لتواصلك مع مُهاب. رقم المرجع: ",
+    en: "Thank you for contacting MUHAB. Reference number: ",
+    ar: "شكراً لتواصلك مع مُهاب. رقم المرجع الخاص بطلبك: ",
   },
   "modal.success_sub": {
-    en: "Our Saudi Webmakers team will review your project and contact you via WhatsApp shortly.",
-    ar: "سيرجع فريق صُنّاع المواقع طلبك ونتواصل معك عبر الواتساب في أقرب وقت.",
+    en: "Our team will review your project requirements and message you directly on WhatsApp shortly.",
+    ar: "سيراجع فريقنا متطلبات مشروعك وسنتواصل معك عبر الواتساب في أقرب وقت.",
   },
   "modal.close": { en: "Close", ar: "إغلاق" },
-  "modal.new_request": { en: "Submit Another Request", ar: "إرسال طلب آخر" },
+  "modal.new_request": { en: "Submit Another Request", ar: "إرسال طلب جديد" },
   "modal.submit_error": {
-    en: "Unable to submit your request at this moment. Please try again or reach out to us directly.",
-    ar: "تعذر إرسال الطلب حالياً. يرجى المحاولة مرة أخرى أو التواصل معنا مباشرة.",
+    en: "Unable to submit your request right now. Please try again or message us directly.",
+    ar: "تعذر إرسال الطلب حالياً. يرجى المحاولة مرة أخرى أو التواصل معنا عبر الواتساب مباشرة.",
   },
   "modal.retry": { en: "Try Again", ar: "إعادة المحاولة" },
 
   "footer.tag": {
-    en: "MUHAB creates modern digital experiences that help Saudi businesses grow.",
-    ar: "مُهاب يبتكر تجارب رقمية حديثة تهدف لتنمية الشركات السعودية.",
+    en: "MUHAB creates fast custom websites and digital systems that increase sales for Saudi businesses.",
+    ar: "مُهاب — نصنع مواقع إلكترونية مخصصة وسريعة تزيد مبيعاتك وتعزز سمعتك في السوق السعودي.",
   },
   "footer.rights": { en: "All rights reserved.", ar: "جميع الحقوق محفوظة." },
-  "footer.contact": { en: "Get In Touch", ar: "تواصل معنا" },
-  "footer.quick_links": { en: "Navigation", ar: "التنقل" },
+  "footer.contact": { en: "Contact Us", ar: "تواصل معنا" },
+  "footer.quick_links": { en: "Navigation", ar: "روابط سريعة" },
 };
 
 type Ctx = {
@@ -410,7 +588,7 @@ type Ctx = {
 const I18nCtx = createContext<Ctx | null>(null);
 
 export function I18nProvider({ children }: { children: ReactNode }) {
-  const [lang, setLang] = useState<Lang>("en");
+  const [lang, setLang] = useState<Lang>("ar");
 
   useEffect(() => {
     const saved = (typeof window !== "undefined" && (localStorage.getItem("lang") as Lang)) || null;
@@ -431,7 +609,7 @@ export function I18nProvider({ children }: { children: ReactNode }) {
   const t = (k: keyof typeof dict) => dict[k]?.[lang] || k;
   const tf = (o: Record<string, any>, key: "name" | "description" | "category") => {
     const suffix = lang === "ar" ? "_ar" : "_en";
-    return o[`${key}${suffix}`];
+    return o[`${key}${suffix}`] || o[`${key}_ar`] || o[key];
   };
 
   return (

@@ -140,6 +140,7 @@ export function RequestWebsiteDialog({
     if (srv === "basic") return t("modal.pkg.basic.title");
     if (srv === "custom") return t("modal.pkg.custom.title");
     if (srv === "taqyeemi") return t("modal.pkg.taqyeemi.title");
+    if (srv === "pointpass") return t("modal.pkg.pointpass.title");
     return srv;
   };
 
@@ -148,7 +149,7 @@ export function RequestWebsiteDialog({
       <DialogContent className="sm:max-w-xl p-6 sm:p-8 max-h-[92vh] overflow-y-auto rounded-3xl border border-[#A6FF2E]/25 bg-[#051A12] text-white shadow-2xl">
         {!isSubmitted ? (
           <>
-            <DialogHeader className="space-y-2 text-left rtl:text-right">
+            <DialogHeader className="space-y-2 text-start">
               <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#0B2F23] border border-[#A6FF2E]/30 text-[#A6FF2E] text-xs font-bold w-fit">
                 <img src={logoIcon} alt="MUHAB" className="h-4 w-4 rounded-sm object-cover" />
                 <span>MUHAB · SAUDI WEBMAKERS</span>
@@ -210,7 +211,7 @@ export function RequestWebsiteDialog({
                       if (whatsappError) setWhatsappError(false);
                     }}
                     placeholder={t("modal.whatsapp_placeholder")}
-                    className={`rounded-xl bg-[#0B2F23]/60 border-white/15 text-white placeholder:text-white/40 focus-visible:ring-[#A6FF2E] h-11 text-left rtl:text-right ${
+                    className={`rounded-xl bg-[#0B2F23]/60 border-white/15 text-white placeholder:text-white/40 focus-visible:ring-[#A6FF2E] h-11 text-start ${
                       whatsappError ? "border-red-500 focus-visible:ring-red-500" : ""
                     }`}
                   />
@@ -247,7 +248,7 @@ export function RequestWebsiteDialog({
                     <button
                       type="button"
                       onClick={() => handleSelectService("basic")}
-                      className={`relative flex flex-col justify-between p-3.5 rounded-2xl border text-left rtl:text-right transition-all cursor-pointer ${
+                      className={`relative flex flex-col justify-between p-3.5 rounded-2xl border text-start transition-all cursor-pointer ${
                         selectedService === "basic"
                           ? "border-[#A6FF2E] bg-[#0B2F23] text-white ring-2 ring-[#A6FF2E]/60 shadow-lg"
                           : "border-white/10 bg-[#0B2F23]/30 hover:bg-[#0B2F23]/70 text-[#DADDD6]"
@@ -273,7 +274,7 @@ export function RequestWebsiteDialog({
                     <button
                       type="button"
                       onClick={() => handleSelectService("custom")}
-                      className={`relative flex flex-col justify-between p-3.5 rounded-2xl border text-left rtl:text-right transition-all cursor-pointer ${
+                      className={`relative flex flex-col justify-between p-3.5 rounded-2xl border text-start transition-all cursor-pointer ${
                         selectedService === "custom"
                           ? "border-[#A6FF2E] bg-[#0B2F23] text-white ring-2 ring-[#A6FF2E] shadow-xl"
                           : "border-[#A6FF2E]/30 bg-[#0B2F23]/50 hover:bg-[#0B2F23] text-[#DADDD6]"
@@ -333,12 +334,12 @@ export function RequestWebsiteDialog({
                     <span>{t("modal.group.apps")}</span>
                   </div>
 
-                  <div className="grid grid-cols-1 gap-2.5">
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
                     {/* Taqyeemi App */}
                     <button
                       type="button"
                       onClick={() => handleSelectService("taqyeemi")}
-                      className={`relative flex items-center justify-between p-3.5 rounded-2xl border text-left rtl:text-right transition-all cursor-pointer ${
+                      className={`relative flex items-center justify-between p-3.5 rounded-2xl border text-start transition-all cursor-pointer ${
                         selectedService === "taqyeemi"
                           ? "border-[#A6FF2E] bg-[#0B2F23] text-white ring-2 ring-[#A6FF2E]/60 shadow-lg"
                           : "border-white/10 bg-[#0B2F23]/30 hover:bg-[#0B2F23]/70 text-[#DADDD6]"
@@ -350,7 +351,7 @@ export function RequestWebsiteDialog({
                             {t("modal.pkg.taqyeemi.title")}
                           </span>
                           <span className="text-[10px] font-bold text-[#A6FF2E] bg-[#A6FF2E]/10 px-2 py-0.5 rounded-full border border-[#A6FF2E]/20">
-                            {lang === "ar" ? "منتج رقمي حي" : "Live Product"}
+                            {lang === "ar" ? "منتج حي" : "Live"}
                           </span>
                         </div>
                         <div className="text-xs text-[#DADDD6]/80">
@@ -359,6 +360,41 @@ export function RequestWebsiteDialog({
                       </div>
 
                       {selectedService === "taqyeemi" ? (
+                        <div className="p-1.5 rounded-xl bg-[#A6FF2E] text-[#09110D] shrink-0">
+                          <Check className="h-4 w-4 stroke-[3]" />
+                        </div>
+                      ) : (
+                        <div className="p-1.5 rounded-xl bg-white/5 text-white/40 shrink-0">
+                          <ArrowRight className="h-4 w-4 rtl:rotate-180" />
+                        </div>
+                      )}
+                    </button>
+
+                    {/* PointPass App */}
+                    <button
+                      type="button"
+                      onClick={() => handleSelectService("pointpass")}
+                      className={`relative flex items-center justify-between p-3.5 rounded-2xl border text-start transition-all cursor-pointer ${
+                        selectedService === "pointpass"
+                          ? "border-[#A6FF2E] bg-[#0B2F23] text-white ring-2 ring-[#A6FF2E]/60 shadow-lg"
+                          : "border-white/10 bg-[#0B2F23]/30 hover:bg-[#0B2F23]/70 text-[#DADDD6]"
+                      }`}
+                    >
+                      <div className="space-y-1">
+                        <div className="flex items-center gap-2">
+                          <span className="text-xs sm:text-sm font-extrabold tracking-wide uppercase text-white">
+                            {t("modal.pkg.pointpass.title")}
+                          </span>
+                          <span className="text-[10px] font-bold text-amber-400 bg-amber-500/10 px-2 py-0.5 rounded-full border border-amber-500/20">
+                            {lang === "ar" ? "شبه جاهز" : "Almost Ready"}
+                          </span>
+                        </div>
+                        <div className="text-xs text-[#DADDD6]/80">
+                          {t("modal.pkg.pointpass.sub")}
+                        </div>
+                      </div>
+
+                      {selectedService === "pointpass" ? (
                         <div className="p-1.5 rounded-xl bg-[#A6FF2E] text-[#09110D] shrink-0">
                           <Check className="h-4 w-4 stroke-[3]" />
                         </div>
@@ -411,7 +447,7 @@ export function RequestWebsiteDialog({
               </p>
 
               {submittedData && (
-                <div className="p-4 rounded-2xl bg-[#0B2F23]/80 border border-white/10 text-left rtl:text-right max-w-md mx-auto space-y-1.5 text-xs text-[#DADDD6]">
+                <div className="p-4 rounded-2xl bg-[#0B2F23]/80 border border-white/10 text-start max-w-md mx-auto space-y-1.5 text-xs text-[#DADDD6]">
                   <div className="flex justify-between">
                     <span className="text-white/60">{t("modal.name")}:</span>
                     <span className="font-bold text-white">{submittedData.name}</span>

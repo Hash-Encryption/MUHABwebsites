@@ -8,8 +8,8 @@ export function Hero() {
   const { t, lang } = useI18n();
   const [requestModalOpen, setRequestModalOpen] = useState(false);
 
-  const scrollToPortfolio = () => {
-    const element = document.getElementById("portfolio");
+  const scrollToCompanies = () => {
+    const element = document.getElementById("companies");
     if (element) {
       const offset = 80;
       const bodyRect = document.body.getBoundingClientRect().top;
@@ -27,36 +27,40 @@ export function Hero() {
   return (
     <section id="top" className="relative isolate overflow-hidden pt-12 pb-20 sm:pt-16 sm:pb-28 lg:pt-20 lg:pb-32 bg-[#051A12] text-white">
       {/* Optimized Ambient Glow */}
-      <div className="absolute top-1/3 left-1/2 -translate-x-1/2 -translate-y-1/2 -z-10 h-[400px] w-[500px] sm:w-[700px] rounded-full bg-[#A6FF2E]/10 blur-2xl opacity-60 pointer-events-none transform-gpu" />
+      <div className="absolute top-1/3 inset-x-0 mx-auto -translate-y-1/2 -z-10 h-[400px] w-[500px] sm:w-[700px] rounded-full bg-[#A6FF2E]/10 blur-2xl opacity-60 pointer-events-none transform-gpu" />
 
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
           
           {/* Hero Text Area */}
-          <div className="lg:col-span-7 text-center lg:text-left rtl:lg:text-right space-y-6 sm:space-y-8">
+          <div className="lg:col-span-7 text-center lg:text-start space-y-6 sm:space-y-8">
             
             {/* Eyebrow Badge */}
             <div className="inline-flex items-center gap-2 rounded-full border border-[#A6FF2E]/30 bg-[#0B2F23]/80 px-4 py-1.5 text-xs font-bold text-[#A6FF2E] shadow-sm tracking-wider uppercase">
               <span className="h-2 w-2 rounded-full bg-[#A6FF2E] animate-pulse" />
-              <span>{t("hero.eyebrow")}</span>
+              <span>{t("hero.badge")}</span>
             </div>
 
             {/* Main Headline */}
-            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.1]">
-              {lang === "ar" ? (
-                <span>
-                  نصنع مواقع إلكترونية <span className="text-[#A6FF2E]">تنمّي أعمالك.</span>
-                </span>
-              ) : (
-                <span>
-                  WE BUILD WEBSITES THAT <span className="text-[#A6FF2E]">GROW BUSINESSES.</span>
-                </span>
-              )}
+            <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-white leading-[1.18]">
+              {t("hero.title_part1")}{" "}
+              <span className="text-[#A6FF2E]">{t("hero.title_part2")}</span>
             </h1>
 
-            {/* Subtitle */}
+            {/* Subtitle with Inline Jump */}
             <p className="max-w-2xl mx-auto lg:mx-0 text-base sm:text-lg text-[#DADDD6] leading-relaxed">
-              {t("hero.sub")}
+              <span>{t("hero.subtitle_pre")}</span>
+              <a
+                href="#companies"
+                onClick={(e) => {
+                  e.preventDefault();
+                  scrollToCompanies();
+                }}
+                className="font-bold text-white underline decoration-[#A6FF2E] decoration-2 underline-offset-4 hover:text-[#A6FF2E] transition-colors cursor-pointer"
+              >
+                {t("hero.companies_link")}
+              </a>
+              <span>{t("hero.subtitle_post")}</span>
             </p>
 
             {/* Call to Action Buttons */}
@@ -69,7 +73,7 @@ export function Hero() {
               </button>
 
               <button
-                onClick={scrollToPortfolio}
+                onClick={scrollToCompanies}
                 className="w-full sm:w-auto inline-flex items-center justify-center gap-2 rounded-full border border-white/20 bg-white/5 hover:bg-white/10 hover:border-[#A6FF2E]/50 px-7 py-4 text-base font-semibold text-white transition-all cursor-pointer group"
               >
                 <Eye className="h-5 w-5 text-[#A6FF2E]" />

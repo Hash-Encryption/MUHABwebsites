@@ -38,11 +38,11 @@
   --color-muhab-white: #FFFFFF;
   --color-muhab-black: #09110D;
 
-  --font-sans: "Poppins", "Inter", sans-serif;
-  --font-display: "Poppins", "Inter", sans-serif;
-  --font-body: "Poppins", "Inter", sans-serif;
-  --font-arabic: "Cairo", sans-serif;
-  --font-arabic-display: "Cairo", sans-serif;
+  --font-sans: "Tajawal", "Cairo", system-ui, -apple-system, sans-serif;
+  --font-display: "Tajawal", "Cairo", system-ui, -apple-system, sans-serif;
+  --font-body: "Tajawal", "Cairo", system-ui, -apple-system, sans-serif;
+  --font-arabic: "Tajawal", "Cairo", system-ui, -apple-system, sans-serif;
+  --font-arabic-display: "Tajawal", "Cairo", system-ui, -apple-system, sans-serif;
 }
 
 :root {
@@ -85,24 +85,21 @@
   }
   html {
     scroll-behavior: smooth;
+    font-family: var(--font-arabic);
   }
   body {
     background-color: var(--color-background);
     color: var(--color-foreground);
-    font-family: var(--font-body);
-  }
-  html[dir="rtl"] body {
     font-family: var(--font-arabic);
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
   }
-  h1, h2, h3, h4 {
-    font-family: var(--font-display);
-    letter-spacing: -0.02em;
-  }
-  html[dir="rtl"] h1,
-  html[dir="rtl"] h2,
-  html[dir="rtl"] h3,
-  html[dir="rtl"] h4 {
+  h1, h2, h3, h4, h5, h6 {
     font-family: var(--font-arabic-display);
+    letter-spacing: -0.01em;
+  }
+  button, input, select, textarea {
+    font-family: inherit;
   }
 }
 

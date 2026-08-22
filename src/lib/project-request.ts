@@ -1,7 +1,7 @@
 import { createServerFn } from "@tanstack/react-start";
 import { Resend } from "resend";
 
-export type ServicePackageId = "basic" | "custom" | "taqyeemi";
+export type ServicePackageId = "basic" | "custom" | "taqyeemi" | "pointpass";
 
 export type ProjectRequestPayload = {
   refId: string;
@@ -15,6 +15,7 @@ const ALLOWED_SERVICES: Record<ServicePackageId, string> = {
   basic: "Basic Website (Starter)",
   custom: "Custom Website (Main Option)",
   taqyeemi: "Taqyeemi (Customer Experience & Reputation App)",
+  pointpass: "PointPass (Apple & Google Wallet Loyalty)",
 };
 
 function sanitizeString(str: unknown, maxLen = 150): string {

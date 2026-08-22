@@ -29,16 +29,16 @@ import {
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "MUHAB · SAUDI WEBMAKERS — WEBSITES. GROWTH. REPUTATION." },
+      { title: "مُهاب · صُنّاع المواقع السعودية — مواقع. نمو. سمعة." },
       {
         name: "description",
-        content: "Muhab creates modern digital experiences that help Saudi businesses grow.",
+        content: "نصمم أفضل المواقع المخصصة في السعودية. مواقع وتطبيقات إلكترونية سريعة ومباشرة تزيد مبيعاتك وتعزز سمعتك.",
       },
-      { property: "og:title", content: "MUHAB · SAUDI WEBMAKERS" },
+      { property: "og:title", content: "مُهاب · صُنّاع المواقع السعودية" },
       {
         property: "og:description",
         content:
-          "Websites. Growth. Reputation. High-performance digital solutions for Saudi businesses.",
+          "نصمم أفضل المواقع المخصصة في السعودية. مواقع وتطبيقات إلكترونية سريعة ومباشرة تزيد مبيعاتك.",
       },
       { property: "og:type", content: "website" },
     ],
@@ -75,10 +75,10 @@ function HomeContent() {
       liveUrl: "https://gotcha-fresh-tea-jeddah-jwmw.vercel.app",
       image: gotchaImg,
       outcomeEn: "Live Website · Interactive Menu & Orders",
-      outcomeAr: "موقع مباشر · قائمة تفاعلية وطلبات",
+      outcomeAr: "موقع مباشر · قائمة تفاعلية وطلبات واتساب",
       descEn:
         "Vibrant, mobile-optimized online store & interactive menu for Gotcha Fresh Tea in Jeddah.",
-      descAr: "متجر إلكتروني وقائمة تفاعلية حديثة لعلامة جوتشا فريش تي بجدة.",
+      descAr: "متجر إلكتروني وقائمة تفاعلية سريعة لعلامة جوتشا فريش تي بجدة تتيح تصفح المشروبات والطلب مباشرة.",
     },
     {
       id: "damascene-syrian",
@@ -89,42 +89,42 @@ function HomeContent() {
       filter: "corporate",
       liveUrl: "https://damascene.vercel.app/#cat-chicken-shawarma",
       image: alkhalImg,
-      outcomeEn: "Live Website · Bilingual Syrian Menu",
-      outcomeAr: "موقع مباشر · قائمة طعام ثنائية اللغة",
+      outcomeEn: "Live Website · Fast Menu & Ordering",
+      outcomeAr: "موقع مباشر · قائمة طعام سريعة وطلب عبر الواتساب",
       descEn:
         "Alkhal aldimashki restaurant platform featuring authentic heritage recipes, shawarma catalog, and WhatsApp ordering.",
-      descAr: "منصة مطعم الخال الدمشقي تعرض أشهر الأطباق والقوائم المباشرة مع الربط بالواتساب.",
+      descAr: "منصة طعام متجاوبة تعرض أشهر الأطباق وقوائم الأسعار مع إمكانية توجيه الطلبات للفرع فوراً عبر الواتساب.",
     },
     {
       id: "ueno-saryo",
       titleEn: "Ueno Saryo Teahouse",
       titleAr: "مقهى أوينو ساريو",
       categoryEn: "Specialty Culinary & Teahouse",
-      categoryAr: "مقهى وتجربة شاي فاخرة",
+      categoryAr: "مقهى وتجربة شاي مختص",
       filter: "saas",
       liveUrl: "https://ueno-saryo.vercel.app/",
       image: uenoImg,
-      outcomeEn: "Live Website · Zen Design",
-      outcomeAr: "موقع مباشر · تصميم ورقي هادئ",
+      outcomeEn: "Live Website · Clean Interface",
+      outcomeAr: "موقع مباشر · واجهة راقية وسريعة للمقهى",
       descEn:
         "Sophisticated teahouse web experience crafted with minimalistic aesthetic and smooth navigation.",
-      descAr: "تجربة ويب فاخرة للمقهى مصممة بطابع مينيماليست وأداء سلس.",
+      descAr: "موقع تعريفي هادئ وسريع لمقهى الشاي المختص يعرض الأصناف والموقع وأوقات العمل بوضوح.",
     },
     {
       id: "lavoa-lounge",
       titleEn: "Lavoa Night Lounge & Café",
-      titleAr: "لاونج ومقهى لافوا الليلي",
+      titleAr: "لاونج ومقهى لافوا",
       categoryEn: "Night Lounge & Café",
-      categoryAr: "لاونج ومقهى ليلي فاخر",
+      categoryAr: "لاونج ومقهى ومشروبات",
       filter: "saas",
       liveUrl: "https://lavoa.hgendi3.workers.dev/",
       image: lavoaImg,
       outcomeEn: "Live Lounge Platform · Edge Speed",
       outcomeAr: "منصة لاونج مباشرة · سرعة استجابة فائقة",
       descEn:
-        "Exceptional night lounge & café experience crafted with luxury dark ambiance, specialty menu, and smooth online ordering.",
+        "Refined night lounge & café experience crafted with dark ambiance, specialty menu, and fast online ordering.",
       descAr:
-        "تجربة ليلية استثنائية للاونج والمقهى تجمع بين الفخامة والقهوة المختصة وقائمة رقمية سلسة.",
+        "منصة رقمية للاونج والمقهى تعرض قائمة المشروبات والمأكولات مع سرعة تصفح عالية وربط مباشر بالطلب.",
     },
   ];
 
@@ -137,70 +137,70 @@ function HomeContent() {
     {
       id: "web-design",
       title: "WEB DESIGN",
-      titleAr: "تصميم المواقع",
+      titleAr: "تصميم المواقع المخصصة",
       descEn:
-        "Modern websites designed around the business and its customers to maximize conversion.",
-      descAr: "مواقع حديثة مصممة حول هوية عملك وعملائك لتحقيق أعلى معدل تحويل.",
+        "Modern websites designed around your brand to maximize conversion and sales.",
+      descAr: "تصميم واجهات احترافية ومريحة تعكس هوية علامتك وتسهل على العميل الوصول لما يريد والطلب فوراً.",
       icon: Globe,
     },
     {
       id: "web-dev",
       title: "WEB DEVELOPMENT",
-      titleAr: "تطوير المواقع",
+      titleAr: "برمجة وتطوير المواقع",
       descEn: "Fast, scalable, responsive websites built with state-of-the-art web technology.",
-      descAr: "مواقع فائقة السرعة، قابلة للتوسع، ومتجاوبة تماماً مبنية بأحدث التقنيات.",
+      descAr: "برمجة سريعة ومتوافقة 100% مع أجهزة الجوال لضمان تحميل فوري وتجربة استخدام خالية من التعليق.",
       icon: Zap,
     },
     {
       id: "growth",
       title: "BUSINESS GROWTH",
-      titleAr: "نمو الأعمال الرقمية",
-      descEn: "Digital experiences designed to convert visitor attention into long-term customers.",
-      descAr: "تجارب رقمية مصممة لتحويل اهتمام الزوار إلى عملاء دائمين.",
+      titleAr: "ربط المبيعات والطلبات",
+      descEn: "Digital solutions designed to convert visitor attention into direct sales and inquiries.",
+      descAr: "ربط مباشر مع الواتساب ونماذج الطلب الذكية لرفع معدل التحويل وتحويل الزوار لعملاء فعليين.",
       icon: TrendingUp,
     },
     {
       id: "reputation",
       title: "ONLINE REPUTATION",
-      titleAr: "سمعة العلامة التجارية",
+      titleAr: "إدارة التقييمات والسمعة",
       descEn:
-        "Solutions that make it easy for happy customers to strengthen your brand's online presence.",
-      descAr: "حلول تتيح لعملائك تعزيز سمعة موقعك وحضورك الرقمي بكل سهولة.",
+        "Solutions that make it easy for satisfied customers to review your business on Google Maps.",
+      descAr: "تسهيل تقييم الزوار لمنشأتك على Google Maps لرفع ترتيبك في نتائج البحث وكسب ثقة العملاء الجدد.",
       icon: Star,
     },
     {
       id: "seo",
       title: "SEO & PERFORMANCE",
-      titleAr: "تحسين المحركات والأداء",
-      descEn: "Fast, discoverable websites optimized for Google search and seamless usability.",
-      descAr: "مواقع سريعة ومكتشفة بسهولة ومحسنة تماماً لمحركات البحث وتجربة المستخدم.",
+      titleAr: "تهيئة محركات البحث (SEO)",
+      descEn: "Fast, discoverable websites optimized for Google search rankings and local visibility.",
+      descAr: "بنية برمجية مهيأة لمحركات البحث وأرشفة Google لمساعدة منشأتك على تصدر نتائج البحث في مدينتك.",
       icon: Search,
     },
     {
       id: "maintenance",
       title: "SUPPORT & MAINTENANCE",
-      titleAr: "الدعم والتطوير المستمر",
+      titleAr: "الصيانة والدعم المستمر",
       descEn: "Ongoing technical care, security updates, and performance monitoring after launch.",
-      descAr: "دعم فني مستمر، تحديثات أمان، ومراقبة أداء دورية بعد الإطلاق.",
+      descAr: "تحديثات دورية وضمان استقرار الموقع وأمان البيانات مع دعم فني مستمر لمعالجة أي متطلبات جديدة.",
       icon: Headphones,
     },
   ];
 
   const resultsValue = [
     {
-      stat: "3.2x",
-      labelEn: "Average Increase in Customer Inquiries",
-      labelAr: "متوسط الزيادة في استفسارات العملاء",
-    },
-    {
-      stat: "99.9%",
-      labelEn: "Uptime & High-Speed Performance",
-      labelAr: "نسبة استقرار وأداء فائق السرعة",
-    },
-    {
       stat: "100%",
-      labelEn: "Saudi Market Compliance & Localization",
-      labelAr: "تطابق وتكيف تام مع السوق السعودي",
+      labelEn: "Mobile Optimization & Responsiveness",
+      labelAr: "توافق تام مع الجوال والأجهزة الذكية",
+    },
+    {
+      stat: "< 1s",
+      labelEn: "Ultra-Fast Page Response Speed",
+      labelAr: "سرعة تحميل واستجابة فورية للواجهات",
+    },
+    {
+      stat: "24/7",
+      labelEn: "Continuous Technical Reliability",
+      labelAr: "استقرار دائم ودعم فني مستمر لأعمالك",
     },
   ];
 
@@ -250,15 +250,15 @@ function HomeContent() {
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B2F23] text-[#A6FF2E] text-xs font-extrabold uppercase tracking-wider shadow-sm">
                 <Sparkles className="h-4 w-4" />
                 <span>
-                  {lang === "ar" ? "عملاؤنا ومشاريعنا الحية" : "OUR CLIENTS · LIVE SHOWCASE"}
+                  {lang === "ar" ? "أعمالنا ومشاريعنا المباشرة" : "OUR CLIENTS · LIVE SHOWCASE"}
                 </span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#09110D]">
-                {lang === "ar" ? "أعمالنا والمواقع الحية التي صمّمنا" : "Our Live Client Websites"}
+                {lang === "ar" ? "نماذج حية من المواقع التي نفّذناها" : "Our Live Client Websites"}
               </h2>
               <p className="text-[#09110D]/75 text-base sm:text-lg leading-relaxed">
                 {lang === "ar"
-                  ? "تصفّح نماذج حية ومباشرة من المواقع والتجارب الرقمية التي قمنا ببنائها لعملائنا."
+                  ? "تصفّح نماذج حية ومباشرة من المواقع والتجارب الرقمية التي قمنا ببنائها وتطويرها لعملائنا في السعودية."
                   : "Explore live websites and custom digital platforms engineered by MUHAB Saudi Webmakers."}
               </p>
             </div>
@@ -266,17 +266,17 @@ function HomeContent() {
             {/* Filter Tabs */}
             <div className="flex flex-wrap items-center justify-center gap-2 mb-12">
               {[
-                { id: "all", labelEn: "All Websites", labelAr: "جميع المواقع" },
+                { id: "all", labelEn: "All Websites", labelAr: "جميع النماذج" },
                 { id: "ecommerce", labelEn: "E-Commerce & Retail", labelAr: "المتاجر والتجزئة" },
                 {
                   id: "corporate",
-                  labelEn: "Restaurants & Corporate",
-                  labelAr: "المطاعم والشركات",
+                  labelEn: "Restaurants & Dining",
+                  labelAr: "المطاعم والضيافة",
                 },
                 {
                   id: "saas",
-                  labelEn: "Specialty & Culinary",
-                  labelAr: "المقاهي والتجارب الفاخرة",
+                  labelEn: "Specialty Cafes & Lounges",
+                  labelAr: "المقاهي واللاونجات",
                 },
               ].map((tab) => (
                 <button
@@ -309,14 +309,14 @@ function HomeContent() {
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent" />
 
                     {/* Category Badge */}
-                    <div className="absolute top-4 left-4 rtl:left-auto rtl:right-4">
+                    <div className="absolute top-4 start-4">
                       <span className="inline-block rounded-full bg-[#0B2F23] px-3.5 py-1 text-xs font-bold text-[#A6FF2E] shadow-md">
                         {lang === "ar" ? project.categoryAr : project.categoryEn}
                       </span>
                     </div>
 
                     {/* Outcome Badge */}
-                    <div className="absolute bottom-4 left-4 right-4">
+                    <div className="absolute bottom-4 inset-x-4">
                       <div className="rounded-xl bg-black/75 backdrop-blur-md border border-white/20 p-3 text-white">
                         <div className="text-xs font-bold text-[#A6FF2E] flex items-center gap-1.5">
                           <CheckCircle2 className="h-4 w-4" />
@@ -326,7 +326,7 @@ function HomeContent() {
                     </div>
                   </div>
 
-                  <div className="p-6 sm:p-8 space-y-4">
+                  <div className="p-6 sm:p-8 space-y-4 text-start">
                     <h3 className="text-xl sm:text-2xl font-extrabold text-[#09110D]">
                       {lang === "ar" ? project.titleAr : project.titleEn}
                     </h3>
@@ -342,7 +342,7 @@ function HomeContent() {
                         rel="noopener noreferrer"
                         className="inline-flex items-center gap-1.5 rounded-full border border-[#0B2F23] px-4 py-2 text-xs font-bold text-[#0B2F23] hover:bg-[#0B2F23] hover:text-[#A6FF2E] transition-all"
                       >
-                        <span>{lang === "ar" ? "زيارة الموقع المباشر" : "Visit Live Site"}</span>
+                        <span>{lang === "ar" ? "معاينة الموقع مباشرة" : "Visit Live Site"}</span>
                         <ExternalLink className="h-3.5 w-3.5" />
                       </a>
 
@@ -372,7 +372,7 @@ function HomeContent() {
             <div className="text-center max-w-3xl mx-auto space-y-4 mb-16">
               <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-[#0B2F23] text-[#A6FF2E] text-xs font-extrabold uppercase tracking-wider">
                 <ShieldCheck className="h-4 w-4" />
-                <span>MUHAB SERVICES</span>
+                <span>{lang === "ar" ? "خدمات مُهاب" : "MUHAB SERVICES"}</span>
               </div>
               <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-white">
                 {t("services.title")}
@@ -388,7 +388,7 @@ function HomeContent() {
                 return (
                   <div
                     key={srv.id}
-                    className="group relative rounded-3xl border border-white/10 bg-[#0B2F23] p-7 sm:p-8 shadow-sm hover:shadow-xl hover:border-[#A6FF2E]/40 transition-all duration-300 flex flex-col justify-between"
+                    className="group relative rounded-3xl border border-white/10 bg-[#0B2F23] p-7 sm:p-8 shadow-sm hover:shadow-xl hover:border-[#A6FF2E]/40 transition-all duration-300 flex flex-col justify-between text-start"
                   >
                     <div className="space-y-4">
                       <div className="h-12 w-12 rounded-2xl bg-[#051A12] text-[#A6FF2E] flex items-center justify-center group-hover:scale-110 transition-transform">
@@ -406,7 +406,7 @@ function HomeContent() {
                       onClick={() => openServiceDialog("")}
                       className="mt-6 pt-4 border-t border-white/10 inline-flex items-center gap-2 text-xs font-extrabold text-[#A6FF2E] hover:text-white transition-colors cursor-pointer"
                     >
-                      <span>START THIS SERVICE</span>
+                      <span>{lang === "ar" ? "طلب هذه الخدمة" : "START THIS SERVICE"}</span>
                       <ArrowRight className="h-3.5 w-3.5 rtl:rotate-180" />
                     </button>
                   </div>
@@ -423,30 +423,33 @@ function HomeContent() {
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-              <div className="lg:col-span-6 space-y-6">
+              <div className="lg:col-span-6 space-y-6 text-start">
                 <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-[#A6FF2E]/10 border border-[#A6FF2E]/30 text-[#A6FF2E] text-xs font-extrabold uppercase">
-                  <span>WEBSITES. GROWTH. REPUTATION.</span>
+                  <span>{lang === "ar" ? "مواقع. نمو. سمعة." : "WEBSITES. GROWTH. REPUTATION."}</span>
                 </div>
                 <h2 className="text-3xl sm:text-4xl font-extrabold tracking-tight leading-tight">
-                  Engineered to Deliver Real Business Impact in the Saudi Market
+                  {lang === "ar"
+                    ? "مواقع مصممة لتحقيق نتائج تجارية حقيقية في السوق السعودي"
+                    : "Engineered to Deliver Real Business Impact in the Saudi Market"}
                 </h2>
                 <p className="text-[#DADDD6] text-base leading-relaxed">
-                  Muhab combines modern web development standards with deep knowledge of local
-                  market preferences to build websites that look premium and convert reliably.
+                  {lang === "ar"
+                    ? "نجمع بين المعايير التقنية الحديثة وفهم سلوك المستهلك المحلي لنبني مواقع تزيد من حجم مبيعاتك وتسهل تواصل العملاء معك مباشرة."
+                    : "Muhab combines modern web development standards with deep knowledge of local market preferences to build websites that look premium and convert reliably."}
                 </p>
 
                 <div className="pt-2 space-y-3">
                   <div className="flex items-center gap-3 text-sm font-semibold">
                     <CheckCircle2 className="h-5 w-5 text-[#A6FF2E] shrink-0" />
-                    <span>High-converting architecture & clear call-to-actions</span>
+                    <span>{lang === "ar" ? "مسارات طلب واضحة ومباشرة عبر الواتساب" : "Direct WhatsApp ordering and lead funnels"}</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm font-semibold">
                     <CheckCircle2 className="h-5 w-5 text-[#A6FF2E] shrink-0" />
-                    <span>Seamless Arabic & English bilingual support</span>
+                    <span>{lang === "ar" ? "دعم وتوافق لغوي كامل مع تجربة RTL طبيعية" : "Natural Arabic RTL-first user experience"}</span>
                   </div>
                   <div className="flex items-center gap-3 text-sm font-semibold">
                     <CheckCircle2 className="h-5 w-5 text-[#A6FF2E] shrink-0" />
-                    <span>Ultra-fast load times & mobile perfection</span>
+                    <span>{lang === "ar" ? "سرعة تحميل فائقة وتوافق 100% مع الجوال" : "Ultra-fast load times and mobile perfection"}</span>
                   </div>
                 </div>
               </div>

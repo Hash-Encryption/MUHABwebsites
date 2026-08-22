@@ -124,25 +124,25 @@ export function Header() {
             <nav className="flex flex-col space-y-3 text-sm font-medium text-[#DADDD6]">
               <button
                 onClick={() => scrollToSection("companies")}
-                className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer"
+                className="text-start hover:text-[#A6FF2E] cursor-pointer"
               >
                 {t("nav.companies")}
               </button>
               <button
                 onClick={() => scrollToSection("portfolio")}
-                className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer"
+                className="text-start hover:text-[#A6FF2E] cursor-pointer"
               >
                 {t("nav.portfolio")}
               </button>
               <button
                 onClick={() => scrollToSection("services")}
-                className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer"
+                className="text-start hover:text-[#A6FF2E] cursor-pointer"
               >
                 {t("nav.services")}
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
-                className="text-left rtl:text-right hover:text-[#A6FF2E] cursor-pointer"
+                className="text-start hover:text-[#A6FF2E] cursor-pointer"
               >
                 {t("nav.contact")}
               </button>

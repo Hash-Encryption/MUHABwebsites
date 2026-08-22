@@ -11,6 +11,7 @@
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
 import { Route as CompaniesTaqyeemiRouteImport } from './routes/companies.taqyeemi'
+import { Route as CompaniesPointpassRouteImport } from './routes/companies.pointpass'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
@@ -22,30 +23,39 @@ const CompaniesTaqyeemiRoute = CompaniesTaqyeemiRouteImport.update({
   path: '/companies/taqyeemi',
   getParentRoute: () => rootRouteImport,
 } as any)
+const CompaniesPointpassRoute = CompaniesPointpassRouteImport.update({
+  id: '/companies/pointpass',
+  path: '/companies/pointpass',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/companies/pointpass': typeof CompaniesPointpassRoute
   '/companies/taqyeemi': typeof CompaniesTaqyeemiRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/companies/pointpass': typeof CompaniesPointpassRoute
   '/companies/taqyeemi': typeof CompaniesTaqyeemiRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/companies/pointpass': typeof CompaniesPointpassRoute
   '/companies/taqyeemi': typeof CompaniesTaqyeemiRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/companies/taqyeemi'
+  fullPaths: '/' | '/companies/pointpass' | '/companies/taqyeemi'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/companies/taqyeemi'
-  id: '__root__' | '/' | '/companies/taqyeemi'
+  to: '/' | '/companies/pointpass' | '/companies/taqyeemi'
+  id: '__root__' | '/' | '/companies/pointpass' | '/companies/taqyeemi'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  CompaniesPointpassRoute: typeof CompaniesPointpassRoute
   CompaniesTaqyeemiRoute: typeof CompaniesTaqyeemiRoute
 }
 
@@ -65,11 +75,19 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof CompaniesTaqyeemiRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/companies/pointpass': {
+      id: '/companies/pointpass'
+      path: '/companies/pointpass'
+      fullPath: '/companies/pointpass'
+      preLoaderRoute: typeof CompaniesPointpassRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  CompaniesPointpassRoute: CompaniesPointpassRoute,
   CompaniesTaqyeemiRoute: CompaniesTaqyeemiRoute,
 }
 export const routeTree = rootRouteImport

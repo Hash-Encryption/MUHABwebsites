@@ -18,16 +18,16 @@ function NotFoundComponent() {
     <div className="flex min-h-screen items-center justify-center bg-[#051A12] text-white px-4">
       <div className="max-w-md text-center space-y-4">
         <h1 className="text-7xl font-extrabold text-[#A6FF2E]">404</h1>
-        <h2 className="text-2xl font-bold">Page Not Found</h2>
+        <h2 className="text-2xl font-bold">الصفحة غير موجودة</h2>
         <p className="text-sm text-[#DADDD6]">
-          The page you are looking for does not exist or has been moved.
+          الصفحة التي تبحث عنها غير متوفرة أو تم نقلها.
         </p>
         <div className="pt-4">
           <Link
             to="/"
             className="inline-flex items-center justify-center rounded-xl bg-[#A6FF2E] px-6 py-3 text-sm font-bold text-[#09110D] transition-transform hover:scale-105"
           >
-            Return to MUHAB Home
+            العودة للرئيسية
           </Link>
         </div>
       </div>
@@ -46,10 +46,10 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
     <div className="flex min-h-screen items-center justify-center bg-[#051A12] text-white px-4">
       <div className="max-w-md text-center space-y-4">
         <h1 className="text-2xl font-bold tracking-tight text-white">
-          Unexpected Error
+          حدث خطأ غير متوقع
         </h1>
         <p className="text-sm text-[#DADDD6]">
-          Something went wrong. Please try refreshing or returning home.
+          يرجى تحديث الصفحة أو العودة إلى الصفحة الرئيسية.
         </p>
         <div className="pt-4 flex flex-wrap justify-center gap-3">
           <button
@@ -59,13 +59,13 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
             }}
             className="inline-flex items-center justify-center rounded-xl bg-[#A6FF2E] px-5 py-2.5 text-sm font-bold text-[#09110D] transition-transform hover:scale-105"
           >
-            Try Again
+            إعادة المحاولة
           </button>
           <a
             href="/"
             className="inline-flex items-center justify-center rounded-xl border border-white/20 bg-transparent px-5 py-2.5 text-sm font-medium text-white transition-colors hover:bg-white/10"
           >
-            Go Home
+            الصفحة الرئيسية
           </a>
         </div>
       </div>
@@ -73,21 +73,144 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   );
 }
 
+const jsonLdSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "موهاب",
+  "alternateName": ["Muhab", "Muhabweb", "منصة موهاب"],
+  "url": "https://muhab.org",
+  "logo": "https://muhab.org/logo.png",
+  "description":
+    "شركة تقنية واستوديو تطوير برمجيات متخصص في بناء المواقع المخصصة، بطاقات تقييم قوقل الذكية (تقييمي)، وكروت الولاء الرقمية (بوينت باس) في جدة والمملكة العربية السعودية.",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Jeddah",
+    "addressRegion": "Makkah Province",
+    "addressCountry": "SA",
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": 21.5433,
+    "longitude": 39.1728,
+  },
+  "areaServed": [
+    { "@type": "City", "name": "Jeddah" },
+    { "@type": "Country", "name": "Saudi Arabia" },
+  ],
+  "brand": [
+    {
+      "@type": "Brand",
+      "name": "تقييمي",
+      "alternateName": "Taqyeemi",
+      "description":
+        "نظام وبطاقات تقييم قوقل الذكية NFC لفرز آراء العملاء وتوجيه التقييمات الإيجابية إلى خرائط Google.",
+      "url": "https://muhab.org/companies/taqyeemi",
+    },
+    {
+      "@type": "Brand",
+      "name": "بوينت باس",
+      "alternateName": "PointPass",
+      "description":
+        "كروت ولاء وأختام رقمية في Apple Wallet و Google Wallet مع نظام إشعارات جغرافية ومجدولة لشاشة قفل العميل.",
+      "url": "https://muhab.org/companies/pointpass",
+    },
+    {
+      "@type": "Brand",
+      "name": "واصل",
+      "alternateName": "Wasel",
+      "description":
+        "بطاقات أعمال رقمية وحلول ذكية لمشاركة جهات الاتصال وشبكات الأعمال بتقنية NFC.",
+    },
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "خدمات ومنتجات موهاب الرقمية",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "تطوير وبرمجة المواقع المخصصة (Custom Web Development)",
+          "description":
+            "تصميم وبرمجة مواقع وتطبيقات ويب فائقة السرعة ومتوافقة مع الـ SEO للشركات والمتاجر.",
+        },
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "نظام تقييمي لإدارة تقييمات Google (Taqyeemi)",
+          "url": "https://muhab.org/companies/taqyeemi",
+        },
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Product",
+          "name": "نظام بوينت باس لكروت الولاء الرقمية (PointPass)",
+          "url": "https://muhab.org/companies/pointpass",
+        },
+      },
+    ],
+  },
+};
+
 export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()({
   head: () => ({
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "MUHAB · SAUDI WEBMAKERS — WEBSITES. GROWTH. REPUTATION." },
-      { name: "description", content: "Muhab creates modern digital experiences that help Saudi businesses grow." },
+      { title: "موهاب | تصميم مواقع وبطاقات تقييمي وبوينت باس الذكية في جدة | Muhab" },
+      { name: "title", content: "موهاب | تصميم مواقع وبطاقات تقييمي وبوينت باس الذكية في جدة | Muhab" },
+      {
+        name: "description",
+        content:
+          "منصة موهاب (Muhab) في جدة — استوديو تطوير مواقع وتطبيقات مخصصة، ومنظومة منتجات ذكية تشمل تقييمي (Taqyeemi) لتقييمات قوقل، وبوينت باس (PointPass) لكروت الولاء في محفظة آبل وجوجل.",
+      },
+      {
+        name: "keywords",
+        content:
+          "موهاب, Muhab, تصميم مواقع جدة, برمجة مواقع السعودية, تقييمي, Taqyeemi, بوينت باس, PointPass, بطاقات تقييم قوقل, كروت ولاء Apple Wallet, واصل, Muhabweb",
+      },
+      {
+        name: "robots",
+        content: "index, follow, max-image-preview:large, max-snippet:-1, max-video-preview:-1",
+      },
       { name: "author", content: "MUHAB SAUDI WEBMAKERS" },
-      { property: "og:title", content: "MUHAB · SAUDI WEBMAKERS" },
-      { property: "og:description", content: "Websites. Growth. Reputation. High-performance digital solutions for Saudi businesses." },
+      { name: "geo.region", content: "SA-02" },
+      { name: "geo.placename", content: "Jeddah" },
+      { name: "geo.position", content: "21.543333;39.172778" },
+      { name: "ICBM", content: "21.543333, 39.172778" },
       { property: "og:type", content: "website" },
+      { property: "og:url", content: "https://muhab.org" },
+      { property: "og:site_name", content: "موهاب | Muhab" },
+      {
+        property: "og:title",
+        content: "موهاب — نصمم أفضل المواقع المخصصة والحلول الرقمية في السعودية",
+      },
+      {
+        property: "og:description",
+        content:
+          "استوديو تطوير برمجيات ومنظومة منتجات ذكية: تقييمي لتقييمات قوقل، وبوينت باس لكروت الولاء الرقمية.",
+      },
+      { property: "og:image", content: "https://muhab.org/og-image.png" },
+      { property: "og:locale", content: "ar_SA" },
+      { property: "og:locale:alternate", content: "en_US" },
       { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:title",
+        content: "موهاب | Muhab — حلول برمجية ومنتجات رقمية ذكية",
+      },
+      {
+        name: "twitter:description",
+        content:
+          "تصميم وتطوير المواقع المخصصة، بطاقات تقييم قوقل NFC، وكروت الولاء الرقمية في جدة.",
+      },
+      { name: "twitter:image", content: "https://muhab.org/og-image.png" },
       { name: "theme-color", content: "#051A12" },
     ],
     links: [
+      { rel: "canonical", href: "https://muhab.org" },
       { rel: "stylesheet", href: appCss },
       { rel: "icon", href: "/favicon.ico" },
       { rel: "shortcut icon", href: "/favicon.ico" },
@@ -96,7 +219,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
         rel: "stylesheet",
-        href: "https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&display=swap",
+        href: "https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;600;700;800&family=Tajawal:wght@400;500;700;800&display=swap",
       },
     ],
   }),
@@ -108,9 +231,15 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
 
 function RootShell({ children }: { children: ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="ar" dir="rtl">
       <head>
         <HeadContent />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify(jsonLdSchema),
+          }}
+        />
       </head>
       <body>
         {children}

@@ -11,6 +11,11 @@ import {
   Sparkles,
   Layers,
   Clock,
+  Smartphone,
+  Bell,
+  Coins,
+  CheckCircle2,
+  MapPin,
 } from "lucide-react";
 import taqyeemiImg from "@/assets/companies/taqyeemi.jpg";
 
@@ -68,7 +73,7 @@ export function OurCompanies() {
           ───────────────────────────────────────── */}
           <div className="group relative rounded-3xl sm:rounded-[32px] border border-[#0B2F23]/10 bg-[#FAF9F5] p-6 sm:p-10 lg:p-12 shadow-sm hover:shadow-2xl hover:border-[#0B2F23]/25 transition-all duration-300 overflow-hidden">
             {/* Subtle glow accent on hover */}
-            <div className="absolute -right-20 -top-20 h-64 w-64 rounded-full bg-[#A6FF2E]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+            <div className="absolute -end-20 -top-20 h-64 w-64 rounded-full bg-[#A6FF2E]/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
 
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Copy / Capabilities / CTA (Desktop Left 42% / Mobile Top) */}
@@ -162,31 +167,174 @@ export function OurCompanies() {
           </div>
 
           {/* ─────────────────────────────────────────
-              02 / WASEL — COMING SOON SHOWCASE
+              02 / POINTPASS — ALMOST READY SHOWCASE
           ───────────────────────────────────────── */}
-          <div className="relative rounded-3xl sm:rounded-[32px] border border-[#0B2F23]/10 bg-[#FAF9F5] p-6 sm:p-10 lg:p-12 shadow-sm overflow-hidden">
+          <div className="group relative rounded-3xl sm:rounded-[32px] border border-[#0B2F23]/10 bg-[#FAF9F5] p-6 sm:p-10 lg:p-12 shadow-sm hover:shadow-2xl hover:border-[#0B2F23]/25 transition-all duration-300 overflow-hidden">
+            {/* Subtle glow accent on hover */}
+            <div className="absolute -end-20 -top-20 h-64 w-64 rounded-full bg-amber-400/10 blur-3xl opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
+
             <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
               {/* Copy Area (Left) */}
-              <div className="lg:col-span-6 space-y-6 sm:space-y-7">
-                {/* Header & Badges */}
+              <div className="lg:col-span-5 flex flex-col justify-between space-y-6 sm:space-y-7 order-1 text-start">
                 <div className="space-y-2">
                   <div className="flex items-center gap-3">
                     <span className="text-xs font-extrabold tracking-widest text-[#0B2F23]/60 uppercase">
-                      {t("companies.wasel.badge")}
+                      02 / PRODUCT
                     </span>
                     <span className="h-1 w-1 rounded-full bg-[#0B2F23]/30" />
-                    <span className="inline-flex items-center gap-1.5 text-xs font-extrabold tracking-wide uppercase text-[#0B2F23] bg-[#A6FF2E]/30 border border-[#0B2F23]/15 px-3 py-1 rounded-full">
-                      <Clock className="h-3 w-3 text-[#0B2F23]" />
-                      <span>{t("companies.wasel.status")}</span>
+                    <span className="inline-flex items-center gap-1.5 text-xs font-extrabold text-amber-700 bg-amber-500/15 border border-amber-500/30 px-2.5 py-0.5 rounded-full">
+                      <span className="h-1.5 w-1.5 rounded-full bg-amber-500 animate-pulse" />
+                      <span>{t("companies.status_almost_ready")}</span>
                     </span>
                   </div>
 
                   <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#09110D]">
-                    {t("companies.wasel.name")}
+                    {t("companies.pointpass.title")}
                   </h3>
 
                   <p className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0B2F23]">
-                    {t("companies.wasel.category")}
+                    {t("companies.pointpass.badge")}
+                  </p>
+                </div>
+
+                <p className="text-sm sm:text-base text-[#09110D]/75 leading-relaxed">
+                  {t("companies.pointpass.desc")}
+                </p>
+
+                {/* Capabilities Badges */}
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-1">
+                  <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-[#0B2F23]/10 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+                    <div className="h-7 w-7 rounded-lg bg-[#0B2F23]/5 text-[#0B2F23] flex items-center justify-center shrink-0">
+                      <Smartphone className="h-3.5 w-3.5" />
+                    </div>
+                    <span className="text-xs font-semibold text-[#09110D]/90 leading-tight">
+                      {t("companies.pointpass.tag1")}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-[#0B2F23]/10 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+                    <div className="h-7 w-7 rounded-lg bg-[#0B2F23]/5 text-[#0B2F23] flex items-center justify-center shrink-0">
+                      <Layers className="h-3.5 w-3.5" />
+                    </div>
+                    <span className="text-xs font-semibold text-[#09110D]/90 leading-tight">
+                      {t("companies.pointpass.tag2")}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-[#0B2F23]/10 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+                    <div className="h-7 w-7 rounded-lg bg-[#0B2F23]/5 text-[#0B2F23] flex items-center justify-center shrink-0">
+                      <Bell className="h-3.5 w-3.5" />
+                    </div>
+                    <span className="text-xs font-semibold text-[#09110D]/90 leading-tight">
+                      {t("companies.pointpass.tag3")}
+                    </span>
+                  </div>
+                  <div className="flex items-center gap-2.5 p-2.5 rounded-xl bg-white border border-[#0B2F23]/10 shadow-[0_1px_3px_rgba(0,0,0,0.04)]">
+                    <div className="h-7 w-7 rounded-lg bg-[#0B2F23]/5 text-[#0B2F23] flex items-center justify-center shrink-0">
+                      <Sparkles className="h-3.5 w-3.5" />
+                    </div>
+                    <span className="text-xs font-semibold text-[#09110D]/90 leading-tight">
+                      {lang === "ar" ? "بدون تحميل تطبيق" : "No App Required"}
+                    </span>
+                  </div>
+                </div>
+
+                {/* CTA Links */}
+                <div className="pt-2 flex flex-wrap items-center gap-3">
+                  <Link
+                    to="/companies/pointpass"
+                    className="inline-flex items-center gap-2.5 rounded-full bg-[#0B2F23] px-6 py-3.5 text-xs sm:text-sm font-extrabold text-[#A6FF2E] shadow-md hover:bg-[#051A12] hover:shadow-lg transition-all duration-200 group/btn"
+                  >
+                    <span>{t("companies.pointpass.cta")}</span>
+                    <ArrowRight className="h-4 w-4 rtl:rotate-180 transition-transform duration-200 group-hover/btn:translate-x-1 rtl:group-hover/btn:-translate-x-1" />
+                  </Link>
+                </div>
+              </div>
+
+              {/* Visual Card (Right) */}
+              <div className="lg:col-span-7 order-2">
+                <Link
+                  to="/companies/pointpass"
+                  className="block relative rounded-2xl sm:rounded-3xl overflow-hidden border border-[#0B2F23]/15 bg-[#051A12] p-6 sm:p-8 shadow-lg shadow-black/10 group-hover:shadow-2xl transition-all duration-300"
+                >
+                  <div className="relative z-10 space-y-4">
+                    {/* Header in pass */}
+                    <div className="flex items-center justify-between border-b border-white/10 pb-3">
+                      <div>
+                        <div className="text-[11px] font-extrabold tracking-widest text-[#A6FF2E] uppercase">
+                          APPLE & GOOGLE WALLET PASS
+                        </div>
+                        <div className="text-xl sm:text-2xl font-black text-white">
+                          PointPass Loyalty Pass
+                        </div>
+                      </div>
+                      <div className="flex items-center gap-1.5 bg-[#A6FF2E]/10 border border-[#A6FF2E]/30 px-3 py-1 rounded-full text-xs font-extrabold text-[#A6FF2E]">
+                        <Coins className="h-3.5 w-3.5" />
+                        <span>VIP REWARDS</span>
+                      </div>
+                    </div>
+
+                    {/* Interactive 6-stamp mini preview */}
+                    <div className="grid grid-cols-6 gap-2 pt-2">
+                      {[1, 2, 3, 4, 5, 6].map((st) => (
+                        <div
+                          key={st}
+                          className={`h-12 rounded-xl flex flex-col items-center justify-center border text-xs font-extrabold ${
+                            st <= 5
+                              ? "bg-[#A6FF2E] text-[#09110D] border-[#A6FF2E]"
+                              : "bg-white/5 text-[#A6FF2E] border-[#A6FF2E]/40 border-dashed animate-pulse"
+                          }`}
+                        >
+                          {st <= 5 ? (
+                            <CheckCircle2 className="h-5 w-5 stroke-[2.5]" />
+                          ) : (
+                            <Star className="h-5 w-5 fill-current" />
+                          )}
+                        </div>
+                      ))}
+                    </div>
+
+                    {/* Geofence Alert footer */}
+                    <div className="flex items-center justify-between pt-2 text-xs text-[#DADDD6]">
+                      <div className="flex items-center gap-2">
+                        <MapPin className="h-4 w-4 text-[#A6FF2E]" />
+                        <span>{lang === "ar" ? "إشعار جغرافي تلقائي عند الوصول للفرع" : "Auto geofence push on arrival"}</span>
+                      </div>
+                      <span className="font-mono text-[#A6FF2E] font-bold">5/6 STAMPS</span>
+                    </div>
+                  </div>
+
+                  {/* Gradient Glow */}
+                  <div className="absolute inset-0 bg-gradient-to-tr from-[#051A12] via-[#0B2F23] to-[#051A12] opacity-90 -z-0" />
+                </Link>
+              </div>
+            </div>
+          </div>
+
+          {/* ─────────────────────────────────────────
+              03 / WASEL — COMING SOON SHOWCASE
+          ───────────────────────────────────────── */}
+          <div className="relative rounded-3xl sm:rounded-[32px] border border-[#0B2F23]/10 bg-[#FAF9F5] p-6 sm:p-10 lg:p-12 shadow-sm overflow-hidden">
+            <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center">
+              {/* Copy Area (Left) */}
+              <div className="lg:col-span-6 space-y-6 sm:space-y-7 text-start">
+                {/* Header & Badges */}
+                <div className="space-y-2">
+                  <div className="flex items-center gap-3">
+                    <span className="text-xs font-extrabold tracking-widest text-[#0B2F23]/60 uppercase">
+                      03 / PRODUCT
+                    </span>
+                    <span className="h-1 w-1 rounded-full bg-[#0B2F23]/30" />
+                    <span className="inline-flex items-center gap-1.5 text-xs font-extrabold tracking-wide uppercase text-[#0B2F23] bg-[#A6FF2E]/30 border border-[#0B2F23]/15 px-3 py-1 rounded-full">
+                      <Clock className="h-3 w-3 text-[#0B2F23]" />
+                      <span>{t("companies.status_coming_soon")}</span>
+                    </span>
+                  </div>
+
+                  <h3 className="text-3xl sm:text-4xl font-extrabold tracking-tight text-[#09110D]">
+                    {t("companies.wasel.title")}
+                  </h3>
+
+                  <p className="text-xs sm:text-sm font-bold uppercase tracking-wider text-[#0B2F23]">
+                    {t("companies.wasel.badge")}
                   </p>
                 </div>
 
@@ -220,10 +368,10 @@ export function OurCompanies() {
                     </div>
                     <div>
                       <div className="text-xs font-extrabold uppercase tracking-[0.25em] text-[#A6FF2E]">
-                        WASEL · {t("companies.wasel.status")}
+                        WASEL · {t("companies.status_coming_soon")}
                       </div>
                       <div className="text-[11px] text-white/50 tracking-wider">
-                        RESTAURANT OPERATING SUITE
+                        SMART NFC & NETWORKING SUITE
                       </div>
                     </div>
                   </div>

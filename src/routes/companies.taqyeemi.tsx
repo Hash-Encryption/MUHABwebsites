@@ -36,17 +36,17 @@ import simulatorPreviewImg from "@/assets/companies/taqyeemi-simulator-preview.p
 export const Route = createFileRoute("/companies/taqyeemi")({
   head: () => ({
     meta: [
-      { title: "Taqyeemi by MUHAB — Customer Experience & Reputation Platform" },
+      { title: "تقييمي من مُهاب — منصة التقييمات الذكية وإدارة السمعة" },
       {
         name: "description",
         content:
-          "Turn customer visits into valuable feedback while building your online reputation with Taqyeemi smart NFC & QR review stands and dashboard.",
+          "حوّل زيارات العملاء إلى تقييمات إيجابية على خرائط Google واحمِ سمعة منشأتك عبر منصة وستاند تقييمي الذكي (NFC & QR).",
       },
-      { property: "og:title", content: "Taqyeemi by MUHAB" },
+      { property: "og:title", content: "تقييمي من مُهاب" },
       {
         property: "og:description",
         content:
-          "NFC & QR feedback collection, review intercept funnel, and real-time dashboard for Saudi businesses.",
+          "منظومة جمع التقييمات الذكية وحماية السمعة الرقمية للشركات والمطاعم في السعودية.",
       },
     ],
   }),
@@ -90,6 +90,7 @@ function TaqyeemiPage() {
                 target="_blank"
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-1 text-[11px] font-bold text-[#60A5FA] hover:text-white transition-colors"
+                dir="ltr"
               >
                 <span>taqyeemi.pages.dev</span>
                 <ArrowUpRight className="h-3 w-3" />
@@ -103,8 +104,8 @@ function TaqyeemiPage() {
         ───────────────────────────────────────────────────────────── */}
         <section className="relative pt-12 sm:pt-20 pb-20 sm:pb-28 overflow-hidden bg-gradient-to-b from-[#070D18] via-[#0B1528] to-[#070D18]">
           {/* Subtle Glows */}
-          <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[700px] h-[450px] bg-[#2563EB]/15 blur-[120px] rounded-full pointer-events-none" />
-          <div className="absolute top-10 right-10 w-[300px] h-[300px] bg-[#A6FF2E]/10 blur-[100px] rounded-full pointer-events-none" />
+          <div className="absolute top-1/4 inset-x-0 mx-auto -translate-y-1/2 w-[700px] h-[450px] bg-[#2563EB]/15 blur-[120px] rounded-full pointer-events-none" />
+          <div className="absolute top-10 end-10 w-[300px] h-[300px] bg-[#A6FF2E]/10 blur-[100px] rounded-full pointer-events-none" />
 
           {/* Background Grid Pattern */}
           <div className="absolute inset-0 bg-[radial-gradient(#3B82F6_1px,transparent_1px)] [background-size:32px_32px] opacity-[0.05] pointer-events-none" />
@@ -458,7 +459,7 @@ function TaqyeemiPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 relative z-10">
             <div className="rounded-3xl bg-gradient-to-br from-[#0B1528] via-[#0F172A] to-[#0B1528] border border-[#2563EB]/30 p-8 sm:p-12 lg:p-16 shadow-2xl relative overflow-hidden">
               {/* Background Accent Glow */}
-              <div className="absolute -right-20 -top-20 w-80 h-80 bg-[#2563EB]/20 blur-3xl rounded-full pointer-events-none" />
+              <div className="absolute -end-20 -top-20 w-80 h-80 bg-[#2563EB]/20 blur-3xl rounded-full pointer-events-none" />
 
               <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center relative z-10">
                 <div className="lg:col-span-7 space-y-6">

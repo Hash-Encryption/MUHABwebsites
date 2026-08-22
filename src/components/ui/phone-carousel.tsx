@@ -73,7 +73,7 @@ export function PhoneCarousel({
           <div className="relative h-full w-full overflow-hidden rounded-[38px] bg-slate-900 select-none">
             
             {/* Status Bar */}
-            <div className="absolute top-0 inset-x-0 z-30 flex h-9 items-center justify-between px-6 pt-1 text-white text-xs font-semibold tracking-tight">
+            <div className="absolute top-0 inset-x-0 z-30 flex h-9 items-center justify-between px-6 pt-1 text-white text-xs font-semibold tracking-tight" dir="ltr">
               <span>{currentTime}</span>
               <div className="flex items-center gap-1.5 opacity-90">
                 <Signal className="h-3 w-3 text-[#A6FF2E]" />
@@ -146,7 +146,7 @@ export function PhoneCarousel({
       </div>
 
       {/* External Controls & Indicators */}
-      <div className="flex items-center gap-4 bg-[#0B2F23]/90 backdrop-blur-md px-5 py-2.5 rounded-full border border-[#A6FF2E]/20 shadow-lg text-white">
+      <div className="flex items-center gap-4 bg-[#0B2F23]/90 backdrop-blur-md px-5 py-2.5 rounded-full border border-[#A6FF2E]/20 shadow-lg text-white" dir="ltr">
         {/* Previous Button */}
         <button
           onClick={prevSlide}
@@ -184,7 +184,7 @@ export function PhoneCarousel({
         {/* Play/Pause Button */}
         <button
           onClick={() => setIsPlaying(!isPlaying)}
-          className="ml-2 p-1.5 rounded-full bg-[#A6FF2E]/20 text-[#A6FF2E] hover:bg-[#A6FF2E]/30 transition-colors cursor-pointer"
+          className="ms-2 p-1.5 rounded-full bg-[#A6FF2E]/20 text-[#A6FF2E] hover:bg-[#A6FF2E]/30 transition-colors cursor-pointer"
           aria-label={isPlaying ? "Pause autoplay" : "Start autoplay"}
         >
           {isPlaying ? <Pause className="h-4 w-4" /> : <Play className="h-4 w-4" />}

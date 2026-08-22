@@ -57,35 +57,35 @@ export function Footer() {
         </div>
 
         {/* Services Outcome */}
-        <div className="space-y-3">
+        <div className="space-y-3 text-start">
           <div className="text-xs font-extrabold uppercase tracking-wider text-[#A6FF2E]">
             {t("nav.services")}
           </div>
           <ul className="space-y-2 text-xs text-[#DADDD6]">
-            <li>Web Design & Development</li>
-            <li>Business Digital Growth</li>
-            <li>Online Reputation Management</li>
-            <li>SEO & Performance Tuning</li>
+            <li>{lang === "ar" ? "تصميم وبرمجة المواقع المخصصة" : "Custom Web Design & Development"}</li>
+            <li>{lang === "ar" ? "ربط أنظمة الطلبات والمبيعات" : "Sales & Order Systems Integration"}</li>
+            <li>{lang === "ar" ? "إدارة التقييمات والسمعة الرقمية" : "Online Reputation & Review Management"}</li>
+            <li>{lang === "ar" ? "تهيئة محركات البحث والأداء" : "SEO & Speed Optimization"}</li>
           </ul>
         </div>
 
         {/* Contact Info */}
-        <div className="space-y-3">
+        <div className="space-y-3 text-start">
           <div className="text-xs font-extrabold uppercase tracking-wider text-[#A6FF2E]">
             {t("footer.contact")}
           </div>
           <div className="space-y-2.5 text-xs text-[#DADDD6]">
             <p className="flex items-center gap-2">
-              <Mail className="h-3.5 w-3.5 text-[#A6FF2E]" />
+              <Mail className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
               <span>hello@muhab.sa</span>
             </p>
             <p className="flex items-center gap-2" dir="ltr">
-              <Phone className="h-3.5 w-3.5 text-[#A6FF2E]" />
+              <Phone className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
               <span>+966 50 000 0000</span>
             </p>
             <p className="flex items-center gap-2">
-              <MapPin className="h-3.5 w-3.5 text-[#A6FF2E]" />
-              <span>Riyadh · Kingdom of Saudi Arabia</span>
+              <MapPin className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
+              <span>{lang === "ar" ? "الرياض · المملكة العربية السعودية" : "Riyadh · Kingdom of Saudi Arabia"}</span>
             </p>
           </div>
 
