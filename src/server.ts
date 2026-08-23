@@ -44,6 +44,39 @@ function isH3SwallowedErrorBody(body: string): boolean {
   }
 }
 
+// ---------------------------------------------------------------------------
+// Security headers — applied to every response from this Worker.
+// Fixes: clickjacking, MIME-sniffing, XSS, SSL-downgrade, referrer leakage.
+// ---------------------------------------------------------------------------
+const SECURITY_HEADERS: Record<string, string> = {
+  "X-Frame-Options": "DENY",
+  "X-Content-Type-Options": "nosniff",
+  "Referrer-Policy": "strict-origin-when-cross-origin",
+  "Strict-Transport-Security": "max-age=31536000; includeSubDomains; preload",
+  "Permissions-Policy": "camera=(), microphone=(), geolocation=(), payment=()",
+  "Content-Security-Policy":
+    "default-src 'self'; " +
+    "script-src 'self' 'unsafe-inline' https://static.cloudflareinsights.com; " +
+    "style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; " +
+    "font-src 'self' https://fonts.gstatic.com; " +
+    "img-src 'self' data: https:; " +
+    "media-src 'self'; " +
+    "connect-src 'self' https://a.nel.cloudflare.com; " +
+    "frame-ancestors 'none';",
+};
+
+function withSecurityHeaders(response: Response): Response {
+  const headers = new Headers(response.headers);
+  for (const [key, value] of Object.entries(SECURITY_HEADERS)) {
+    headers.set(key, value);
+  }
+  return new Response(response.body, {
+    status: response.status,
+    statusText: response.statusText,
+    headers,
+  });
+}
+
 const SITEMAP_XML = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
         xmlns:xhtml="http://www.w3.org/1999/xhtml">
@@ -93,33 +126,33 @@ export default {
     try {
       const url = new URL(request.url);
       if (url.pathname === "/sitemap.xml") {
-        return new Response(SITEMAP_XML, {
+        return withSecurityHeaders(new Response(SITEMAP_XML, {
           status: 200,
           headers: {
             "content-type": "application/xml; charset=utf-8",
             "cache-control": "public, max-age=86400",
           },
-        });
+        }));
       }
       if (url.pathname === "/robots.txt") {
-        return new Response(ROBOTS_TXT, {
+        return withSecurityHeaders(new Response(ROBOTS_TXT, {
           status: 200,
           headers: {
             "content-type": "text/plain; charset=utf-8",
             "cache-control": "public, max-age=86400",
           },
-        });
+        }));
       }
 
       const handler = await getServerEntry();
       const response = await handler.fetch(request, env, ctx);
-      return await normalizeCatastrophicSsrResponse(response);
+      return withSecurityHeaders(await normalizeCatastrophicSsrResponse(response));
     } catch (error) {
       console.error(error);
-      return new Response(renderErrorPage(), {
+      return withSecurityHeaders(new Response(renderErrorPage(), {
         status: 500,
         headers: { "content-type": "text/html; charset=utf-8" },
-      });
+      }));
     }
   },
 };
