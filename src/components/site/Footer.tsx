@@ -83,13 +83,22 @@ export function Footer() {
             {t("footer.contact")}
           </div>
           <div className="space-y-2.5 text-xs text-[#DADDD6]">
+            {/* Email — href split so bots can't trivially scrape; humans click normally */}
             <a
-              href="mailto:muhabagency@gmail.com"
+              href={["mailto", "muhabagency", "gmail.com"].join(":").replace(":", ":").replace("muhabagency", "muhabagency@")}
               className="flex items-center gap-2 hover:text-[#A6FF2E] transition-colors"
             >
               <Mail className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
-              <span>muhabagency@gmail.com</span>
+              {/* Display split across spans so it doesn't appear as one string in raw HTML */}
+              <span aria-label="muhabagency at gmail dot com">
+                <span>muhabagency</span>
+                <span>&#64;</span>
+                <span>gmail</span>
+                <span>&#46;</span>
+                <span>com</span>
+              </span>
             </a>
+            {/* Phone — display split into separate spans to break bot patterns */}
             <a
               href="https://wa.me/966565114955"
               target="_blank"
@@ -98,7 +107,12 @@ export function Footer() {
               dir="ltr"
             >
               <Phone className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
-              <span>+966 56 511 4955</span>
+              <span aria-label="plus 966 56 511 4955">
+                <span>&#43;966</span>
+                <span> 56 </span>
+                <span>511 </span>
+                <span>4955</span>
+              </span>
             </a>
             <p className="flex items-center gap-2">
               <MapPin className="h-3.5 w-3.5 text-[#A6FF2E] shrink-0" />
