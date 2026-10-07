@@ -1,14 +1,19 @@
 {
   "$schema": "node_modules/wrangler/config-schema.json",
   "name": "muhabwebsites",
-  "main": ".output/server/index.mjs",
-  "compatibility_date": "2026-08-19",
-  "compatibility_flags": ["nodejs_compat"],
+  "compatibility_date": "2026-10-07",
   "routes": [
-    { "pattern": "muhab.org", "custom_domain": true },
-    { "pattern": "www.muhab.org", "custom_domain": true }
+    {
+      "pattern": "muhab.org",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.muhab.org",
+      "custom_domain": true
+    }
   ],
   "assets": {
-    "directory": ".output/public"
+    "directory": "./dist",
+    "not_found_handling": "single-page-application"
   }
 }

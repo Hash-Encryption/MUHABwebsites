@@ -1,19 +1,21 @@
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
 
-// Auto-detect deployment preset for Cloudflare Pages, Cloudflare Workers, and Vercel
-const getPreset = () => {
-  if (process.env.VERCEL) return "vercel";
-  if (process.env.CF_PAGES || process.env.CLOUDFLARE_PAGES) return "cloudflare-pages";
-  return process.env.NITRO_PRESET || "cloudflare-module";
-};
+// https://vite.dev/config/
+export default defineConfig({
+  base: '/',
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+  server: {
+    host: '0.0.0.0',
+    port: 5173,
+    strictPort: false,
+  },
+  build: {
+    sourcemap: false,
+  },
+})
 
-export default (defineConfig as any)({
-  tanstackStart: {
-    server: { entry: "server" },
-  },
-  vite: {
-    nitro: {
-      preset: getPreset(),
-    },
-  },
-});
